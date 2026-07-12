@@ -6,7 +6,7 @@ import org.bukkit.event.inventory.InventoryClickEvent
 import org.bukkit.event.inventory.InventoryCloseEvent
 import org.bukkit.event.inventory.InventoryOpenEvent
 
-class MenuEventManager : Listener {
+class MenuEventListener : Listener {
     @EventHandler
     fun onClick(event: InventoryClickEvent) {
         val player = event.whoClicked
@@ -47,5 +47,6 @@ class MenuEventManager : Listener {
         val menu = MenuManager.openedMenuPayers[uuid] ?: return
 
         menu.handleClose(event)
+        MenuManager.openedMenuPayers.remove(uuid)
     }
 }

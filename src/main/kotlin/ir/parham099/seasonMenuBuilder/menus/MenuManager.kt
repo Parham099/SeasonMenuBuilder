@@ -24,6 +24,7 @@ object MenuManager {
         } catch (exc: Exception) {
             this.closeInventory()
             if (openedMenuPayers.contains(this.uniqueId)) openedMenuPayers.remove(this.uniqueId)
+            exc.printStackTrace()
         }
     }
 }

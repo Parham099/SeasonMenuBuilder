@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ir.parham099</groupId>
-    <artifactId>seasonmenubuilder</artifactId>
-    <version>0.0.1</version>
+    <artifactId>SeasonMenuBuilder</artifactId>
+    <version>0.0.1-BetaTest</version>
     <packaging>jar</packaging>
 
     <name>SeasonMenuBuilder-Paper</name>

@@ -19,7 +19,7 @@ data class MenuBuilder(
     val size: Int = 27,
     val menuType: MenuType = MenuType.STATIC,
     var player: UUID? = null,
-    var block: MenuBuilder.() -> Unit,
+    var block: MenuBuilder.() -> Unit = {},
 ) {
     var inventory: Inventory? = null
         private set
