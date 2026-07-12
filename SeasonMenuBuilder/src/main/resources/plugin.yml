@@ -1,9 +1,0 @@
-name: SeasonMenuBuilder
-description: $description
-version: '${version}'
-
-main: ir.parham099.seasonMenuBuilder.SeasonMenuBuilder
-api-version: '26.2'
-load: POSTWORLD
-
-authors: [ Parham099 ]
