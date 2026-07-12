@@ -42,7 +42,7 @@ SeasonMenuBuilder is a Kotlin DSL library for creating Minecraft GUI menus on Pa
 ```kotlin
 val menu = menu("Example Menu", 27) {
 
-    stone(listOf(13)) {
+    stone(13) {
         displayName = mm("<green>Hello!")
 
         onClick {
