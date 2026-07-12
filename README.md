@@ -212,7 +212,7 @@ onShiftClick {
 Item:
 
 ```kotlin
-stone(listOf(10)) {
+stone(10) {
 
     onClick {
 
