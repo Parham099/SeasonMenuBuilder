@@ -11,10 +11,12 @@ class MenuEventListener : Listener {
     fun onClick(event: InventoryClickEvent) {
         val player = event.whoClicked
         val uuid = player.uniqueId
+
         val menu = MenuManager.openedMenuPayers[uuid] ?: return
 
         val slot = event.slot
         if (!menu.items.containsKey(slot)) return
+
         val item = menu.items[slot]
         if (event.isRightClick) {
             menu.handleRightClick(event)

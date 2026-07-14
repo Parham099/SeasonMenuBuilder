@@ -1,12 +1,12 @@
 package ir.parham099.seasonMenuBuilder.menus
 
 import ir.parham099.seasonMenuBuilder.MenuDsl
+import ir.parham099.seasonMenuBuilder.menus.MenuManager.openGui
 import ir.parham099.seasonMenuBuilder.models.Item
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.minimessage.MiniMessage
 import org.bukkit.Bukkit
 import org.bukkit.Material
-import org.bukkit.entity.Player
 import org.bukkit.event.inventory.InventoryClickEvent
 import org.bukkit.event.inventory.InventoryCloseEvent
 import org.bukkit.event.inventory.InventoryOpenEvent
@@ -23,8 +23,7 @@ data class MenuBuilder(
 ) {
     var inventory: Inventory? = null
         private set
-    val items: Map<Int, Item?>
-        field = hashMapOf<Int, Item?>()
+    val items = hashMapOf<Int, Item?>()
 
     init {
         block(this)
@@ -40,11 +39,23 @@ data class MenuBuilder(
         block: Item.() -> Unit = {}
     ) {
         for (slot in slots) {
-            items[slot] = Item(slot = slot, material = material).apply(block)
+            val item = Item(slot = slot, material = material, menu = this).apply(block)
+            items[slot] = item
+            inventory?.setItem(slot, item.itemStack)
         }
     }
 
-    fun buildAsBukkitInventory(): Inventory = buildInventory()
+    // just for dynamic menu
+    fun refresh() {
+        val uuid = player ?: return
+        val human = Bukkit.getPlayer(uuid) ?: return
+        human.openGui(this)
+    }
+
+    fun build(): Inventory {
+        inventory = buildInventory()
+        return inventory!!
+    }
 
     // events
 
