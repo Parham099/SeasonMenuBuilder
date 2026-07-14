@@ -1,6 +1,6 @@
 package ir.parham099.seasonMenuBuilder
 
-import ir.parham099.seasonMenuBuilder.menus.MenuEventListener
+import ir.parham099.seasonMenuBuilder.event.MenuEventListener
 import org.bukkit.Bukkit
 import org.bukkit.plugin.java.JavaPlugin
 

@@ -1,7 +1,7 @@
-package ir.parham099.seasonMenuBuilder.models
+package ir.parham099.seasonMenuBuilder.item
 
-import ir.parham099.seasonMenuBuilder.MenuDsl
-import ir.parham099.seasonMenuBuilder.menus.MenuBuilder
+import ir.parham099.seasonMenuBuilder.builder.BaseMenuBuilder
+import ir.parham099.seasonMenuBuilder.dsl.MenuDsl
 import net.kyori.adventure.text.Component
 import org.bukkit.Material
 import org.bukkit.event.inventory.InventoryClickEvent
@@ -10,10 +10,10 @@ import org.bukkit.inventory.ItemStack
 import org.bukkit.inventory.meta.ItemMeta
 
 @MenuDsl
-data class Item(
+data class MenuItem(
     val material: Material,
     var slot: Int,
-    var menu: MenuBuilder? = null
+    var menu: BaseMenuBuilder? = null
 ) {
     var id: Int = -1
     var amount: Int = 1

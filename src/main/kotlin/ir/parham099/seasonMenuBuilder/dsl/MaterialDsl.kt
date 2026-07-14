@@ -1,10160 +1,10160 @@
-package ir.parham099.seasonMenuBuilder.models
+package ir.parham099.seasonMenuBuilder.dsl
 
 import org.bukkit.Material
-import ir.parham099.seasonMenuBuilder.menus.MenuBuilder
-import ir.parham099.seasonMenuBuilder.models.Item
+import ir.parham099.seasonMenuBuilder.builder.BaseMenuBuilder
+import ir.parham099.seasonMenuBuilder.item.MenuItem
 
-fun MenuBuilder.acaciaBoat(
+fun BaseMenuBuilder.acaciaBoat(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ACACIA_BOAT, slots.toList(), block)
 
-fun MenuBuilder.acaciaChestBoat(
+fun BaseMenuBuilder.acaciaChestBoat(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ACACIA_CHEST_BOAT, slots.toList(), block)
 
-fun MenuBuilder.air(
+fun BaseMenuBuilder.air(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.AIR, slots.toList(), block)
 
-fun MenuBuilder.allaySpawnEgg(
+fun BaseMenuBuilder.allaySpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ALLAY_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.amethystShard(
+fun BaseMenuBuilder.amethystShard(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.AMETHYST_SHARD, slots.toList(), block)
 
-fun MenuBuilder.anglerPotterySherd(
+fun BaseMenuBuilder.anglerPotterySherd(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ANGLER_POTTERY_SHERD, slots.toList(), block)
 
-fun MenuBuilder.apple(
+fun BaseMenuBuilder.apple(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.APPLE, slots.toList(), block)
 
-fun MenuBuilder.archerPotterySherd(
+fun BaseMenuBuilder.archerPotterySherd(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ARCHER_POTTERY_SHERD, slots.toList(), block)
 
-fun MenuBuilder.armadilloScute(
+fun BaseMenuBuilder.armadilloScute(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ARMADILLO_SCUTE, slots.toList(), block)
 
-fun MenuBuilder.armadilloSpawnEgg(
+fun BaseMenuBuilder.armadilloSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ARMADILLO_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.armorStand(
+fun BaseMenuBuilder.armorStand(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ARMOR_STAND, slots.toList(), block)
 
-fun MenuBuilder.armsUpPotterySherd(
+fun BaseMenuBuilder.armsUpPotterySherd(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ARMS_UP_POTTERY_SHERD, slots.toList(), block)
 
-fun MenuBuilder.arrow(
+fun BaseMenuBuilder.arrow(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ARROW, slots.toList(), block)
 
-fun MenuBuilder.axolotlBucket(
+fun BaseMenuBuilder.axolotlBucket(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.AXOLOTL_BUCKET, slots.toList(), block)
 
-fun MenuBuilder.axolotlSpawnEgg(
+fun BaseMenuBuilder.axolotlSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.AXOLOTL_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.bakedPotato(
+fun BaseMenuBuilder.bakedPotato(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BAKED_POTATO, slots.toList(), block)
 
-fun MenuBuilder.bambooChestRaft(
+fun BaseMenuBuilder.bambooChestRaft(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BAMBOO_CHEST_RAFT, slots.toList(), block)
 
-fun MenuBuilder.bambooRaft(
+fun BaseMenuBuilder.bambooRaft(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BAMBOO_RAFT, slots.toList(), block)
 
-fun MenuBuilder.batSpawnEgg(
+fun BaseMenuBuilder.batSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BAT_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.beeSpawnEgg(
+fun BaseMenuBuilder.beeSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BEE_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.beef(
+fun BaseMenuBuilder.beef(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BEEF, slots.toList(), block)
 
-fun MenuBuilder.beetroot(
+fun BaseMenuBuilder.beetroot(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BEETROOT, slots.toList(), block)
 
-fun MenuBuilder.beetrootSeeds(
+fun BaseMenuBuilder.beetrootSeeds(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BEETROOT_SEEDS, slots.toList(), block)
 
-fun MenuBuilder.beetrootSoup(
+fun BaseMenuBuilder.beetrootSoup(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BEETROOT_SOUP, slots.toList(), block)
 
-fun MenuBuilder.birchBoat(
+fun BaseMenuBuilder.birchBoat(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BIRCH_BOAT, slots.toList(), block)
 
-fun MenuBuilder.birchChestBoat(
+fun BaseMenuBuilder.birchChestBoat(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BIRCH_CHEST_BOAT, slots.toList(), block)
 
-fun MenuBuilder.blackBundle(
+fun BaseMenuBuilder.blackBundle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLACK_BUNDLE, slots.toList(), block)
 
-fun MenuBuilder.blackDye(
+fun BaseMenuBuilder.blackDye(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLACK_DYE, slots.toList(), block)
 
-fun MenuBuilder.blackHarness(
+fun BaseMenuBuilder.blackHarness(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLACK_HARNESS, slots.toList(), block)
 
-fun MenuBuilder.bladePotterySherd(
+fun BaseMenuBuilder.bladePotterySherd(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLADE_POTTERY_SHERD, slots.toList(), block)
 
-fun MenuBuilder.blazePowder(
+fun BaseMenuBuilder.blazePowder(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLAZE_POWDER, slots.toList(), block)
 
-fun MenuBuilder.blazeRod(
+fun BaseMenuBuilder.blazeRod(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLAZE_ROD, slots.toList(), block)
 
-fun MenuBuilder.blazeSpawnEgg(
+fun BaseMenuBuilder.blazeSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLAZE_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.blueBundle(
+fun BaseMenuBuilder.blueBundle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLUE_BUNDLE, slots.toList(), block)
 
-fun MenuBuilder.blueDye(
+fun BaseMenuBuilder.blueDye(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLUE_DYE, slots.toList(), block)
 
-fun MenuBuilder.blueEgg(
+fun BaseMenuBuilder.blueEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLUE_EGG, slots.toList(), block)
 
-fun MenuBuilder.blueHarness(
+fun BaseMenuBuilder.blueHarness(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLUE_HARNESS, slots.toList(), block)
 
-fun MenuBuilder.boggedSpawnEgg(
+fun BaseMenuBuilder.boggedSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BOGGED_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.boltArmorTrimSmithingTemplate(
+fun BaseMenuBuilder.boltArmorTrimSmithingTemplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BOLT_ARMOR_TRIM_SMITHING_TEMPLATE, slots.toList(), block)
 
-fun MenuBuilder.bone(
+fun BaseMenuBuilder.bone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BONE, slots.toList(), block)
 
-fun MenuBuilder.boneMeal(
+fun BaseMenuBuilder.boneMeal(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BONE_MEAL, slots.toList(), block)
 
-fun MenuBuilder.book(
+fun BaseMenuBuilder.book(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BOOK, slots.toList(), block)
 
-fun MenuBuilder.bordureIndentedBannerPattern(
+fun BaseMenuBuilder.bordureIndentedBannerPattern(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BORDURE_INDENTED_BANNER_PATTERN, slots.toList(), block)
 
-fun MenuBuilder.bow(
+fun BaseMenuBuilder.bow(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BOW, slots.toList(), block)
 
-fun MenuBuilder.bowl(
+fun BaseMenuBuilder.bowl(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BOWL, slots.toList(), block)
 
-fun MenuBuilder.bread(
+fun BaseMenuBuilder.bread(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BREAD, slots.toList(), block)
 
-fun MenuBuilder.breezeRod(
+fun BaseMenuBuilder.breezeRod(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BREEZE_ROD, slots.toList(), block)
 
-fun MenuBuilder.breezeSpawnEgg(
+fun BaseMenuBuilder.breezeSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BREEZE_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.brewerPotterySherd(
+fun BaseMenuBuilder.brewerPotterySherd(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BREWER_POTTERY_SHERD, slots.toList(), block)
 
-fun MenuBuilder.brick(
+fun BaseMenuBuilder.brick(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BRICK, slots.toList(), block)
 
-fun MenuBuilder.brownBundle(
+fun BaseMenuBuilder.brownBundle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BROWN_BUNDLE, slots.toList(), block)
 
-fun MenuBuilder.brownDye(
+fun BaseMenuBuilder.brownDye(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BROWN_DYE, slots.toList(), block)
 
-fun MenuBuilder.brownEgg(
+fun BaseMenuBuilder.brownEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BROWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.brownHarness(
+fun BaseMenuBuilder.brownHarness(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BROWN_HARNESS, slots.toList(), block)
 
-fun MenuBuilder.brush(
+fun BaseMenuBuilder.brush(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BRUSH, slots.toList(), block)
 
-fun MenuBuilder.bucket(
+fun BaseMenuBuilder.bucket(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BUCKET, slots.toList(), block)
 
-fun MenuBuilder.bundle(
+fun BaseMenuBuilder.bundle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BUNDLE, slots.toList(), block)
 
-fun MenuBuilder.burnPotterySherd(
+fun BaseMenuBuilder.burnPotterySherd(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BURN_POTTERY_SHERD, slots.toList(), block)
 
-fun MenuBuilder.camelSpawnEgg(
+fun BaseMenuBuilder.camelSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CAMEL_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.carrot(
+fun BaseMenuBuilder.carrot(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CARROT, slots.toList(), block)
 
-fun MenuBuilder.carrotOnAStick(
+fun BaseMenuBuilder.carrotOnAStick(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CARROT_ON_A_STICK, slots.toList(), block)
 
-fun MenuBuilder.catSpawnEgg(
+fun BaseMenuBuilder.catSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CAT_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.caveSpiderSpawnEgg(
+fun BaseMenuBuilder.caveSpiderSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CAVE_SPIDER_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.chainmailBoots(
+fun BaseMenuBuilder.chainmailBoots(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHAINMAIL_BOOTS, slots.toList(), block)
 
-fun MenuBuilder.chainmailChestplate(
+fun BaseMenuBuilder.chainmailChestplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHAINMAIL_CHESTPLATE, slots.toList(), block)
 
-fun MenuBuilder.chainmailHelmet(
+fun BaseMenuBuilder.chainmailHelmet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHAINMAIL_HELMET, slots.toList(), block)
 
-fun MenuBuilder.chainmailLeggings(
+fun BaseMenuBuilder.chainmailLeggings(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHAINMAIL_LEGGINGS, slots.toList(), block)
 
-fun MenuBuilder.charcoal(
+fun BaseMenuBuilder.charcoal(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHARCOAL, slots.toList(), block)
 
-fun MenuBuilder.cherryBoat(
+fun BaseMenuBuilder.cherryBoat(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHERRY_BOAT, slots.toList(), block)
 
-fun MenuBuilder.cherryChestBoat(
+fun BaseMenuBuilder.cherryChestBoat(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHERRY_CHEST_BOAT, slots.toList(), block)
 
-fun MenuBuilder.chestMinecart(
+fun BaseMenuBuilder.chestMinecart(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHEST_MINECART, slots.toList(), block)
 
-fun MenuBuilder.chicken(
+fun BaseMenuBuilder.chicken(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHICKEN, slots.toList(), block)
 
-fun MenuBuilder.chickenSpawnEgg(
+fun BaseMenuBuilder.chickenSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHICKEN_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.chorusFruit(
+fun BaseMenuBuilder.chorusFruit(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHORUS_FRUIT, slots.toList(), block)
 
-fun MenuBuilder.clayBall(
+fun BaseMenuBuilder.clayBall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CLAY_BALL, slots.toList(), block)
 
-fun MenuBuilder.clock(
+fun BaseMenuBuilder.clock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CLOCK, slots.toList(), block)
 
-fun MenuBuilder.coal(
+fun BaseMenuBuilder.coal(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COAL, slots.toList(), block)
 
-fun MenuBuilder.coastArmorTrimSmithingTemplate(
+fun BaseMenuBuilder.coastArmorTrimSmithingTemplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COAST_ARMOR_TRIM_SMITHING_TEMPLATE, slots.toList(), block)
 
-fun MenuBuilder.cocoaBeans(
+fun BaseMenuBuilder.cocoaBeans(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COCOA_BEANS, slots.toList(), block)
 
-fun MenuBuilder.cod(
+fun BaseMenuBuilder.cod(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COD, slots.toList(), block)
 
-fun MenuBuilder.codBucket(
+fun BaseMenuBuilder.codBucket(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COD_BUCKET, slots.toList(), block)
 
-fun MenuBuilder.codSpawnEgg(
+fun BaseMenuBuilder.codSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COD_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.commandBlockMinecart(
+fun BaseMenuBuilder.commandBlockMinecart(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COMMAND_BLOCK_MINECART, slots.toList(), block)
 
-fun MenuBuilder.compass(
+fun BaseMenuBuilder.compass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COMPASS, slots.toList(), block)
 
-fun MenuBuilder.cookedBeef(
+fun BaseMenuBuilder.cookedBeef(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COOKED_BEEF, slots.toList(), block)
 
-fun MenuBuilder.cookedChicken(
+fun BaseMenuBuilder.cookedChicken(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COOKED_CHICKEN, slots.toList(), block)
 
-fun MenuBuilder.cookedCod(
+fun BaseMenuBuilder.cookedCod(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COOKED_COD, slots.toList(), block)
 
-fun MenuBuilder.cookedMutton(
+fun BaseMenuBuilder.cookedMutton(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COOKED_MUTTON, slots.toList(), block)
 
-fun MenuBuilder.cookedPorkchop(
+fun BaseMenuBuilder.cookedPorkchop(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COOKED_PORKCHOP, slots.toList(), block)
 
-fun MenuBuilder.cookedRabbit(
+fun BaseMenuBuilder.cookedRabbit(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COOKED_RABBIT, slots.toList(), block)
 
-fun MenuBuilder.cookedSalmon(
+fun BaseMenuBuilder.cookedSalmon(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COOKED_SALMON, slots.toList(), block)
 
-fun MenuBuilder.cookie(
+fun BaseMenuBuilder.cookie(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COOKIE, slots.toList(), block)
 
-fun MenuBuilder.copperIngot(
+fun BaseMenuBuilder.copperIngot(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COPPER_INGOT, slots.toList(), block)
 
-fun MenuBuilder.cowSpawnEgg(
+fun BaseMenuBuilder.cowSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COW_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.creakingSpawnEgg(
+fun BaseMenuBuilder.creakingSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CREAKING_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.creeperBannerPattern(
+fun BaseMenuBuilder.creeperBannerPattern(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CREEPER_BANNER_PATTERN, slots.toList(), block)
 
-fun MenuBuilder.creeperSpawnEgg(
+fun BaseMenuBuilder.creeperSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CREEPER_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.crossbow(
+fun BaseMenuBuilder.crossbow(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CROSSBOW, slots.toList(), block)
 
-fun MenuBuilder.cyanBundle(
+fun BaseMenuBuilder.cyanBundle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CYAN_BUNDLE, slots.toList(), block)
 
-fun MenuBuilder.cyanDye(
+fun BaseMenuBuilder.cyanDye(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CYAN_DYE, slots.toList(), block)
 
-fun MenuBuilder.cyanHarness(
+fun BaseMenuBuilder.cyanHarness(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CYAN_HARNESS, slots.toList(), block)
 
-fun MenuBuilder.dangerPotterySherd(
+fun BaseMenuBuilder.dangerPotterySherd(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DANGER_POTTERY_SHERD, slots.toList(), block)
 
-fun MenuBuilder.darkOakBoat(
+fun BaseMenuBuilder.darkOakBoat(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DARK_OAK_BOAT, slots.toList(), block)
 
-fun MenuBuilder.darkOakChestBoat(
+fun BaseMenuBuilder.darkOakChestBoat(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DARK_OAK_CHEST_BOAT, slots.toList(), block)
 
-fun MenuBuilder.debugStick(
+fun BaseMenuBuilder.debugStick(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEBUG_STICK, slots.toList(), block)
 
-fun MenuBuilder.diamond(
+fun BaseMenuBuilder.diamond(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DIAMOND, slots.toList(), block)
 
-fun MenuBuilder.diamondAxe(
+fun BaseMenuBuilder.diamondAxe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DIAMOND_AXE, slots.toList(), block)
 
-fun MenuBuilder.diamondBoots(
+fun BaseMenuBuilder.diamondBoots(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DIAMOND_BOOTS, slots.toList(), block)
 
-fun MenuBuilder.diamondChestplate(
+fun BaseMenuBuilder.diamondChestplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DIAMOND_CHESTPLATE, slots.toList(), block)
 
-fun MenuBuilder.diamondHelmet(
+fun BaseMenuBuilder.diamondHelmet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DIAMOND_HELMET, slots.toList(), block)
 
-fun MenuBuilder.diamondHoe(
+fun BaseMenuBuilder.diamondHoe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DIAMOND_HOE, slots.toList(), block)
 
-fun MenuBuilder.diamondHorseArmor(
+fun BaseMenuBuilder.diamondHorseArmor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DIAMOND_HORSE_ARMOR, slots.toList(), block)
 
-fun MenuBuilder.diamondLeggings(
+fun BaseMenuBuilder.diamondLeggings(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DIAMOND_LEGGINGS, slots.toList(), block)
 
-fun MenuBuilder.diamondPickaxe(
+fun BaseMenuBuilder.diamondPickaxe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DIAMOND_PICKAXE, slots.toList(), block)
 
-fun MenuBuilder.diamondShovel(
+fun BaseMenuBuilder.diamondShovel(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DIAMOND_SHOVEL, slots.toList(), block)
 
-fun MenuBuilder.diamondSword(
+fun BaseMenuBuilder.diamondSword(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DIAMOND_SWORD, slots.toList(), block)
 
-fun MenuBuilder.discFragment5(
+fun BaseMenuBuilder.discFragment5(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DISC_FRAGMENT_5, slots.toList(), block)
 
-fun MenuBuilder.dolphinSpawnEgg(
+fun BaseMenuBuilder.dolphinSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DOLPHIN_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.donkeySpawnEgg(
+fun BaseMenuBuilder.donkeySpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DONKEY_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.dragonBreath(
+fun BaseMenuBuilder.dragonBreath(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DRAGON_BREATH, slots.toList(), block)
 
-fun MenuBuilder.driedKelp(
+fun BaseMenuBuilder.driedKelp(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DRIED_KELP, slots.toList(), block)
 
-fun MenuBuilder.drownedSpawnEgg(
+fun BaseMenuBuilder.drownedSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DROWNED_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.duneArmorTrimSmithingTemplate(
+fun BaseMenuBuilder.duneArmorTrimSmithingTemplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DUNE_ARMOR_TRIM_SMITHING_TEMPLATE, slots.toList(), block)
 
-fun MenuBuilder.echoShard(
+fun BaseMenuBuilder.echoShard(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ECHO_SHARD, slots.toList(), block)
 
-fun MenuBuilder.egg(
+fun BaseMenuBuilder.egg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.EGG, slots.toList(), block)
 
-fun MenuBuilder.elderGuardianSpawnEgg(
+fun BaseMenuBuilder.elderGuardianSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ELDER_GUARDIAN_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.elytra(
+fun BaseMenuBuilder.elytra(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ELYTRA, slots.toList(), block)
 
-fun MenuBuilder.emerald(
+fun BaseMenuBuilder.emerald(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.EMERALD, slots.toList(), block)
 
-fun MenuBuilder.enchantedBook(
+fun BaseMenuBuilder.enchantedBook(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ENCHANTED_BOOK, slots.toList(), block)
 
-fun MenuBuilder.enchantedGoldenApple(
+fun BaseMenuBuilder.enchantedGoldenApple(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ENCHANTED_GOLDEN_APPLE, slots.toList(), block)
 
-fun MenuBuilder.endCrystal(
+fun BaseMenuBuilder.endCrystal(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.END_CRYSTAL, slots.toList(), block)
 
-fun MenuBuilder.enderDragonSpawnEgg(
+fun BaseMenuBuilder.enderDragonSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ENDER_DRAGON_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.enderEye(
+fun BaseMenuBuilder.enderEye(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ENDER_EYE, slots.toList(), block)
 
-fun MenuBuilder.enderPearl(
+fun BaseMenuBuilder.enderPearl(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ENDER_PEARL, slots.toList(), block)
 
-fun MenuBuilder.endermanSpawnEgg(
+fun BaseMenuBuilder.endermanSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ENDERMAN_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.endermiteSpawnEgg(
+fun BaseMenuBuilder.endermiteSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ENDERMITE_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.evokerSpawnEgg(
+fun BaseMenuBuilder.evokerSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.EVOKER_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.experienceBottle(
+fun BaseMenuBuilder.experienceBottle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.EXPERIENCE_BOTTLE, slots.toList(), block)
 
-fun MenuBuilder.explorerPotterySherd(
+fun BaseMenuBuilder.explorerPotterySherd(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.EXPLORER_POTTERY_SHERD, slots.toList(), block)
 
-fun MenuBuilder.eyeArmorTrimSmithingTemplate(
+fun BaseMenuBuilder.eyeArmorTrimSmithingTemplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.EYE_ARMOR_TRIM_SMITHING_TEMPLATE, slots.toList(), block)
 
-fun MenuBuilder.feather(
+fun BaseMenuBuilder.feather(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FEATHER, slots.toList(), block)
 
-fun MenuBuilder.fermentedSpiderEye(
+fun BaseMenuBuilder.fermentedSpiderEye(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FERMENTED_SPIDER_EYE, slots.toList(), block)
 
-fun MenuBuilder.fieldMasonedBannerPattern(
+fun BaseMenuBuilder.fieldMasonedBannerPattern(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FIELD_MASONED_BANNER_PATTERN, slots.toList(), block)
 
-fun MenuBuilder.filledMap(
+fun BaseMenuBuilder.filledMap(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FILLED_MAP, slots.toList(), block)
 
-fun MenuBuilder.fireCharge(
+fun BaseMenuBuilder.fireCharge(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FIRE_CHARGE, slots.toList(), block)
 
-fun MenuBuilder.fireworkRocket(
+fun BaseMenuBuilder.fireworkRocket(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FIREWORK_ROCKET, slots.toList(), block)
 
-fun MenuBuilder.fireworkStar(
+fun BaseMenuBuilder.fireworkStar(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FIREWORK_STAR, slots.toList(), block)
 
-fun MenuBuilder.fishingRod(
+fun BaseMenuBuilder.fishingRod(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FISHING_ROD, slots.toList(), block)
 
-fun MenuBuilder.flint(
+fun BaseMenuBuilder.flint(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FLINT, slots.toList(), block)
 
-fun MenuBuilder.flintAndSteel(
+fun BaseMenuBuilder.flintAndSteel(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FLINT_AND_STEEL, slots.toList(), block)
 
-fun MenuBuilder.flowArmorTrimSmithingTemplate(
+fun BaseMenuBuilder.flowArmorTrimSmithingTemplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FLOW_ARMOR_TRIM_SMITHING_TEMPLATE, slots.toList(), block)
 
-fun MenuBuilder.flowBannerPattern(
+fun BaseMenuBuilder.flowBannerPattern(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FLOW_BANNER_PATTERN, slots.toList(), block)
 
-fun MenuBuilder.flowPotterySherd(
+fun BaseMenuBuilder.flowPotterySherd(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FLOW_POTTERY_SHERD, slots.toList(), block)
 
-fun MenuBuilder.flowerBannerPattern(
+fun BaseMenuBuilder.flowerBannerPattern(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FLOWER_BANNER_PATTERN, slots.toList(), block)
 
-fun MenuBuilder.foxSpawnEgg(
+fun BaseMenuBuilder.foxSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FOX_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.friendPotterySherd(
+fun BaseMenuBuilder.friendPotterySherd(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FRIEND_POTTERY_SHERD, slots.toList(), block)
 
-fun MenuBuilder.frogSpawnEgg(
+fun BaseMenuBuilder.frogSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FROG_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.furnaceMinecart(
+fun BaseMenuBuilder.furnaceMinecart(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FURNACE_MINECART, slots.toList(), block)
 
-fun MenuBuilder.ghastSpawnEgg(
+fun BaseMenuBuilder.ghastSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GHAST_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.ghastTear(
+fun BaseMenuBuilder.ghastTear(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GHAST_TEAR, slots.toList(), block)
 
-fun MenuBuilder.glassBottle(
+fun BaseMenuBuilder.glassBottle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GLASS_BOTTLE, slots.toList(), block)
 
-fun MenuBuilder.glisteringMelonSlice(
+fun BaseMenuBuilder.glisteringMelonSlice(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GLISTERING_MELON_SLICE, slots.toList(), block)
 
-fun MenuBuilder.globeBannerPattern(
+fun BaseMenuBuilder.globeBannerPattern(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GLOBE_BANNER_PATTERN, slots.toList(), block)
 
-fun MenuBuilder.glowBerries(
+fun BaseMenuBuilder.glowBerries(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GLOW_BERRIES, slots.toList(), block)
 
-fun MenuBuilder.glowInkSac(
+fun BaseMenuBuilder.glowInkSac(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GLOW_INK_SAC, slots.toList(), block)
 
-fun MenuBuilder.glowItemFrame(
+fun BaseMenuBuilder.glowItemFrame(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GLOW_ITEM_FRAME, slots.toList(), block)
 
-fun MenuBuilder.glowSquidSpawnEgg(
+fun BaseMenuBuilder.glowSquidSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GLOW_SQUID_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.glowstoneDust(
+fun BaseMenuBuilder.glowstoneDust(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GLOWSTONE_DUST, slots.toList(), block)
 
-fun MenuBuilder.goatHorn(
+fun BaseMenuBuilder.goatHorn(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GOAT_HORN, slots.toList(), block)
 
-fun MenuBuilder.goatSpawnEgg(
+fun BaseMenuBuilder.goatSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GOAT_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.goldIngot(
+fun BaseMenuBuilder.goldIngot(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GOLD_INGOT, slots.toList(), block)
 
-fun MenuBuilder.goldNugget(
+fun BaseMenuBuilder.goldNugget(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GOLD_NUGGET, slots.toList(), block)
 
-fun MenuBuilder.goldenApple(
+fun BaseMenuBuilder.goldenApple(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GOLDEN_APPLE, slots.toList(), block)
 
-fun MenuBuilder.goldenAxe(
+fun BaseMenuBuilder.goldenAxe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GOLDEN_AXE, slots.toList(), block)
 
-fun MenuBuilder.goldenBoots(
+fun BaseMenuBuilder.goldenBoots(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GOLDEN_BOOTS, slots.toList(), block)
 
-fun MenuBuilder.goldenCarrot(
+fun BaseMenuBuilder.goldenCarrot(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GOLDEN_CARROT, slots.toList(), block)
 
-fun MenuBuilder.goldenChestplate(
+fun BaseMenuBuilder.goldenChestplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GOLDEN_CHESTPLATE, slots.toList(), block)
 
-fun MenuBuilder.goldenHelmet(
+fun BaseMenuBuilder.goldenHelmet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GOLDEN_HELMET, slots.toList(), block)
 
-fun MenuBuilder.goldenHoe(
+fun BaseMenuBuilder.goldenHoe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GOLDEN_HOE, slots.toList(), block)
 
-fun MenuBuilder.goldenHorseArmor(
+fun BaseMenuBuilder.goldenHorseArmor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GOLDEN_HORSE_ARMOR, slots.toList(), block)
 
-fun MenuBuilder.goldenLeggings(
+fun BaseMenuBuilder.goldenLeggings(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GOLDEN_LEGGINGS, slots.toList(), block)
 
-fun MenuBuilder.goldenPickaxe(
+fun BaseMenuBuilder.goldenPickaxe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GOLDEN_PICKAXE, slots.toList(), block)
 
-fun MenuBuilder.goldenShovel(
+fun BaseMenuBuilder.goldenShovel(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GOLDEN_SHOVEL, slots.toList(), block)
 
-fun MenuBuilder.goldenSword(
+fun BaseMenuBuilder.goldenSword(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GOLDEN_SWORD, slots.toList(), block)
 
-fun MenuBuilder.grayBundle(
+fun BaseMenuBuilder.grayBundle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRAY_BUNDLE, slots.toList(), block)
 
-fun MenuBuilder.grayDye(
+fun BaseMenuBuilder.grayDye(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRAY_DYE, slots.toList(), block)
 
-fun MenuBuilder.grayHarness(
+fun BaseMenuBuilder.grayHarness(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRAY_HARNESS, slots.toList(), block)
 
-fun MenuBuilder.greenBundle(
+fun BaseMenuBuilder.greenBundle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GREEN_BUNDLE, slots.toList(), block)
 
-fun MenuBuilder.greenDye(
+fun BaseMenuBuilder.greenDye(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GREEN_DYE, slots.toList(), block)
 
-fun MenuBuilder.greenHarness(
+fun BaseMenuBuilder.greenHarness(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GREEN_HARNESS, slots.toList(), block)
 
-fun MenuBuilder.guardianSpawnEgg(
+fun BaseMenuBuilder.guardianSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GUARDIAN_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.gunpowder(
+fun BaseMenuBuilder.gunpowder(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GUNPOWDER, slots.toList(), block)
 
-fun MenuBuilder.gusterBannerPattern(
+fun BaseMenuBuilder.gusterBannerPattern(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GUSTER_BANNER_PATTERN, slots.toList(), block)
 
-fun MenuBuilder.gusterPotterySherd(
+fun BaseMenuBuilder.gusterPotterySherd(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GUSTER_POTTERY_SHERD, slots.toList(), block)
 
-fun MenuBuilder.happyGhastSpawnEgg(
+fun BaseMenuBuilder.happyGhastSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.HAPPY_GHAST_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.heartOfTheSea(
+fun BaseMenuBuilder.heartOfTheSea(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.HEART_OF_THE_SEA, slots.toList(), block)
 
-fun MenuBuilder.heartPotterySherd(
+fun BaseMenuBuilder.heartPotterySherd(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.HEART_POTTERY_SHERD, slots.toList(), block)
 
-fun MenuBuilder.heartbreakPotterySherd(
+fun BaseMenuBuilder.heartbreakPotterySherd(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.HEARTBREAK_POTTERY_SHERD, slots.toList(), block)
 
-fun MenuBuilder.hoglinSpawnEgg(
+fun BaseMenuBuilder.hoglinSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.HOGLIN_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.honeyBottle(
+fun BaseMenuBuilder.honeyBottle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.HONEY_BOTTLE, slots.toList(), block)
 
-fun MenuBuilder.honeycomb(
+fun BaseMenuBuilder.honeycomb(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.HONEYCOMB, slots.toList(), block)
 
-fun MenuBuilder.hopperMinecart(
+fun BaseMenuBuilder.hopperMinecart(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.HOPPER_MINECART, slots.toList(), block)
 
-fun MenuBuilder.horseSpawnEgg(
+fun BaseMenuBuilder.horseSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.HORSE_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.hostArmorTrimSmithingTemplate(
+fun BaseMenuBuilder.hostArmorTrimSmithingTemplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.HOST_ARMOR_TRIM_SMITHING_TEMPLATE, slots.toList(), block)
 
-fun MenuBuilder.howlPotterySherd(
+fun BaseMenuBuilder.howlPotterySherd(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.HOWL_POTTERY_SHERD, slots.toList(), block)
 
-fun MenuBuilder.huskSpawnEgg(
+fun BaseMenuBuilder.huskSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.HUSK_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.inkSac(
+fun BaseMenuBuilder.inkSac(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.INK_SAC, slots.toList(), block)
 
-fun MenuBuilder.ironAxe(
+fun BaseMenuBuilder.ironAxe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.IRON_AXE, slots.toList(), block)
 
-fun MenuBuilder.ironBoots(
+fun BaseMenuBuilder.ironBoots(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.IRON_BOOTS, slots.toList(), block)
 
-fun MenuBuilder.ironChestplate(
+fun BaseMenuBuilder.ironChestplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.IRON_CHESTPLATE, slots.toList(), block)
 
-fun MenuBuilder.ironGolemSpawnEgg(
+fun BaseMenuBuilder.ironGolemSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.IRON_GOLEM_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.ironHelmet(
+fun BaseMenuBuilder.ironHelmet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.IRON_HELMET, slots.toList(), block)
 
-fun MenuBuilder.ironHoe(
+fun BaseMenuBuilder.ironHoe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.IRON_HOE, slots.toList(), block)
 
-fun MenuBuilder.ironHorseArmor(
+fun BaseMenuBuilder.ironHorseArmor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.IRON_HORSE_ARMOR, slots.toList(), block)
 
-fun MenuBuilder.ironIngot(
+fun BaseMenuBuilder.ironIngot(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.IRON_INGOT, slots.toList(), block)
 
-fun MenuBuilder.ironLeggings(
+fun BaseMenuBuilder.ironLeggings(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.IRON_LEGGINGS, slots.toList(), block)
 
-fun MenuBuilder.ironNugget(
+fun BaseMenuBuilder.ironNugget(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.IRON_NUGGET, slots.toList(), block)
 
-fun MenuBuilder.ironPickaxe(
+fun BaseMenuBuilder.ironPickaxe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.IRON_PICKAXE, slots.toList(), block)
 
-fun MenuBuilder.ironShovel(
+fun BaseMenuBuilder.ironShovel(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.IRON_SHOVEL, slots.toList(), block)
 
-fun MenuBuilder.ironSword(
+fun BaseMenuBuilder.ironSword(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.IRON_SWORD, slots.toList(), block)
 
-fun MenuBuilder.itemFrame(
+fun BaseMenuBuilder.itemFrame(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ITEM_FRAME, slots.toList(), block)
 
-fun MenuBuilder.jungleBoat(
+fun BaseMenuBuilder.jungleBoat(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.JUNGLE_BOAT, slots.toList(), block)
 
-fun MenuBuilder.jungleChestBoat(
+fun BaseMenuBuilder.jungleChestBoat(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.JUNGLE_CHEST_BOAT, slots.toList(), block)
 
-fun MenuBuilder.knowledgeBook(
+fun BaseMenuBuilder.knowledgeBook(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.KNOWLEDGE_BOOK, slots.toList(), block)
 
-fun MenuBuilder.lapisLazuli(
+fun BaseMenuBuilder.lapisLazuli(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LAPIS_LAZULI, slots.toList(), block)
 
-fun MenuBuilder.lavaBucket(
+fun BaseMenuBuilder.lavaBucket(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LAVA_BUCKET, slots.toList(), block)
 
-fun MenuBuilder.lead(
+fun BaseMenuBuilder.lead(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEAD, slots.toList(), block)
 
-fun MenuBuilder.leather(
+fun BaseMenuBuilder.leather(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEATHER, slots.toList(), block)
 
-fun MenuBuilder.leatherBoots(
+fun BaseMenuBuilder.leatherBoots(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEATHER_BOOTS, slots.toList(), block)
 
-fun MenuBuilder.leatherChestplate(
+fun BaseMenuBuilder.leatherChestplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEATHER_CHESTPLATE, slots.toList(), block)
 
-fun MenuBuilder.leatherHelmet(
+fun BaseMenuBuilder.leatherHelmet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEATHER_HELMET, slots.toList(), block)
 
-fun MenuBuilder.leatherHorseArmor(
+fun BaseMenuBuilder.leatherHorseArmor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEATHER_HORSE_ARMOR, slots.toList(), block)
 
-fun MenuBuilder.leatherLeggings(
+fun BaseMenuBuilder.leatherLeggings(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEATHER_LEGGINGS, slots.toList(), block)
 
-fun MenuBuilder.lightBlueBundle(
+fun BaseMenuBuilder.lightBlueBundle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_BLUE_BUNDLE, slots.toList(), block)
 
-fun MenuBuilder.lightBlueDye(
+fun BaseMenuBuilder.lightBlueDye(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_BLUE_DYE, slots.toList(), block)
 
-fun MenuBuilder.lightBlueHarness(
+fun BaseMenuBuilder.lightBlueHarness(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_BLUE_HARNESS, slots.toList(), block)
 
-fun MenuBuilder.lightGrayBundle(
+fun BaseMenuBuilder.lightGrayBundle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_GRAY_BUNDLE, slots.toList(), block)
 
-fun MenuBuilder.lightGrayDye(
+fun BaseMenuBuilder.lightGrayDye(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_GRAY_DYE, slots.toList(), block)
 
-fun MenuBuilder.lightGrayHarness(
+fun BaseMenuBuilder.lightGrayHarness(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_GRAY_HARNESS, slots.toList(), block)
 
-fun MenuBuilder.limeBundle(
+fun BaseMenuBuilder.limeBundle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIME_BUNDLE, slots.toList(), block)
 
-fun MenuBuilder.limeDye(
+fun BaseMenuBuilder.limeDye(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIME_DYE, slots.toList(), block)
 
-fun MenuBuilder.limeHarness(
+fun BaseMenuBuilder.limeHarness(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIME_HARNESS, slots.toList(), block)
 
-fun MenuBuilder.lingeringPotion(
+fun BaseMenuBuilder.lingeringPotion(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LINGERING_POTION, slots.toList(), block)
 
-fun MenuBuilder.llamaSpawnEgg(
+fun BaseMenuBuilder.llamaSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LLAMA_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.mace(
+fun BaseMenuBuilder.mace(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MACE, slots.toList(), block)
 
-fun MenuBuilder.magentaBundle(
+fun BaseMenuBuilder.magentaBundle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MAGENTA_BUNDLE, slots.toList(), block)
 
-fun MenuBuilder.magentaDye(
+fun BaseMenuBuilder.magentaDye(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MAGENTA_DYE, slots.toList(), block)
 
-fun MenuBuilder.magentaHarness(
+fun BaseMenuBuilder.magentaHarness(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MAGENTA_HARNESS, slots.toList(), block)
 
-fun MenuBuilder.magmaCream(
+fun BaseMenuBuilder.magmaCream(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MAGMA_CREAM, slots.toList(), block)
 
-fun MenuBuilder.magmaCubeSpawnEgg(
+fun BaseMenuBuilder.magmaCubeSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MAGMA_CUBE_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.mangroveBoat(
+fun BaseMenuBuilder.mangroveBoat(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MANGROVE_BOAT, slots.toList(), block)
 
-fun MenuBuilder.mangroveChestBoat(
+fun BaseMenuBuilder.mangroveChestBoat(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MANGROVE_CHEST_BOAT, slots.toList(), block)
 
-fun MenuBuilder.map(
+fun BaseMenuBuilder.map(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MAP, slots.toList(), block)
 
-fun MenuBuilder.melonSeeds(
+fun BaseMenuBuilder.melonSeeds(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MELON_SEEDS, slots.toList(), block)
 
-fun MenuBuilder.melonSlice(
+fun BaseMenuBuilder.melonSlice(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MELON_SLICE, slots.toList(), block)
 
-fun MenuBuilder.milkBucket(
+fun BaseMenuBuilder.milkBucket(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MILK_BUCKET, slots.toList(), block)
 
-fun MenuBuilder.minecart(
+fun BaseMenuBuilder.minecart(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MINECART, slots.toList(), block)
 
-fun MenuBuilder.minerPotterySherd(
+fun BaseMenuBuilder.minerPotterySherd(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MINER_POTTERY_SHERD, slots.toList(), block)
 
-fun MenuBuilder.mojangBannerPattern(
+fun BaseMenuBuilder.mojangBannerPattern(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MOJANG_BANNER_PATTERN, slots.toList(), block)
 
-fun MenuBuilder.mooshroomSpawnEgg(
+fun BaseMenuBuilder.mooshroomSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MOOSHROOM_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.mournerPotterySherd(
+fun BaseMenuBuilder.mournerPotterySherd(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MOURNER_POTTERY_SHERD, slots.toList(), block)
 
-fun MenuBuilder.muleSpawnEgg(
+fun BaseMenuBuilder.muleSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MULE_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.mushroomStew(
+fun BaseMenuBuilder.mushroomStew(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUSHROOM_STEW, slots.toList(), block)
 
-fun MenuBuilder.musicDisc5(
+fun BaseMenuBuilder.musicDisc5(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUSIC_DISC_5, slots.toList(), block)
 
-fun MenuBuilder.musicDisc11(
+fun BaseMenuBuilder.musicDisc11(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUSIC_DISC_11, slots.toList(), block)
 
-fun MenuBuilder.musicDisc13(
+fun BaseMenuBuilder.musicDisc13(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUSIC_DISC_13, slots.toList(), block)
 
-fun MenuBuilder.musicDiscBlocks(
+fun BaseMenuBuilder.musicDiscBlocks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUSIC_DISC_BLOCKS, slots.toList(), block)
 
-fun MenuBuilder.musicDiscCat(
+fun BaseMenuBuilder.musicDiscCat(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUSIC_DISC_CAT, slots.toList(), block)
 
-fun MenuBuilder.musicDiscChirp(
+fun BaseMenuBuilder.musicDiscChirp(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUSIC_DISC_CHIRP, slots.toList(), block)
 
-fun MenuBuilder.musicDiscCreator(
+fun BaseMenuBuilder.musicDiscCreator(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUSIC_DISC_CREATOR, slots.toList(), block)
 
-fun MenuBuilder.musicDiscCreatorMusicBox(
+fun BaseMenuBuilder.musicDiscCreatorMusicBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUSIC_DISC_CREATOR_MUSIC_BOX, slots.toList(), block)
 
-fun MenuBuilder.musicDiscFar(
+fun BaseMenuBuilder.musicDiscFar(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUSIC_DISC_FAR, slots.toList(), block)
 
-fun MenuBuilder.musicDiscLavaChicken(
+fun BaseMenuBuilder.musicDiscLavaChicken(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUSIC_DISC_LAVA_CHICKEN, slots.toList(), block)
 
-fun MenuBuilder.musicDiscMall(
+fun BaseMenuBuilder.musicDiscMall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUSIC_DISC_MALL, slots.toList(), block)
 
-fun MenuBuilder.musicDiscMellohi(
+fun BaseMenuBuilder.musicDiscMellohi(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUSIC_DISC_MELLOHI, slots.toList(), block)
 
-fun MenuBuilder.musicDiscOtherside(
+fun BaseMenuBuilder.musicDiscOtherside(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUSIC_DISC_OTHERSIDE, slots.toList(), block)
 
-fun MenuBuilder.musicDiscPigstep(
+fun BaseMenuBuilder.musicDiscPigstep(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUSIC_DISC_PIGSTEP, slots.toList(), block)
 
-fun MenuBuilder.musicDiscPrecipice(
+fun BaseMenuBuilder.musicDiscPrecipice(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUSIC_DISC_PRECIPICE, slots.toList(), block)
 
-fun MenuBuilder.musicDiscRelic(
+fun BaseMenuBuilder.musicDiscRelic(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUSIC_DISC_RELIC, slots.toList(), block)
 
-fun MenuBuilder.musicDiscStal(
+fun BaseMenuBuilder.musicDiscStal(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUSIC_DISC_STAL, slots.toList(), block)
 
-fun MenuBuilder.musicDiscStrad(
+fun BaseMenuBuilder.musicDiscStrad(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUSIC_DISC_STRAD, slots.toList(), block)
 
-fun MenuBuilder.musicDiscTears(
+fun BaseMenuBuilder.musicDiscTears(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUSIC_DISC_TEARS, slots.toList(), block)
 
-fun MenuBuilder.musicDiscWait(
+fun BaseMenuBuilder.musicDiscWait(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUSIC_DISC_WAIT, slots.toList(), block)
 
-fun MenuBuilder.musicDiscWard(
+fun BaseMenuBuilder.musicDiscWard(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUSIC_DISC_WARD, slots.toList(), block)
 
-fun MenuBuilder.mutton(
+fun BaseMenuBuilder.mutton(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUTTON, slots.toList(), block)
 
-fun MenuBuilder.nameTag(
+fun BaseMenuBuilder.nameTag(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NAME_TAG, slots.toList(), block)
 
-fun MenuBuilder.nautilusShell(
+fun BaseMenuBuilder.nautilusShell(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NAUTILUS_SHELL, slots.toList(), block)
 
-fun MenuBuilder.netherBrick(
+fun BaseMenuBuilder.netherBrick(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHER_BRICK, slots.toList(), block)
 
-fun MenuBuilder.netherStar(
+fun BaseMenuBuilder.netherStar(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHER_STAR, slots.toList(), block)
 
-fun MenuBuilder.netheriteAxe(
+fun BaseMenuBuilder.netheriteAxe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHERITE_AXE, slots.toList(), block)
 
-fun MenuBuilder.netheriteBoots(
+fun BaseMenuBuilder.netheriteBoots(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHERITE_BOOTS, slots.toList(), block)
 
-fun MenuBuilder.netheriteChestplate(
+fun BaseMenuBuilder.netheriteChestplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHERITE_CHESTPLATE, slots.toList(), block)
 
-fun MenuBuilder.netheriteHelmet(
+fun BaseMenuBuilder.netheriteHelmet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHERITE_HELMET, slots.toList(), block)
 
-fun MenuBuilder.netheriteHoe(
+fun BaseMenuBuilder.netheriteHoe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHERITE_HOE, slots.toList(), block)
 
-fun MenuBuilder.netheriteIngot(
+fun BaseMenuBuilder.netheriteIngot(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHERITE_INGOT, slots.toList(), block)
 
-fun MenuBuilder.netheriteLeggings(
+fun BaseMenuBuilder.netheriteLeggings(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHERITE_LEGGINGS, slots.toList(), block)
 
-fun MenuBuilder.netheritePickaxe(
+fun BaseMenuBuilder.netheritePickaxe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHERITE_PICKAXE, slots.toList(), block)
 
-fun MenuBuilder.netheriteScrap(
+fun BaseMenuBuilder.netheriteScrap(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHERITE_SCRAP, slots.toList(), block)
 
-fun MenuBuilder.netheriteShovel(
+fun BaseMenuBuilder.netheriteShovel(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHERITE_SHOVEL, slots.toList(), block)
 
-fun MenuBuilder.netheriteSword(
+fun BaseMenuBuilder.netheriteSword(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHERITE_SWORD, slots.toList(), block)
 
-fun MenuBuilder.netheriteUpgradeSmithingTemplate(
+fun BaseMenuBuilder.netheriteUpgradeSmithingTemplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHERITE_UPGRADE_SMITHING_TEMPLATE, slots.toList(), block)
 
-fun MenuBuilder.oakBoat(
+fun BaseMenuBuilder.oakBoat(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OAK_BOAT, slots.toList(), block)
 
-fun MenuBuilder.oakChestBoat(
+fun BaseMenuBuilder.oakChestBoat(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OAK_CHEST_BOAT, slots.toList(), block)
 
-fun MenuBuilder.ocelotSpawnEgg(
+fun BaseMenuBuilder.ocelotSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OCELOT_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.ominousBottle(
+fun BaseMenuBuilder.ominousBottle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OMINOUS_BOTTLE, slots.toList(), block)
 
-fun MenuBuilder.ominousTrialKey(
+fun BaseMenuBuilder.ominousTrialKey(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OMINOUS_TRIAL_KEY, slots.toList(), block)
 
-fun MenuBuilder.orangeBundle(
+fun BaseMenuBuilder.orangeBundle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ORANGE_BUNDLE, slots.toList(), block)
 
-fun MenuBuilder.orangeDye(
+fun BaseMenuBuilder.orangeDye(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ORANGE_DYE, slots.toList(), block)
 
-fun MenuBuilder.orangeHarness(
+fun BaseMenuBuilder.orangeHarness(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ORANGE_HARNESS, slots.toList(), block)
 
-fun MenuBuilder.painting(
+fun BaseMenuBuilder.painting(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PAINTING, slots.toList(), block)
 
-fun MenuBuilder.paleOakBoat(
+fun BaseMenuBuilder.paleOakBoat(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PALE_OAK_BOAT, slots.toList(), block)
 
-fun MenuBuilder.paleOakChestBoat(
+fun BaseMenuBuilder.paleOakChestBoat(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PALE_OAK_CHEST_BOAT, slots.toList(), block)
 
-fun MenuBuilder.pandaSpawnEgg(
+fun BaseMenuBuilder.pandaSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PANDA_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.paper(
+fun BaseMenuBuilder.paper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PAPER, slots.toList(), block)
 
-fun MenuBuilder.parrotSpawnEgg(
+fun BaseMenuBuilder.parrotSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PARROT_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.phantomMembrane(
+fun BaseMenuBuilder.phantomMembrane(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PHANTOM_MEMBRANE, slots.toList(), block)
 
-fun MenuBuilder.phantomSpawnEgg(
+fun BaseMenuBuilder.phantomSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PHANTOM_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.pigSpawnEgg(
+fun BaseMenuBuilder.pigSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PIG_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.piglinBannerPattern(
+fun BaseMenuBuilder.piglinBannerPattern(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PIGLIN_BANNER_PATTERN, slots.toList(), block)
 
-fun MenuBuilder.piglinBruteSpawnEgg(
+fun BaseMenuBuilder.piglinBruteSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PIGLIN_BRUTE_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.piglinSpawnEgg(
+fun BaseMenuBuilder.piglinSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PIGLIN_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.pillagerSpawnEgg(
+fun BaseMenuBuilder.pillagerSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PILLAGER_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.pinkBundle(
+fun BaseMenuBuilder.pinkBundle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PINK_BUNDLE, slots.toList(), block)
 
-fun MenuBuilder.pinkDye(
+fun BaseMenuBuilder.pinkDye(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PINK_DYE, slots.toList(), block)
 
-fun MenuBuilder.pinkHarness(
+fun BaseMenuBuilder.pinkHarness(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PINK_HARNESS, slots.toList(), block)
 
-fun MenuBuilder.pitcherPod(
+fun BaseMenuBuilder.pitcherPod(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PITCHER_POD, slots.toList(), block)
 
-fun MenuBuilder.plentyPotterySherd(
+fun BaseMenuBuilder.plentyPotterySherd(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PLENTY_POTTERY_SHERD, slots.toList(), block)
 
-fun MenuBuilder.poisonousPotato(
+fun BaseMenuBuilder.poisonousPotato(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POISONOUS_POTATO, slots.toList(), block)
 
-fun MenuBuilder.polarBearSpawnEgg(
+fun BaseMenuBuilder.polarBearSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLAR_BEAR_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.poppedChorusFruit(
+fun BaseMenuBuilder.poppedChorusFruit(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POPPED_CHORUS_FRUIT, slots.toList(), block)
 
-fun MenuBuilder.porkchop(
+fun BaseMenuBuilder.porkchop(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PORKCHOP, slots.toList(), block)
 
-fun MenuBuilder.potato(
+fun BaseMenuBuilder.potato(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTATO, slots.toList(), block)
 
-fun MenuBuilder.potion(
+fun BaseMenuBuilder.potion(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTION, slots.toList(), block)
 
-fun MenuBuilder.powderSnowBucket(
+fun BaseMenuBuilder.powderSnowBucket(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POWDER_SNOW_BUCKET, slots.toList(), block)
 
-fun MenuBuilder.prismarineCrystals(
+fun BaseMenuBuilder.prismarineCrystals(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PRISMARINE_CRYSTALS, slots.toList(), block)
 
-fun MenuBuilder.prismarineShard(
+fun BaseMenuBuilder.prismarineShard(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PRISMARINE_SHARD, slots.toList(), block)
 
-fun MenuBuilder.prizePotterySherd(
+fun BaseMenuBuilder.prizePotterySherd(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PRIZE_POTTERY_SHERD, slots.toList(), block)
 
-fun MenuBuilder.pufferfish(
+fun BaseMenuBuilder.pufferfish(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PUFFERFISH, slots.toList(), block)
 
-fun MenuBuilder.pufferfishBucket(
+fun BaseMenuBuilder.pufferfishBucket(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PUFFERFISH_BUCKET, slots.toList(), block)
 
-fun MenuBuilder.pufferfishSpawnEgg(
+fun BaseMenuBuilder.pufferfishSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PUFFERFISH_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.pumpkinPie(
+fun BaseMenuBuilder.pumpkinPie(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PUMPKIN_PIE, slots.toList(), block)
 
-fun MenuBuilder.pumpkinSeeds(
+fun BaseMenuBuilder.pumpkinSeeds(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PUMPKIN_SEEDS, slots.toList(), block)
 
-fun MenuBuilder.purpleBundle(
+fun BaseMenuBuilder.purpleBundle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PURPLE_BUNDLE, slots.toList(), block)
 
-fun MenuBuilder.purpleDye(
+fun BaseMenuBuilder.purpleDye(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PURPLE_DYE, slots.toList(), block)
 
-fun MenuBuilder.purpleHarness(
+fun BaseMenuBuilder.purpleHarness(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PURPLE_HARNESS, slots.toList(), block)
 
-fun MenuBuilder.quartz(
+fun BaseMenuBuilder.quartz(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.QUARTZ, slots.toList(), block)
 
-fun MenuBuilder.rabbit(
+fun BaseMenuBuilder.rabbit(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RABBIT, slots.toList(), block)
 
-fun MenuBuilder.rabbitFoot(
+fun BaseMenuBuilder.rabbitFoot(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RABBIT_FOOT, slots.toList(), block)
 
-fun MenuBuilder.rabbitHide(
+fun BaseMenuBuilder.rabbitHide(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RABBIT_HIDE, slots.toList(), block)
 
-fun MenuBuilder.rabbitSpawnEgg(
+fun BaseMenuBuilder.rabbitSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RABBIT_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.rabbitStew(
+fun BaseMenuBuilder.rabbitStew(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RABBIT_STEW, slots.toList(), block)
 
-fun MenuBuilder.raiserArmorTrimSmithingTemplate(
+fun BaseMenuBuilder.raiserArmorTrimSmithingTemplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RAISER_ARMOR_TRIM_SMITHING_TEMPLATE, slots.toList(), block)
 
-fun MenuBuilder.ravagerSpawnEgg(
+fun BaseMenuBuilder.ravagerSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RAVAGER_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.rawCopper(
+fun BaseMenuBuilder.rawCopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RAW_COPPER, slots.toList(), block)
 
-fun MenuBuilder.rawGold(
+fun BaseMenuBuilder.rawGold(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RAW_GOLD, slots.toList(), block)
 
-fun MenuBuilder.rawIron(
+fun BaseMenuBuilder.rawIron(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RAW_IRON, slots.toList(), block)
 
-fun MenuBuilder.recoveryCompass(
+fun BaseMenuBuilder.recoveryCompass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RECOVERY_COMPASS, slots.toList(), block)
 
-fun MenuBuilder.redBundle(
+fun BaseMenuBuilder.redBundle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_BUNDLE, slots.toList(), block)
 
-fun MenuBuilder.redDye(
+fun BaseMenuBuilder.redDye(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_DYE, slots.toList(), block)
 
-fun MenuBuilder.redHarness(
+fun BaseMenuBuilder.redHarness(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_HARNESS, slots.toList(), block)
 
-fun MenuBuilder.redstone(
+fun BaseMenuBuilder.redstone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.REDSTONE, slots.toList(), block)
 
-fun MenuBuilder.resinBrick(
+fun BaseMenuBuilder.resinBrick(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RESIN_BRICK, slots.toList(), block)
 
-fun MenuBuilder.ribArmorTrimSmithingTemplate(
+fun BaseMenuBuilder.ribArmorTrimSmithingTemplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RIB_ARMOR_TRIM_SMITHING_TEMPLATE, slots.toList(), block)
 
-fun MenuBuilder.rottenFlesh(
+fun BaseMenuBuilder.rottenFlesh(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ROTTEN_FLESH, slots.toList(), block)
 
-fun MenuBuilder.saddle(
+fun BaseMenuBuilder.saddle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SADDLE, slots.toList(), block)
 
-fun MenuBuilder.salmon(
+fun BaseMenuBuilder.salmon(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SALMON, slots.toList(), block)
 
-fun MenuBuilder.salmonBucket(
+fun BaseMenuBuilder.salmonBucket(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SALMON_BUCKET, slots.toList(), block)
 
-fun MenuBuilder.salmonSpawnEgg(
+fun BaseMenuBuilder.salmonSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SALMON_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.scrapePotterySherd(
+fun BaseMenuBuilder.scrapePotterySherd(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SCRAPE_POTTERY_SHERD, slots.toList(), block)
 
-fun MenuBuilder.sentryArmorTrimSmithingTemplate(
+fun BaseMenuBuilder.sentryArmorTrimSmithingTemplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE, slots.toList(), block)
 
-fun MenuBuilder.shaperArmorTrimSmithingTemplate(
+fun BaseMenuBuilder.shaperArmorTrimSmithingTemplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE, slots.toList(), block)
 
-fun MenuBuilder.sheafPotterySherd(
+fun BaseMenuBuilder.sheafPotterySherd(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SHEAF_POTTERY_SHERD, slots.toList(), block)
 
-fun MenuBuilder.shears(
+fun BaseMenuBuilder.shears(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SHEARS, slots.toList(), block)
 
-fun MenuBuilder.sheepSpawnEgg(
+fun BaseMenuBuilder.sheepSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SHEEP_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.shelterPotterySherd(
+fun BaseMenuBuilder.shelterPotterySherd(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SHELTER_POTTERY_SHERD, slots.toList(), block)
 
-fun MenuBuilder.shield(
+fun BaseMenuBuilder.shield(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SHIELD, slots.toList(), block)
 
-fun MenuBuilder.shulkerShell(
+fun BaseMenuBuilder.shulkerShell(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SHULKER_SHELL, slots.toList(), block)
 
-fun MenuBuilder.shulkerSpawnEgg(
+fun BaseMenuBuilder.shulkerSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SHULKER_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.silenceArmorTrimSmithingTemplate(
+fun BaseMenuBuilder.silenceArmorTrimSmithingTemplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE, slots.toList(), block)
 
-fun MenuBuilder.silverfishSpawnEgg(
+fun BaseMenuBuilder.silverfishSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SILVERFISH_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.skeletonHorseSpawnEgg(
+fun BaseMenuBuilder.skeletonHorseSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SKELETON_HORSE_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.skeletonSpawnEgg(
+fun BaseMenuBuilder.skeletonSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SKELETON_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.skullBannerPattern(
+fun BaseMenuBuilder.skullBannerPattern(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SKULL_BANNER_PATTERN, slots.toList(), block)
 
-fun MenuBuilder.skullPotterySherd(
+fun BaseMenuBuilder.skullPotterySherd(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SKULL_POTTERY_SHERD, slots.toList(), block)
 
-fun MenuBuilder.slimeBall(
+fun BaseMenuBuilder.slimeBall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SLIME_BALL, slots.toList(), block)
 
-fun MenuBuilder.slimeSpawnEgg(
+fun BaseMenuBuilder.slimeSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SLIME_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.snifferSpawnEgg(
+fun BaseMenuBuilder.snifferSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SNIFFER_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.snortPotterySherd(
+fun BaseMenuBuilder.snortPotterySherd(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SNORT_POTTERY_SHERD, slots.toList(), block)
 
-fun MenuBuilder.snoutArmorTrimSmithingTemplate(
+fun BaseMenuBuilder.snoutArmorTrimSmithingTemplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE, slots.toList(), block)
 
-fun MenuBuilder.snowGolemSpawnEgg(
+fun BaseMenuBuilder.snowGolemSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SNOW_GOLEM_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.snowball(
+fun BaseMenuBuilder.snowball(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SNOWBALL, slots.toList(), block)
 
-fun MenuBuilder.spectralArrow(
+fun BaseMenuBuilder.spectralArrow(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPECTRAL_ARROW, slots.toList(), block)
 
-fun MenuBuilder.spiderEye(
+fun BaseMenuBuilder.spiderEye(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPIDER_EYE, slots.toList(), block)
 
-fun MenuBuilder.spiderSpawnEgg(
+fun BaseMenuBuilder.spiderSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPIDER_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.spireArmorTrimSmithingTemplate(
+fun BaseMenuBuilder.spireArmorTrimSmithingTemplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE, slots.toList(), block)
 
-fun MenuBuilder.splashPotion(
+fun BaseMenuBuilder.splashPotion(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPLASH_POTION, slots.toList(), block)
 
-fun MenuBuilder.spruceBoat(
+fun BaseMenuBuilder.spruceBoat(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPRUCE_BOAT, slots.toList(), block)
 
-fun MenuBuilder.spruceChestBoat(
+fun BaseMenuBuilder.spruceChestBoat(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPRUCE_CHEST_BOAT, slots.toList(), block)
 
-fun MenuBuilder.spyglass(
+fun BaseMenuBuilder.spyglass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPYGLASS, slots.toList(), block)
 
-fun MenuBuilder.squidSpawnEgg(
+fun BaseMenuBuilder.squidSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SQUID_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.stick(
+fun BaseMenuBuilder.stick(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STICK, slots.toList(), block)
 
-fun MenuBuilder.stoneAxe(
+fun BaseMenuBuilder.stoneAxe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STONE_AXE, slots.toList(), block)
 
-fun MenuBuilder.stoneHoe(
+fun BaseMenuBuilder.stoneHoe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STONE_HOE, slots.toList(), block)
 
-fun MenuBuilder.stonePickaxe(
+fun BaseMenuBuilder.stonePickaxe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STONE_PICKAXE, slots.toList(), block)
 
-fun MenuBuilder.stoneShovel(
+fun BaseMenuBuilder.stoneShovel(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STONE_SHOVEL, slots.toList(), block)
 
-fun MenuBuilder.stoneSword(
+fun BaseMenuBuilder.stoneSword(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STONE_SWORD, slots.toList(), block)
 
-fun MenuBuilder.straySpawnEgg(
+fun BaseMenuBuilder.straySpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRAY_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.striderSpawnEgg(
+fun BaseMenuBuilder.striderSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIDER_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.string(
+fun BaseMenuBuilder.string(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRING, slots.toList(), block)
 
-fun MenuBuilder.sugar(
+fun BaseMenuBuilder.sugar(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SUGAR, slots.toList(), block)
 
-fun MenuBuilder.suspiciousStew(
+fun BaseMenuBuilder.suspiciousStew(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SUSPICIOUS_STEW, slots.toList(), block)
 
-fun MenuBuilder.sweetBerries(
+fun BaseMenuBuilder.sweetBerries(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SWEET_BERRIES, slots.toList(), block)
 
-fun MenuBuilder.tadpoleBucket(
+fun BaseMenuBuilder.tadpoleBucket(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TADPOLE_BUCKET, slots.toList(), block)
 
-fun MenuBuilder.tadpoleSpawnEgg(
+fun BaseMenuBuilder.tadpoleSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TADPOLE_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.tideArmorTrimSmithingTemplate(
+fun BaseMenuBuilder.tideArmorTrimSmithingTemplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TIDE_ARMOR_TRIM_SMITHING_TEMPLATE, slots.toList(), block)
 
-fun MenuBuilder.tippedArrow(
+fun BaseMenuBuilder.tippedArrow(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TIPPED_ARROW, slots.toList(), block)
 
-fun MenuBuilder.tntMinecart(
+fun BaseMenuBuilder.tntMinecart(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TNT_MINECART, slots.toList(), block)
 
-fun MenuBuilder.torchflowerSeeds(
+fun BaseMenuBuilder.torchflowerSeeds(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TORCHFLOWER_SEEDS, slots.toList(), block)
 
-fun MenuBuilder.totemOfUndying(
+fun BaseMenuBuilder.totemOfUndying(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TOTEM_OF_UNDYING, slots.toList(), block)
 
-fun MenuBuilder.traderLlamaSpawnEgg(
+fun BaseMenuBuilder.traderLlamaSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TRADER_LLAMA_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.trialKey(
+fun BaseMenuBuilder.trialKey(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TRIAL_KEY, slots.toList(), block)
 
-fun MenuBuilder.trident(
+fun BaseMenuBuilder.trident(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TRIDENT, slots.toList(), block)
 
-fun MenuBuilder.tropicalFish(
+fun BaseMenuBuilder.tropicalFish(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TROPICAL_FISH, slots.toList(), block)
 
-fun MenuBuilder.tropicalFishBucket(
+fun BaseMenuBuilder.tropicalFishBucket(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TROPICAL_FISH_BUCKET, slots.toList(), block)
 
-fun MenuBuilder.tropicalFishSpawnEgg(
+fun BaseMenuBuilder.tropicalFishSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TROPICAL_FISH_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.turtleHelmet(
+fun BaseMenuBuilder.turtleHelmet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TURTLE_HELMET, slots.toList(), block)
 
-fun MenuBuilder.turtleScute(
+fun BaseMenuBuilder.turtleScute(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TURTLE_SCUTE, slots.toList(), block)
 
-fun MenuBuilder.turtleSpawnEgg(
+fun BaseMenuBuilder.turtleSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TURTLE_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.vexArmorTrimSmithingTemplate(
+fun BaseMenuBuilder.vexArmorTrimSmithingTemplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.VEX_ARMOR_TRIM_SMITHING_TEMPLATE, slots.toList(), block)
 
-fun MenuBuilder.vexSpawnEgg(
+fun BaseMenuBuilder.vexSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.VEX_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.villagerSpawnEgg(
+fun BaseMenuBuilder.villagerSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.VILLAGER_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.vindicatorSpawnEgg(
+fun BaseMenuBuilder.vindicatorSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.VINDICATOR_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.wanderingTraderSpawnEgg(
+fun BaseMenuBuilder.wanderingTraderSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WANDERING_TRADER_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.wardArmorTrimSmithingTemplate(
+fun BaseMenuBuilder.wardArmorTrimSmithingTemplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WARD_ARMOR_TRIM_SMITHING_TEMPLATE, slots.toList(), block)
 
-fun MenuBuilder.wardenSpawnEgg(
+fun BaseMenuBuilder.wardenSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WARDEN_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.warpedFungusOnAStick(
+fun BaseMenuBuilder.warpedFungusOnAStick(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WARPED_FUNGUS_ON_A_STICK, slots.toList(), block)
 
-fun MenuBuilder.waterBucket(
+fun BaseMenuBuilder.waterBucket(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WATER_BUCKET, slots.toList(), block)
 
-fun MenuBuilder.wayfinderArmorTrimSmithingTemplate(
+fun BaseMenuBuilder.wayfinderArmorTrimSmithingTemplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE, slots.toList(), block)
 
-fun MenuBuilder.wheatSeeds(
+fun BaseMenuBuilder.wheatSeeds(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WHEAT_SEEDS, slots.toList(), block)
 
-fun MenuBuilder.whiteBundle(
+fun BaseMenuBuilder.whiteBundle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WHITE_BUNDLE, slots.toList(), block)
 
-fun MenuBuilder.whiteDye(
+fun BaseMenuBuilder.whiteDye(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WHITE_DYE, slots.toList(), block)
 
-fun MenuBuilder.whiteHarness(
+fun BaseMenuBuilder.whiteHarness(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WHITE_HARNESS, slots.toList(), block)
 
-fun MenuBuilder.wildArmorTrimSmithingTemplate(
+fun BaseMenuBuilder.wildArmorTrimSmithingTemplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WILD_ARMOR_TRIM_SMITHING_TEMPLATE, slots.toList(), block)
 
-fun MenuBuilder.windCharge(
+fun BaseMenuBuilder.windCharge(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WIND_CHARGE, slots.toList(), block)
 
-fun MenuBuilder.witchSpawnEgg(
+fun BaseMenuBuilder.witchSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WITCH_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.witherSkeletonSpawnEgg(
+fun BaseMenuBuilder.witherSkeletonSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WITHER_SKELETON_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.witherSpawnEgg(
+fun BaseMenuBuilder.witherSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WITHER_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.wolfArmor(
+fun BaseMenuBuilder.wolfArmor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WOLF_ARMOR, slots.toList(), block)
 
-fun MenuBuilder.wolfSpawnEgg(
+fun BaseMenuBuilder.wolfSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WOLF_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.woodenAxe(
+fun BaseMenuBuilder.woodenAxe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WOODEN_AXE, slots.toList(), block)
 
-fun MenuBuilder.woodenHoe(
+fun BaseMenuBuilder.woodenHoe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WOODEN_HOE, slots.toList(), block)
 
-fun MenuBuilder.woodenPickaxe(
+fun BaseMenuBuilder.woodenPickaxe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WOODEN_PICKAXE, slots.toList(), block)
 
-fun MenuBuilder.woodenShovel(
+fun BaseMenuBuilder.woodenShovel(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WOODEN_SHOVEL, slots.toList(), block)
 
-fun MenuBuilder.woodenSword(
+fun BaseMenuBuilder.woodenSword(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WOODEN_SWORD, slots.toList(), block)
 
-fun MenuBuilder.writableBook(
+fun BaseMenuBuilder.writableBook(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WRITABLE_BOOK, slots.toList(), block)
 
-fun MenuBuilder.writtenBook(
+fun BaseMenuBuilder.writtenBook(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WRITTEN_BOOK, slots.toList(), block)
 
-fun MenuBuilder.yellowBundle(
+fun BaseMenuBuilder.yellowBundle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.YELLOW_BUNDLE, slots.toList(), block)
 
-fun MenuBuilder.yellowDye(
+fun BaseMenuBuilder.yellowDye(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.YELLOW_DYE, slots.toList(), block)
 
-fun MenuBuilder.yellowHarness(
+fun BaseMenuBuilder.yellowHarness(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.YELLOW_HARNESS, slots.toList(), block)
 
-fun MenuBuilder.zoglinSpawnEgg(
+fun BaseMenuBuilder.zoglinSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ZOGLIN_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.zombieHorseSpawnEgg(
+fun BaseMenuBuilder.zombieHorseSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ZOMBIE_HORSE_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.zombieSpawnEgg(
+fun BaseMenuBuilder.zombieSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ZOMBIE_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.zombieVillagerSpawnEgg(
+fun BaseMenuBuilder.zombieVillagerSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ZOMBIE_VILLAGER_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.zombifiedPiglinSpawnEgg(
+fun BaseMenuBuilder.zombifiedPiglinSpawnEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ZOMBIFIED_PIGLIN_SPAWN_EGG, slots.toList(), block)
 
-fun MenuBuilder.acaciaButton(
+fun BaseMenuBuilder.acaciaButton(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ACACIA_BUTTON, slots.toList(), block)
 
-fun MenuBuilder.acaciaDoor(
+fun BaseMenuBuilder.acaciaDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ACACIA_DOOR, slots.toList(), block)
 
-fun MenuBuilder.acaciaFence(
+fun BaseMenuBuilder.acaciaFence(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ACACIA_FENCE, slots.toList(), block)
 
-fun MenuBuilder.acaciaFenceGate(
+fun BaseMenuBuilder.acaciaFenceGate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ACACIA_FENCE_GATE, slots.toList(), block)
 
-fun MenuBuilder.acaciaHangingSign(
+fun BaseMenuBuilder.acaciaHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ACACIA_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.acaciaLeaves(
+fun BaseMenuBuilder.acaciaLeaves(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ACACIA_LEAVES, slots.toList(), block)
 
-fun MenuBuilder.acaciaLog(
+fun BaseMenuBuilder.acaciaLog(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ACACIA_LOG, slots.toList(), block)
 
-fun MenuBuilder.acaciaPlanks(
+fun BaseMenuBuilder.acaciaPlanks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ACACIA_PLANKS, slots.toList(), block)
 
-fun MenuBuilder.acaciaPressurePlate(
+fun BaseMenuBuilder.acaciaPressurePlate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ACACIA_PRESSURE_PLATE, slots.toList(), block)
 
-fun MenuBuilder.acaciaSapling(
+fun BaseMenuBuilder.acaciaSapling(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ACACIA_SAPLING, slots.toList(), block)
 
-fun MenuBuilder.acaciaSign(
+fun BaseMenuBuilder.acaciaSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ACACIA_SIGN, slots.toList(), block)
 
-fun MenuBuilder.acaciaSlab(
+fun BaseMenuBuilder.acaciaSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ACACIA_SLAB, slots.toList(), block)
 
-fun MenuBuilder.acaciaStairs(
+fun BaseMenuBuilder.acaciaStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ACACIA_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.acaciaTrapdoor(
+fun BaseMenuBuilder.acaciaTrapdoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ACACIA_TRAPDOOR, slots.toList(), block)
 
-fun MenuBuilder.acaciaWallHangingSign(
+fun BaseMenuBuilder.acaciaWallHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ACACIA_WALL_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.acaciaWallSign(
+fun BaseMenuBuilder.acaciaWallSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ACACIA_WALL_SIGN, slots.toList(), block)
 
-fun MenuBuilder.acaciaWood(
+fun BaseMenuBuilder.acaciaWood(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ACACIA_WOOD, slots.toList(), block)
 
-fun MenuBuilder.activatorRail(
+fun BaseMenuBuilder.activatorRail(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ACTIVATOR_RAIL, slots.toList(), block)
 
-fun MenuBuilder.allium(
+fun BaseMenuBuilder.allium(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ALLIUM, slots.toList(), block)
 
-fun MenuBuilder.amethystBlock(
+fun BaseMenuBuilder.amethystBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.AMETHYST_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.amethystCluster(
+fun BaseMenuBuilder.amethystCluster(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.AMETHYST_CLUSTER, slots.toList(), block)
 
-fun MenuBuilder.ancientDebris(
+fun BaseMenuBuilder.ancientDebris(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ANCIENT_DEBRIS, slots.toList(), block)
 
-fun MenuBuilder.andesite(
+fun BaseMenuBuilder.andesite(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ANDESITE, slots.toList(), block)
 
-fun MenuBuilder.andesiteSlab(
+fun BaseMenuBuilder.andesiteSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ANDESITE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.andesiteStairs(
+fun BaseMenuBuilder.andesiteStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ANDESITE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.andesiteWall(
+fun BaseMenuBuilder.andesiteWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ANDESITE_WALL, slots.toList(), block)
 
-fun MenuBuilder.anvil(
+fun BaseMenuBuilder.anvil(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ANVIL, slots.toList(), block)
 
-fun MenuBuilder.attachedMelonStem(
+fun BaseMenuBuilder.attachedMelonStem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ATTACHED_MELON_STEM, slots.toList(), block)
 
-fun MenuBuilder.attachedPumpkinStem(
+fun BaseMenuBuilder.attachedPumpkinStem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ATTACHED_PUMPKIN_STEM, slots.toList(), block)
 
-fun MenuBuilder.azalea(
+fun BaseMenuBuilder.azalea(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.AZALEA, slots.toList(), block)
 
-fun MenuBuilder.azaleaLeaves(
+fun BaseMenuBuilder.azaleaLeaves(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.AZALEA_LEAVES, slots.toList(), block)
 
-fun MenuBuilder.azureBluet(
+fun BaseMenuBuilder.azureBluet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.AZURE_BLUET, slots.toList(), block)
 
-fun MenuBuilder.bamboo(
+fun BaseMenuBuilder.bamboo(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BAMBOO, slots.toList(), block)
 
-fun MenuBuilder.bambooBlock(
+fun BaseMenuBuilder.bambooBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BAMBOO_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.bambooButton(
+fun BaseMenuBuilder.bambooButton(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BAMBOO_BUTTON, slots.toList(), block)
 
-fun MenuBuilder.bambooDoor(
+fun BaseMenuBuilder.bambooDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BAMBOO_DOOR, slots.toList(), block)
 
-fun MenuBuilder.bambooFence(
+fun BaseMenuBuilder.bambooFence(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BAMBOO_FENCE, slots.toList(), block)
 
-fun MenuBuilder.bambooFenceGate(
+fun BaseMenuBuilder.bambooFenceGate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BAMBOO_FENCE_GATE, slots.toList(), block)
 
-fun MenuBuilder.bambooHangingSign(
+fun BaseMenuBuilder.bambooHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BAMBOO_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.bambooMosaic(
+fun BaseMenuBuilder.bambooMosaic(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BAMBOO_MOSAIC, slots.toList(), block)
 
-fun MenuBuilder.bambooMosaicSlab(
+fun BaseMenuBuilder.bambooMosaicSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BAMBOO_MOSAIC_SLAB, slots.toList(), block)
 
-fun MenuBuilder.bambooMosaicStairs(
+fun BaseMenuBuilder.bambooMosaicStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BAMBOO_MOSAIC_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.bambooPlanks(
+fun BaseMenuBuilder.bambooPlanks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BAMBOO_PLANKS, slots.toList(), block)
 
-fun MenuBuilder.bambooPressurePlate(
+fun BaseMenuBuilder.bambooPressurePlate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BAMBOO_PRESSURE_PLATE, slots.toList(), block)
 
-fun MenuBuilder.bambooSapling(
+fun BaseMenuBuilder.bambooSapling(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BAMBOO_SAPLING, slots.toList(), block)
 
-fun MenuBuilder.bambooSign(
+fun BaseMenuBuilder.bambooSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BAMBOO_SIGN, slots.toList(), block)
 
-fun MenuBuilder.bambooSlab(
+fun BaseMenuBuilder.bambooSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BAMBOO_SLAB, slots.toList(), block)
 
-fun MenuBuilder.bambooStairs(
+fun BaseMenuBuilder.bambooStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BAMBOO_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.bambooTrapdoor(
+fun BaseMenuBuilder.bambooTrapdoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BAMBOO_TRAPDOOR, slots.toList(), block)
 
-fun MenuBuilder.bambooWallHangingSign(
+fun BaseMenuBuilder.bambooWallHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BAMBOO_WALL_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.bambooWallSign(
+fun BaseMenuBuilder.bambooWallSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BAMBOO_WALL_SIGN, slots.toList(), block)
 
-fun MenuBuilder.barrel(
+fun BaseMenuBuilder.barrel(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BARREL, slots.toList(), block)
 
-fun MenuBuilder.barrier(
+fun BaseMenuBuilder.barrier(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BARRIER, slots.toList(), block)
 
-fun MenuBuilder.basalt(
+fun BaseMenuBuilder.basalt(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BASALT, slots.toList(), block)
 
-fun MenuBuilder.beacon(
+fun BaseMenuBuilder.beacon(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BEACON, slots.toList(), block)
 
-fun MenuBuilder.bedrock(
+fun BaseMenuBuilder.bedrock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BEDROCK, slots.toList(), block)
 
-fun MenuBuilder.beeNest(
+fun BaseMenuBuilder.beeNest(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BEE_NEST, slots.toList(), block)
 
-fun MenuBuilder.beehive(
+fun BaseMenuBuilder.beehive(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BEEHIVE, slots.toList(), block)
 
-fun MenuBuilder.beetroots(
+fun BaseMenuBuilder.beetroots(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BEETROOTS, slots.toList(), block)
 
-fun MenuBuilder.bell(
+fun BaseMenuBuilder.bell(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BELL, slots.toList(), block)
 
-fun MenuBuilder.bigDripleaf(
+fun BaseMenuBuilder.bigDripleaf(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BIG_DRIPLEAF, slots.toList(), block)
 
-fun MenuBuilder.bigDripleafStem(
+fun BaseMenuBuilder.bigDripleafStem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BIG_DRIPLEAF_STEM, slots.toList(), block)
 
-fun MenuBuilder.birchButton(
+fun BaseMenuBuilder.birchButton(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BIRCH_BUTTON, slots.toList(), block)
 
-fun MenuBuilder.birchDoor(
+fun BaseMenuBuilder.birchDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BIRCH_DOOR, slots.toList(), block)
 
-fun MenuBuilder.birchFence(
+fun BaseMenuBuilder.birchFence(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BIRCH_FENCE, slots.toList(), block)
 
-fun MenuBuilder.birchFenceGate(
+fun BaseMenuBuilder.birchFenceGate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BIRCH_FENCE_GATE, slots.toList(), block)
 
-fun MenuBuilder.birchHangingSign(
+fun BaseMenuBuilder.birchHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BIRCH_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.birchLeaves(
+fun BaseMenuBuilder.birchLeaves(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BIRCH_LEAVES, slots.toList(), block)
 
-fun MenuBuilder.birchLog(
+fun BaseMenuBuilder.birchLog(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BIRCH_LOG, slots.toList(), block)
 
-fun MenuBuilder.birchPlanks(
+fun BaseMenuBuilder.birchPlanks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BIRCH_PLANKS, slots.toList(), block)
 
-fun MenuBuilder.birchPressurePlate(
+fun BaseMenuBuilder.birchPressurePlate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BIRCH_PRESSURE_PLATE, slots.toList(), block)
 
-fun MenuBuilder.birchSapling(
+fun BaseMenuBuilder.birchSapling(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BIRCH_SAPLING, slots.toList(), block)
 
-fun MenuBuilder.birchSign(
+fun BaseMenuBuilder.birchSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BIRCH_SIGN, slots.toList(), block)
 
-fun MenuBuilder.birchSlab(
+fun BaseMenuBuilder.birchSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BIRCH_SLAB, slots.toList(), block)
 
-fun MenuBuilder.birchStairs(
+fun BaseMenuBuilder.birchStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BIRCH_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.birchTrapdoor(
+fun BaseMenuBuilder.birchTrapdoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BIRCH_TRAPDOOR, slots.toList(), block)
 
-fun MenuBuilder.birchWallHangingSign(
+fun BaseMenuBuilder.birchWallHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BIRCH_WALL_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.birchWallSign(
+fun BaseMenuBuilder.birchWallSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BIRCH_WALL_SIGN, slots.toList(), block)
 
-fun MenuBuilder.birchWood(
+fun BaseMenuBuilder.birchWood(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BIRCH_WOOD, slots.toList(), block)
 
-fun MenuBuilder.blackBanner(
+fun BaseMenuBuilder.blackBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLACK_BANNER, slots.toList(), block)
 
-fun MenuBuilder.blackBed(
+fun BaseMenuBuilder.blackBed(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLACK_BED, slots.toList(), block)
 
-fun MenuBuilder.blackCandle(
+fun BaseMenuBuilder.blackCandle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLACK_CANDLE, slots.toList(), block)
 
-fun MenuBuilder.blackCandleCake(
+fun BaseMenuBuilder.blackCandleCake(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLACK_CANDLE_CAKE, slots.toList(), block)
 
-fun MenuBuilder.blackCarpet(
+fun BaseMenuBuilder.blackCarpet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLACK_CARPET, slots.toList(), block)
 
-fun MenuBuilder.blackConcrete(
+fun BaseMenuBuilder.blackConcrete(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLACK_CONCRETE, slots.toList(), block)
 
-fun MenuBuilder.blackConcretePowder(
+fun BaseMenuBuilder.blackConcretePowder(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLACK_CONCRETE_POWDER, slots.toList(), block)
 
-fun MenuBuilder.blackGlazedTerracotta(
+fun BaseMenuBuilder.blackGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLACK_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.blackShulkerBox(
+fun BaseMenuBuilder.blackShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLACK_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.blackStainedGlass(
+fun BaseMenuBuilder.blackStainedGlass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLACK_STAINED_GLASS, slots.toList(), block)
 
-fun MenuBuilder.blackStainedGlassPane(
+fun BaseMenuBuilder.blackStainedGlassPane(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLACK_STAINED_GLASS_PANE, slots.toList(), block)
 
-fun MenuBuilder.blackTerracotta(
+fun BaseMenuBuilder.blackTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLACK_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.blackWallBanner(
+fun BaseMenuBuilder.blackWallBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLACK_WALL_BANNER, slots.toList(), block)
 
-fun MenuBuilder.blackWool(
+fun BaseMenuBuilder.blackWool(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLACK_WOOL, slots.toList(), block)
 
-fun MenuBuilder.blackstone(
+fun BaseMenuBuilder.blackstone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLACKSTONE, slots.toList(), block)
 
-fun MenuBuilder.blackstoneSlab(
+fun BaseMenuBuilder.blackstoneSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLACKSTONE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.blackstoneStairs(
+fun BaseMenuBuilder.blackstoneStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLACKSTONE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.blackstoneWall(
+fun BaseMenuBuilder.blackstoneWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLACKSTONE_WALL, slots.toList(), block)
 
-fun MenuBuilder.blastFurnace(
+fun BaseMenuBuilder.blastFurnace(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLAST_FURNACE, slots.toList(), block)
 
-fun MenuBuilder.blueBanner(
+fun BaseMenuBuilder.blueBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLUE_BANNER, slots.toList(), block)
 
-fun MenuBuilder.blueBed(
+fun BaseMenuBuilder.blueBed(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLUE_BED, slots.toList(), block)
 
-fun MenuBuilder.blueCandle(
+fun BaseMenuBuilder.blueCandle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLUE_CANDLE, slots.toList(), block)
 
-fun MenuBuilder.blueCandleCake(
+fun BaseMenuBuilder.blueCandleCake(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLUE_CANDLE_CAKE, slots.toList(), block)
 
-fun MenuBuilder.blueCarpet(
+fun BaseMenuBuilder.blueCarpet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLUE_CARPET, slots.toList(), block)
 
-fun MenuBuilder.blueConcrete(
+fun BaseMenuBuilder.blueConcrete(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLUE_CONCRETE, slots.toList(), block)
 
-fun MenuBuilder.blueConcretePowder(
+fun BaseMenuBuilder.blueConcretePowder(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLUE_CONCRETE_POWDER, slots.toList(), block)
 
-fun MenuBuilder.blueGlazedTerracotta(
+fun BaseMenuBuilder.blueGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLUE_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.blueIce(
+fun BaseMenuBuilder.blueIce(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLUE_ICE, slots.toList(), block)
 
-fun MenuBuilder.blueOrchid(
+fun BaseMenuBuilder.blueOrchid(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLUE_ORCHID, slots.toList(), block)
 
-fun MenuBuilder.blueShulkerBox(
+fun BaseMenuBuilder.blueShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLUE_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.blueStainedGlass(
+fun BaseMenuBuilder.blueStainedGlass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLUE_STAINED_GLASS, slots.toList(), block)
 
-fun MenuBuilder.blueStainedGlassPane(
+fun BaseMenuBuilder.blueStainedGlassPane(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLUE_STAINED_GLASS_PANE, slots.toList(), block)
 
-fun MenuBuilder.blueTerracotta(
+fun BaseMenuBuilder.blueTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLUE_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.blueWallBanner(
+fun BaseMenuBuilder.blueWallBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLUE_WALL_BANNER, slots.toList(), block)
 
-fun MenuBuilder.blueWool(
+fun BaseMenuBuilder.blueWool(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BLUE_WOOL, slots.toList(), block)
 
-fun MenuBuilder.boneBlock(
+fun BaseMenuBuilder.boneBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BONE_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.bookshelf(
+fun BaseMenuBuilder.bookshelf(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BOOKSHELF, slots.toList(), block)
 
-fun MenuBuilder.brainCoral(
+fun BaseMenuBuilder.brainCoral(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BRAIN_CORAL, slots.toList(), block)
 
-fun MenuBuilder.brainCoralBlock(
+fun BaseMenuBuilder.brainCoralBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BRAIN_CORAL_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.brainCoralFan(
+fun BaseMenuBuilder.brainCoralFan(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BRAIN_CORAL_FAN, slots.toList(), block)
 
-fun MenuBuilder.brainCoralWallFan(
+fun BaseMenuBuilder.brainCoralWallFan(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BRAIN_CORAL_WALL_FAN, slots.toList(), block)
 
-fun MenuBuilder.brewingStand(
+fun BaseMenuBuilder.brewingStand(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BREWING_STAND, slots.toList(), block)
 
-fun MenuBuilder.brickSlab(
+fun BaseMenuBuilder.brickSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BRICK_SLAB, slots.toList(), block)
 
-fun MenuBuilder.brickStairs(
+fun BaseMenuBuilder.brickStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BRICK_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.brickWall(
+fun BaseMenuBuilder.brickWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BRICK_WALL, slots.toList(), block)
 
-fun MenuBuilder.bricks(
+fun BaseMenuBuilder.bricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BRICKS, slots.toList(), block)
 
-fun MenuBuilder.brownBanner(
+fun BaseMenuBuilder.brownBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BROWN_BANNER, slots.toList(), block)
 
-fun MenuBuilder.brownBed(
+fun BaseMenuBuilder.brownBed(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BROWN_BED, slots.toList(), block)
 
-fun MenuBuilder.brownCandle(
+fun BaseMenuBuilder.brownCandle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BROWN_CANDLE, slots.toList(), block)
 
-fun MenuBuilder.brownCandleCake(
+fun BaseMenuBuilder.brownCandleCake(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BROWN_CANDLE_CAKE, slots.toList(), block)
 
-fun MenuBuilder.brownCarpet(
+fun BaseMenuBuilder.brownCarpet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BROWN_CARPET, slots.toList(), block)
 
-fun MenuBuilder.brownConcrete(
+fun BaseMenuBuilder.brownConcrete(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BROWN_CONCRETE, slots.toList(), block)
 
-fun MenuBuilder.brownConcretePowder(
+fun BaseMenuBuilder.brownConcretePowder(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BROWN_CONCRETE_POWDER, slots.toList(), block)
 
-fun MenuBuilder.brownGlazedTerracotta(
+fun BaseMenuBuilder.brownGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BROWN_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.brownMushroom(
+fun BaseMenuBuilder.brownMushroom(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BROWN_MUSHROOM, slots.toList(), block)
 
-fun MenuBuilder.brownMushroomBlock(
+fun BaseMenuBuilder.brownMushroomBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BROWN_MUSHROOM_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.brownShulkerBox(
+fun BaseMenuBuilder.brownShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BROWN_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.brownStainedGlass(
+fun BaseMenuBuilder.brownStainedGlass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BROWN_STAINED_GLASS, slots.toList(), block)
 
-fun MenuBuilder.brownStainedGlassPane(
+fun BaseMenuBuilder.brownStainedGlassPane(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BROWN_STAINED_GLASS_PANE, slots.toList(), block)
 
-fun MenuBuilder.brownTerracotta(
+fun BaseMenuBuilder.brownTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BROWN_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.brownWallBanner(
+fun BaseMenuBuilder.brownWallBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BROWN_WALL_BANNER, slots.toList(), block)
 
-fun MenuBuilder.brownWool(
+fun BaseMenuBuilder.brownWool(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BROWN_WOOL, slots.toList(), block)
 
-fun MenuBuilder.bubbleColumn(
+fun BaseMenuBuilder.bubbleColumn(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BUBBLE_COLUMN, slots.toList(), block)
 
-fun MenuBuilder.bubbleCoral(
+fun BaseMenuBuilder.bubbleCoral(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BUBBLE_CORAL, slots.toList(), block)
 
-fun MenuBuilder.bubbleCoralBlock(
+fun BaseMenuBuilder.bubbleCoralBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BUBBLE_CORAL_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.bubbleCoralFan(
+fun BaseMenuBuilder.bubbleCoralFan(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BUBBLE_CORAL_FAN, slots.toList(), block)
 
-fun MenuBuilder.bubbleCoralWallFan(
+fun BaseMenuBuilder.bubbleCoralWallFan(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BUBBLE_CORAL_WALL_FAN, slots.toList(), block)
 
-fun MenuBuilder.buddingAmethyst(
+fun BaseMenuBuilder.buddingAmethyst(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BUDDING_AMETHYST, slots.toList(), block)
 
-fun MenuBuilder.bush(
+fun BaseMenuBuilder.bush(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.BUSH, slots.toList(), block)
 
-fun MenuBuilder.cactus(
+fun BaseMenuBuilder.cactus(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CACTUS, slots.toList(), block)
 
-fun MenuBuilder.cactusFlower(
+fun BaseMenuBuilder.cactusFlower(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CACTUS_FLOWER, slots.toList(), block)
 
-fun MenuBuilder.cake(
+fun BaseMenuBuilder.cake(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CAKE, slots.toList(), block)
 
-fun MenuBuilder.calcite(
+fun BaseMenuBuilder.calcite(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CALCITE, slots.toList(), block)
 
-fun MenuBuilder.calibratedSculkSensor(
+fun BaseMenuBuilder.calibratedSculkSensor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CALIBRATED_SCULK_SENSOR, slots.toList(), block)
 
-fun MenuBuilder.campfire(
+fun BaseMenuBuilder.campfire(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CAMPFIRE, slots.toList(), block)
 
-fun MenuBuilder.candle(
+fun BaseMenuBuilder.candle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CANDLE, slots.toList(), block)
 
-fun MenuBuilder.candleCake(
+fun BaseMenuBuilder.candleCake(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CANDLE_CAKE, slots.toList(), block)
 
-fun MenuBuilder.carrots(
+fun BaseMenuBuilder.carrots(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CARROTS, slots.toList(), block)
 
-fun MenuBuilder.cartographyTable(
+fun BaseMenuBuilder.cartographyTable(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CARTOGRAPHY_TABLE, slots.toList(), block)
 
-fun MenuBuilder.carvedPumpkin(
+fun BaseMenuBuilder.carvedPumpkin(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CARVED_PUMPKIN, slots.toList(), block)
 
-fun MenuBuilder.cauldron(
+fun BaseMenuBuilder.cauldron(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CAULDRON, slots.toList(), block)
 
-fun MenuBuilder.caveAir(
+fun BaseMenuBuilder.caveAir(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CAVE_AIR, slots.toList(), block)
 
-fun MenuBuilder.caveVines(
+fun BaseMenuBuilder.caveVines(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CAVE_VINES, slots.toList(), block)
 
-fun MenuBuilder.caveVinesPlant(
+fun BaseMenuBuilder.caveVinesPlant(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CAVE_VINES_PLANT, slots.toList(), block)
 
-fun MenuBuilder.chain(
+fun BaseMenuBuilder.chain(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHAIN, slots.toList(), block)
 
-fun MenuBuilder.chainCommandBlock(
+fun BaseMenuBuilder.chainCommandBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHAIN_COMMAND_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.cherryButton(
+fun BaseMenuBuilder.cherryButton(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHERRY_BUTTON, slots.toList(), block)
 
-fun MenuBuilder.cherryDoor(
+fun BaseMenuBuilder.cherryDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHERRY_DOOR, slots.toList(), block)
 
-fun MenuBuilder.cherryFence(
+fun BaseMenuBuilder.cherryFence(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHERRY_FENCE, slots.toList(), block)
 
-fun MenuBuilder.cherryFenceGate(
+fun BaseMenuBuilder.cherryFenceGate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHERRY_FENCE_GATE, slots.toList(), block)
 
-fun MenuBuilder.cherryHangingSign(
+fun BaseMenuBuilder.cherryHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHERRY_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.cherryLeaves(
+fun BaseMenuBuilder.cherryLeaves(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHERRY_LEAVES, slots.toList(), block)
 
-fun MenuBuilder.cherryLog(
+fun BaseMenuBuilder.cherryLog(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHERRY_LOG, slots.toList(), block)
 
-fun MenuBuilder.cherryPlanks(
+fun BaseMenuBuilder.cherryPlanks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHERRY_PLANKS, slots.toList(), block)
 
-fun MenuBuilder.cherryPressurePlate(
+fun BaseMenuBuilder.cherryPressurePlate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHERRY_PRESSURE_PLATE, slots.toList(), block)
 
-fun MenuBuilder.cherrySapling(
+fun BaseMenuBuilder.cherrySapling(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHERRY_SAPLING, slots.toList(), block)
 
-fun MenuBuilder.cherrySign(
+fun BaseMenuBuilder.cherrySign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHERRY_SIGN, slots.toList(), block)
 
-fun MenuBuilder.cherrySlab(
+fun BaseMenuBuilder.cherrySlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHERRY_SLAB, slots.toList(), block)
 
-fun MenuBuilder.cherryStairs(
+fun BaseMenuBuilder.cherryStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHERRY_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.cherryTrapdoor(
+fun BaseMenuBuilder.cherryTrapdoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHERRY_TRAPDOOR, slots.toList(), block)
 
-fun MenuBuilder.cherryWallHangingSign(
+fun BaseMenuBuilder.cherryWallHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHERRY_WALL_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.cherryWallSign(
+fun BaseMenuBuilder.cherryWallSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHERRY_WALL_SIGN, slots.toList(), block)
 
-fun MenuBuilder.cherryWood(
+fun BaseMenuBuilder.cherryWood(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHERRY_WOOD, slots.toList(), block)
 
-fun MenuBuilder.chest(
+fun BaseMenuBuilder.chest(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHEST, slots.toList(), block)
 
-fun MenuBuilder.chippedAnvil(
+fun BaseMenuBuilder.chippedAnvil(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHIPPED_ANVIL, slots.toList(), block)
 
-fun MenuBuilder.chiseledBookshelf(
+fun BaseMenuBuilder.chiseledBookshelf(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHISELED_BOOKSHELF, slots.toList(), block)
 
-fun MenuBuilder.chiseledCopper(
+fun BaseMenuBuilder.chiseledCopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHISELED_COPPER, slots.toList(), block)
 
-fun MenuBuilder.chiseledDeepslate(
+fun BaseMenuBuilder.chiseledDeepslate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHISELED_DEEPSLATE, slots.toList(), block)
 
-fun MenuBuilder.chiseledNetherBricks(
+fun BaseMenuBuilder.chiseledNetherBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHISELED_NETHER_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.chiseledPolishedBlackstone(
+fun BaseMenuBuilder.chiseledPolishedBlackstone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHISELED_POLISHED_BLACKSTONE, slots.toList(), block)
 
-fun MenuBuilder.chiseledQuartzBlock(
+fun BaseMenuBuilder.chiseledQuartzBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHISELED_QUARTZ_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.chiseledRedSandstone(
+fun BaseMenuBuilder.chiseledRedSandstone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHISELED_RED_SANDSTONE, slots.toList(), block)
 
-fun MenuBuilder.chiseledResinBricks(
+fun BaseMenuBuilder.chiseledResinBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHISELED_RESIN_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.chiseledSandstone(
+fun BaseMenuBuilder.chiseledSandstone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHISELED_SANDSTONE, slots.toList(), block)
 
-fun MenuBuilder.chiseledStoneBricks(
+fun BaseMenuBuilder.chiseledStoneBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHISELED_STONE_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.chiseledTuff(
+fun BaseMenuBuilder.chiseledTuff(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHISELED_TUFF, slots.toList(), block)
 
-fun MenuBuilder.chiseledTuffBricks(
+fun BaseMenuBuilder.chiseledTuffBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHISELED_TUFF_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.chorusFlower(
+fun BaseMenuBuilder.chorusFlower(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHORUS_FLOWER, slots.toList(), block)
 
-fun MenuBuilder.chorusPlant(
+fun BaseMenuBuilder.chorusPlant(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CHORUS_PLANT, slots.toList(), block)
 
-fun MenuBuilder.clay(
+fun BaseMenuBuilder.clay(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CLAY, slots.toList(), block)
 
-fun MenuBuilder.closedEyeblossom(
+fun BaseMenuBuilder.closedEyeblossom(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CLOSED_EYEBLOSSOM, slots.toList(), block)
 
-fun MenuBuilder.coalBlock(
+fun BaseMenuBuilder.coalBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COAL_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.coalOre(
+fun BaseMenuBuilder.coalOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COAL_ORE, slots.toList(), block)
 
-fun MenuBuilder.coarseDirt(
+fun BaseMenuBuilder.coarseDirt(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COARSE_DIRT, slots.toList(), block)
 
-fun MenuBuilder.cobbledDeepslate(
+fun BaseMenuBuilder.cobbledDeepslate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COBBLED_DEEPSLATE, slots.toList(), block)
 
-fun MenuBuilder.cobbledDeepslateSlab(
+fun BaseMenuBuilder.cobbledDeepslateSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COBBLED_DEEPSLATE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.cobbledDeepslateStairs(
+fun BaseMenuBuilder.cobbledDeepslateStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COBBLED_DEEPSLATE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.cobbledDeepslateWall(
+fun BaseMenuBuilder.cobbledDeepslateWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COBBLED_DEEPSLATE_WALL, slots.toList(), block)
 
-fun MenuBuilder.cobblestone(
+fun BaseMenuBuilder.cobblestone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COBBLESTONE, slots.toList(), block)
 
-fun MenuBuilder.cobblestoneSlab(
+fun BaseMenuBuilder.cobblestoneSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COBBLESTONE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.cobblestoneStairs(
+fun BaseMenuBuilder.cobblestoneStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COBBLESTONE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.cobblestoneWall(
+fun BaseMenuBuilder.cobblestoneWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COBBLESTONE_WALL, slots.toList(), block)
 
-fun MenuBuilder.cobweb(
+fun BaseMenuBuilder.cobweb(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COBWEB, slots.toList(), block)
 
-fun MenuBuilder.cocoa(
+fun BaseMenuBuilder.cocoa(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COCOA, slots.toList(), block)
 
-fun MenuBuilder.commandBlock(
+fun BaseMenuBuilder.commandBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COMMAND_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.comparator(
+fun BaseMenuBuilder.comparator(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COMPARATOR, slots.toList(), block)
 
-fun MenuBuilder.composter(
+fun BaseMenuBuilder.composter(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COMPOSTER, slots.toList(), block)
 
-fun MenuBuilder.conduit(
+fun BaseMenuBuilder.conduit(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CONDUIT, slots.toList(), block)
 
-fun MenuBuilder.copperBlock(
+fun BaseMenuBuilder.copperBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COPPER_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.copperBulb(
+fun BaseMenuBuilder.copperBulb(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COPPER_BULB, slots.toList(), block)
 
-fun MenuBuilder.copperDoor(
+fun BaseMenuBuilder.copperDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COPPER_DOOR, slots.toList(), block)
 
-fun MenuBuilder.copperGrate(
+fun BaseMenuBuilder.copperGrate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COPPER_GRATE, slots.toList(), block)
 
-fun MenuBuilder.copperOre(
+fun BaseMenuBuilder.copperOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COPPER_ORE, slots.toList(), block)
 
-fun MenuBuilder.copperTrapdoor(
+fun BaseMenuBuilder.copperTrapdoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.COPPER_TRAPDOOR, slots.toList(), block)
 
-fun MenuBuilder.cornflower(
+fun BaseMenuBuilder.cornflower(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CORNFLOWER, slots.toList(), block)
 
-fun MenuBuilder.crackedDeepslateBricks(
+fun BaseMenuBuilder.crackedDeepslateBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRACKED_DEEPSLATE_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.crackedDeepslateTiles(
+fun BaseMenuBuilder.crackedDeepslateTiles(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRACKED_DEEPSLATE_TILES, slots.toList(), block)
 
-fun MenuBuilder.crackedNetherBricks(
+fun BaseMenuBuilder.crackedNetherBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRACKED_NETHER_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.crackedPolishedBlackstoneBricks(
+fun BaseMenuBuilder.crackedPolishedBlackstoneBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRACKED_POLISHED_BLACKSTONE_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.crackedStoneBricks(
+fun BaseMenuBuilder.crackedStoneBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRACKED_STONE_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.crafter(
+fun BaseMenuBuilder.crafter(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRAFTER, slots.toList(), block)
 
-fun MenuBuilder.craftingTable(
+fun BaseMenuBuilder.craftingTable(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRAFTING_TABLE, slots.toList(), block)
 
-fun MenuBuilder.creakingHeart(
+fun BaseMenuBuilder.creakingHeart(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CREAKING_HEART, slots.toList(), block)
 
-fun MenuBuilder.creeperHead(
+fun BaseMenuBuilder.creeperHead(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CREEPER_HEAD, slots.toList(), block)
 
-fun MenuBuilder.creeperWallHead(
+fun BaseMenuBuilder.creeperWallHead(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CREEPER_WALL_HEAD, slots.toList(), block)
 
-fun MenuBuilder.crimsonButton(
+fun BaseMenuBuilder.crimsonButton(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRIMSON_BUTTON, slots.toList(), block)
 
-fun MenuBuilder.crimsonDoor(
+fun BaseMenuBuilder.crimsonDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRIMSON_DOOR, slots.toList(), block)
 
-fun MenuBuilder.crimsonFence(
+fun BaseMenuBuilder.crimsonFence(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRIMSON_FENCE, slots.toList(), block)
 
-fun MenuBuilder.crimsonFenceGate(
+fun BaseMenuBuilder.crimsonFenceGate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRIMSON_FENCE_GATE, slots.toList(), block)
 
-fun MenuBuilder.crimsonFungus(
+fun BaseMenuBuilder.crimsonFungus(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRIMSON_FUNGUS, slots.toList(), block)
 
-fun MenuBuilder.crimsonHangingSign(
+fun BaseMenuBuilder.crimsonHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRIMSON_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.crimsonHyphae(
+fun BaseMenuBuilder.crimsonHyphae(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRIMSON_HYPHAE, slots.toList(), block)
 
-fun MenuBuilder.crimsonNylium(
+fun BaseMenuBuilder.crimsonNylium(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRIMSON_NYLIUM, slots.toList(), block)
 
-fun MenuBuilder.crimsonPlanks(
+fun BaseMenuBuilder.crimsonPlanks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRIMSON_PLANKS, slots.toList(), block)
 
-fun MenuBuilder.crimsonPressurePlate(
+fun BaseMenuBuilder.crimsonPressurePlate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRIMSON_PRESSURE_PLATE, slots.toList(), block)
 
-fun MenuBuilder.crimsonRoots(
+fun BaseMenuBuilder.crimsonRoots(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRIMSON_ROOTS, slots.toList(), block)
 
-fun MenuBuilder.crimsonSign(
+fun BaseMenuBuilder.crimsonSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRIMSON_SIGN, slots.toList(), block)
 
-fun MenuBuilder.crimsonSlab(
+fun BaseMenuBuilder.crimsonSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRIMSON_SLAB, slots.toList(), block)
 
-fun MenuBuilder.crimsonStairs(
+fun BaseMenuBuilder.crimsonStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRIMSON_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.crimsonStem(
+fun BaseMenuBuilder.crimsonStem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRIMSON_STEM, slots.toList(), block)
 
-fun MenuBuilder.crimsonTrapdoor(
+fun BaseMenuBuilder.crimsonTrapdoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRIMSON_TRAPDOOR, slots.toList(), block)
 
-fun MenuBuilder.crimsonWallHangingSign(
+fun BaseMenuBuilder.crimsonWallHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRIMSON_WALL_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.crimsonWallSign(
+fun BaseMenuBuilder.crimsonWallSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRIMSON_WALL_SIGN, slots.toList(), block)
 
-fun MenuBuilder.cryingObsidian(
+fun BaseMenuBuilder.cryingObsidian(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CRYING_OBSIDIAN, slots.toList(), block)
 
-fun MenuBuilder.cutCopper(
+fun BaseMenuBuilder.cutCopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CUT_COPPER, slots.toList(), block)
 
-fun MenuBuilder.cutCopperSlab(
+fun BaseMenuBuilder.cutCopperSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CUT_COPPER_SLAB, slots.toList(), block)
 
-fun MenuBuilder.cutCopperStairs(
+fun BaseMenuBuilder.cutCopperStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CUT_COPPER_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.cutRedSandstone(
+fun BaseMenuBuilder.cutRedSandstone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CUT_RED_SANDSTONE, slots.toList(), block)
 
-fun MenuBuilder.cutRedSandstoneSlab(
+fun BaseMenuBuilder.cutRedSandstoneSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CUT_RED_SANDSTONE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.cutSandstone(
+fun BaseMenuBuilder.cutSandstone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CUT_SANDSTONE, slots.toList(), block)
 
-fun MenuBuilder.cutSandstoneSlab(
+fun BaseMenuBuilder.cutSandstoneSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CUT_SANDSTONE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.cyanBanner(
+fun BaseMenuBuilder.cyanBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CYAN_BANNER, slots.toList(), block)
 
-fun MenuBuilder.cyanBed(
+fun BaseMenuBuilder.cyanBed(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CYAN_BED, slots.toList(), block)
 
-fun MenuBuilder.cyanCandle(
+fun BaseMenuBuilder.cyanCandle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CYAN_CANDLE, slots.toList(), block)
 
-fun MenuBuilder.cyanCandleCake(
+fun BaseMenuBuilder.cyanCandleCake(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CYAN_CANDLE_CAKE, slots.toList(), block)
 
-fun MenuBuilder.cyanCarpet(
+fun BaseMenuBuilder.cyanCarpet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CYAN_CARPET, slots.toList(), block)
 
-fun MenuBuilder.cyanConcrete(
+fun BaseMenuBuilder.cyanConcrete(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CYAN_CONCRETE, slots.toList(), block)
 
-fun MenuBuilder.cyanConcretePowder(
+fun BaseMenuBuilder.cyanConcretePowder(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CYAN_CONCRETE_POWDER, slots.toList(), block)
 
-fun MenuBuilder.cyanGlazedTerracotta(
+fun BaseMenuBuilder.cyanGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CYAN_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.cyanShulkerBox(
+fun BaseMenuBuilder.cyanShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CYAN_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.cyanStainedGlass(
+fun BaseMenuBuilder.cyanStainedGlass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CYAN_STAINED_GLASS, slots.toList(), block)
 
-fun MenuBuilder.cyanStainedGlassPane(
+fun BaseMenuBuilder.cyanStainedGlassPane(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CYAN_STAINED_GLASS_PANE, slots.toList(), block)
 
-fun MenuBuilder.cyanTerracotta(
+fun BaseMenuBuilder.cyanTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CYAN_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.cyanWallBanner(
+fun BaseMenuBuilder.cyanWallBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CYAN_WALL_BANNER, slots.toList(), block)
 
-fun MenuBuilder.cyanWool(
+fun BaseMenuBuilder.cyanWool(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.CYAN_WOOL, slots.toList(), block)
 
-fun MenuBuilder.damagedAnvil(
+fun BaseMenuBuilder.damagedAnvil(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DAMAGED_ANVIL, slots.toList(), block)
 
-fun MenuBuilder.dandelion(
+fun BaseMenuBuilder.dandelion(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DANDELION, slots.toList(), block)
 
-fun MenuBuilder.darkOakButton(
+fun BaseMenuBuilder.darkOakButton(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DARK_OAK_BUTTON, slots.toList(), block)
 
-fun MenuBuilder.darkOakDoor(
+fun BaseMenuBuilder.darkOakDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DARK_OAK_DOOR, slots.toList(), block)
 
-fun MenuBuilder.darkOakFence(
+fun BaseMenuBuilder.darkOakFence(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DARK_OAK_FENCE, slots.toList(), block)
 
-fun MenuBuilder.darkOakFenceGate(
+fun BaseMenuBuilder.darkOakFenceGate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DARK_OAK_FENCE_GATE, slots.toList(), block)
 
-fun MenuBuilder.darkOakHangingSign(
+fun BaseMenuBuilder.darkOakHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DARK_OAK_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.darkOakLeaves(
+fun BaseMenuBuilder.darkOakLeaves(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DARK_OAK_LEAVES, slots.toList(), block)
 
-fun MenuBuilder.darkOakLog(
+fun BaseMenuBuilder.darkOakLog(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DARK_OAK_LOG, slots.toList(), block)
 
-fun MenuBuilder.darkOakPlanks(
+fun BaseMenuBuilder.darkOakPlanks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DARK_OAK_PLANKS, slots.toList(), block)
 
-fun MenuBuilder.darkOakPressurePlate(
+fun BaseMenuBuilder.darkOakPressurePlate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DARK_OAK_PRESSURE_PLATE, slots.toList(), block)
 
-fun MenuBuilder.darkOakSapling(
+fun BaseMenuBuilder.darkOakSapling(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DARK_OAK_SAPLING, slots.toList(), block)
 
-fun MenuBuilder.darkOakSign(
+fun BaseMenuBuilder.darkOakSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DARK_OAK_SIGN, slots.toList(), block)
 
-fun MenuBuilder.darkOakSlab(
+fun BaseMenuBuilder.darkOakSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DARK_OAK_SLAB, slots.toList(), block)
 
-fun MenuBuilder.darkOakStairs(
+fun BaseMenuBuilder.darkOakStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DARK_OAK_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.darkOakTrapdoor(
+fun BaseMenuBuilder.darkOakTrapdoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DARK_OAK_TRAPDOOR, slots.toList(), block)
 
-fun MenuBuilder.darkOakWallHangingSign(
+fun BaseMenuBuilder.darkOakWallHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DARK_OAK_WALL_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.darkOakWallSign(
+fun BaseMenuBuilder.darkOakWallSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DARK_OAK_WALL_SIGN, slots.toList(), block)
 
-fun MenuBuilder.darkOakWood(
+fun BaseMenuBuilder.darkOakWood(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DARK_OAK_WOOD, slots.toList(), block)
 
-fun MenuBuilder.darkPrismarine(
+fun BaseMenuBuilder.darkPrismarine(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DARK_PRISMARINE, slots.toList(), block)
 
-fun MenuBuilder.darkPrismarineSlab(
+fun BaseMenuBuilder.darkPrismarineSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DARK_PRISMARINE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.darkPrismarineStairs(
+fun BaseMenuBuilder.darkPrismarineStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DARK_PRISMARINE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.daylightDetector(
+fun BaseMenuBuilder.daylightDetector(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DAYLIGHT_DETECTOR, slots.toList(), block)
 
-fun MenuBuilder.deadBrainCoral(
+fun BaseMenuBuilder.deadBrainCoral(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEAD_BRAIN_CORAL, slots.toList(), block)
 
-fun MenuBuilder.deadBrainCoralBlock(
+fun BaseMenuBuilder.deadBrainCoralBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEAD_BRAIN_CORAL_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.deadBrainCoralFan(
+fun BaseMenuBuilder.deadBrainCoralFan(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEAD_BRAIN_CORAL_FAN, slots.toList(), block)
 
-fun MenuBuilder.deadBrainCoralWallFan(
+fun BaseMenuBuilder.deadBrainCoralWallFan(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEAD_BRAIN_CORAL_WALL_FAN, slots.toList(), block)
 
-fun MenuBuilder.deadBubbleCoral(
+fun BaseMenuBuilder.deadBubbleCoral(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEAD_BUBBLE_CORAL, slots.toList(), block)
 
-fun MenuBuilder.deadBubbleCoralBlock(
+fun BaseMenuBuilder.deadBubbleCoralBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEAD_BUBBLE_CORAL_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.deadBubbleCoralFan(
+fun BaseMenuBuilder.deadBubbleCoralFan(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEAD_BUBBLE_CORAL_FAN, slots.toList(), block)
 
-fun MenuBuilder.deadBubbleCoralWallFan(
+fun BaseMenuBuilder.deadBubbleCoralWallFan(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEAD_BUBBLE_CORAL_WALL_FAN, slots.toList(), block)
 
-fun MenuBuilder.deadBush(
+fun BaseMenuBuilder.deadBush(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEAD_BUSH, slots.toList(), block)
 
-fun MenuBuilder.deadFireCoral(
+fun BaseMenuBuilder.deadFireCoral(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEAD_FIRE_CORAL, slots.toList(), block)
 
-fun MenuBuilder.deadFireCoralBlock(
+fun BaseMenuBuilder.deadFireCoralBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEAD_FIRE_CORAL_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.deadFireCoralFan(
+fun BaseMenuBuilder.deadFireCoralFan(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEAD_FIRE_CORAL_FAN, slots.toList(), block)
 
-fun MenuBuilder.deadFireCoralWallFan(
+fun BaseMenuBuilder.deadFireCoralWallFan(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEAD_FIRE_CORAL_WALL_FAN, slots.toList(), block)
 
-fun MenuBuilder.deadHornCoral(
+fun BaseMenuBuilder.deadHornCoral(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEAD_HORN_CORAL, slots.toList(), block)
 
-fun MenuBuilder.deadHornCoralBlock(
+fun BaseMenuBuilder.deadHornCoralBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEAD_HORN_CORAL_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.deadHornCoralFan(
+fun BaseMenuBuilder.deadHornCoralFan(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEAD_HORN_CORAL_FAN, slots.toList(), block)
 
-fun MenuBuilder.deadHornCoralWallFan(
+fun BaseMenuBuilder.deadHornCoralWallFan(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEAD_HORN_CORAL_WALL_FAN, slots.toList(), block)
 
-fun MenuBuilder.deadTubeCoral(
+fun BaseMenuBuilder.deadTubeCoral(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEAD_TUBE_CORAL, slots.toList(), block)
 
-fun MenuBuilder.deadTubeCoralBlock(
+fun BaseMenuBuilder.deadTubeCoralBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEAD_TUBE_CORAL_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.deadTubeCoralFan(
+fun BaseMenuBuilder.deadTubeCoralFan(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEAD_TUBE_CORAL_FAN, slots.toList(), block)
 
-fun MenuBuilder.deadTubeCoralWallFan(
+fun BaseMenuBuilder.deadTubeCoralWallFan(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEAD_TUBE_CORAL_WALL_FAN, slots.toList(), block)
 
-fun MenuBuilder.decoratedPot(
+fun BaseMenuBuilder.decoratedPot(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DECORATED_POT, slots.toList(), block)
 
-fun MenuBuilder.deepslate(
+fun BaseMenuBuilder.deepslate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEEPSLATE, slots.toList(), block)
 
-fun MenuBuilder.deepslateBrickSlab(
+fun BaseMenuBuilder.deepslateBrickSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEEPSLATE_BRICK_SLAB, slots.toList(), block)
 
-fun MenuBuilder.deepslateBrickStairs(
+fun BaseMenuBuilder.deepslateBrickStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEEPSLATE_BRICK_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.deepslateBrickWall(
+fun BaseMenuBuilder.deepslateBrickWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEEPSLATE_BRICK_WALL, slots.toList(), block)
 
-fun MenuBuilder.deepslateBricks(
+fun BaseMenuBuilder.deepslateBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEEPSLATE_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.deepslateCoalOre(
+fun BaseMenuBuilder.deepslateCoalOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEEPSLATE_COAL_ORE, slots.toList(), block)
 
-fun MenuBuilder.deepslateCopperOre(
+fun BaseMenuBuilder.deepslateCopperOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEEPSLATE_COPPER_ORE, slots.toList(), block)
 
-fun MenuBuilder.deepslateDiamondOre(
+fun BaseMenuBuilder.deepslateDiamondOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEEPSLATE_DIAMOND_ORE, slots.toList(), block)
 
-fun MenuBuilder.deepslateEmeraldOre(
+fun BaseMenuBuilder.deepslateEmeraldOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEEPSLATE_EMERALD_ORE, slots.toList(), block)
 
-fun MenuBuilder.deepslateGoldOre(
+fun BaseMenuBuilder.deepslateGoldOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEEPSLATE_GOLD_ORE, slots.toList(), block)
 
-fun MenuBuilder.deepslateIronOre(
+fun BaseMenuBuilder.deepslateIronOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEEPSLATE_IRON_ORE, slots.toList(), block)
 
-fun MenuBuilder.deepslateLapisOre(
+fun BaseMenuBuilder.deepslateLapisOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEEPSLATE_LAPIS_ORE, slots.toList(), block)
 
-fun MenuBuilder.deepslateRedstoneOre(
+fun BaseMenuBuilder.deepslateRedstoneOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEEPSLATE_REDSTONE_ORE, slots.toList(), block)
 
-fun MenuBuilder.deepslateTileSlab(
+fun BaseMenuBuilder.deepslateTileSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEEPSLATE_TILE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.deepslateTileStairs(
+fun BaseMenuBuilder.deepslateTileStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEEPSLATE_TILE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.deepslateTileWall(
+fun BaseMenuBuilder.deepslateTileWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEEPSLATE_TILE_WALL, slots.toList(), block)
 
-fun MenuBuilder.deepslateTiles(
+fun BaseMenuBuilder.deepslateTiles(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DEEPSLATE_TILES, slots.toList(), block)
 
-fun MenuBuilder.detectorRail(
+fun BaseMenuBuilder.detectorRail(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DETECTOR_RAIL, slots.toList(), block)
 
-fun MenuBuilder.diamondBlock(
+fun BaseMenuBuilder.diamondBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DIAMOND_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.diamondOre(
+fun BaseMenuBuilder.diamondOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DIAMOND_ORE, slots.toList(), block)
 
-fun MenuBuilder.diorite(
+fun BaseMenuBuilder.diorite(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DIORITE, slots.toList(), block)
 
-fun MenuBuilder.dioriteSlab(
+fun BaseMenuBuilder.dioriteSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DIORITE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.dioriteStairs(
+fun BaseMenuBuilder.dioriteStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DIORITE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.dioriteWall(
+fun BaseMenuBuilder.dioriteWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DIORITE_WALL, slots.toList(), block)
 
-fun MenuBuilder.dirt(
+fun BaseMenuBuilder.dirt(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DIRT, slots.toList(), block)
 
-fun MenuBuilder.dirtPath(
+fun BaseMenuBuilder.dirtPath(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DIRT_PATH, slots.toList(), block)
 
-fun MenuBuilder.dispenser(
+fun BaseMenuBuilder.dispenser(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DISPENSER, slots.toList(), block)
 
-fun MenuBuilder.dragonEgg(
+fun BaseMenuBuilder.dragonEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DRAGON_EGG, slots.toList(), block)
 
-fun MenuBuilder.dragonHead(
+fun BaseMenuBuilder.dragonHead(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DRAGON_HEAD, slots.toList(), block)
 
-fun MenuBuilder.dragonWallHead(
+fun BaseMenuBuilder.dragonWallHead(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DRAGON_WALL_HEAD, slots.toList(), block)
 
-fun MenuBuilder.driedGhast(
+fun BaseMenuBuilder.driedGhast(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DRIED_GHAST, slots.toList(), block)
 
-fun MenuBuilder.driedKelpBlock(
+fun BaseMenuBuilder.driedKelpBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DRIED_KELP_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.dripstoneBlock(
+fun BaseMenuBuilder.dripstoneBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DRIPSTONE_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.dropper(
+fun BaseMenuBuilder.dropper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.DROPPER, slots.toList(), block)
 
-fun MenuBuilder.emeraldBlock(
+fun BaseMenuBuilder.emeraldBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.EMERALD_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.emeraldOre(
+fun BaseMenuBuilder.emeraldOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.EMERALD_ORE, slots.toList(), block)
 
-fun MenuBuilder.enchantingTable(
+fun BaseMenuBuilder.enchantingTable(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ENCHANTING_TABLE, slots.toList(), block)
 
-fun MenuBuilder.endGateway(
+fun BaseMenuBuilder.endGateway(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.END_GATEWAY, slots.toList(), block)
 
-fun MenuBuilder.endPortal(
+fun BaseMenuBuilder.endPortal(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.END_PORTAL, slots.toList(), block)
 
-fun MenuBuilder.endPortalFrame(
+fun BaseMenuBuilder.endPortalFrame(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.END_PORTAL_FRAME, slots.toList(), block)
 
-fun MenuBuilder.endRod(
+fun BaseMenuBuilder.endRod(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.END_ROD, slots.toList(), block)
 
-fun MenuBuilder.endStone(
+fun BaseMenuBuilder.endStone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.END_STONE, slots.toList(), block)
 
-fun MenuBuilder.endStoneBrickSlab(
+fun BaseMenuBuilder.endStoneBrickSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.END_STONE_BRICK_SLAB, slots.toList(), block)
 
-fun MenuBuilder.endStoneBrickStairs(
+fun BaseMenuBuilder.endStoneBrickStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.END_STONE_BRICK_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.endStoneBrickWall(
+fun BaseMenuBuilder.endStoneBrickWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.END_STONE_BRICK_WALL, slots.toList(), block)
 
-fun MenuBuilder.endStoneBricks(
+fun BaseMenuBuilder.endStoneBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.END_STONE_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.enderChest(
+fun BaseMenuBuilder.enderChest(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ENDER_CHEST, slots.toList(), block)
 
-fun MenuBuilder.exposedChiseledCopper(
+fun BaseMenuBuilder.exposedChiseledCopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.EXPOSED_CHISELED_COPPER, slots.toList(), block)
 
-fun MenuBuilder.exposedCopper(
+fun BaseMenuBuilder.exposedCopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.EXPOSED_COPPER, slots.toList(), block)
 
-fun MenuBuilder.exposedCopperBulb(
+fun BaseMenuBuilder.exposedCopperBulb(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.EXPOSED_COPPER_BULB, slots.toList(), block)
 
-fun MenuBuilder.exposedCopperDoor(
+fun BaseMenuBuilder.exposedCopperDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.EXPOSED_COPPER_DOOR, slots.toList(), block)
 
-fun MenuBuilder.exposedCopperGrate(
+fun BaseMenuBuilder.exposedCopperGrate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.EXPOSED_COPPER_GRATE, slots.toList(), block)
 
-fun MenuBuilder.exposedCopperTrapdoor(
+fun BaseMenuBuilder.exposedCopperTrapdoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.EXPOSED_COPPER_TRAPDOOR, slots.toList(), block)
 
-fun MenuBuilder.exposedCutCopper(
+fun BaseMenuBuilder.exposedCutCopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.EXPOSED_CUT_COPPER, slots.toList(), block)
 
-fun MenuBuilder.exposedCutCopperSlab(
+fun BaseMenuBuilder.exposedCutCopperSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.EXPOSED_CUT_COPPER_SLAB, slots.toList(), block)
 
-fun MenuBuilder.exposedCutCopperStairs(
+fun BaseMenuBuilder.exposedCutCopperStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.EXPOSED_CUT_COPPER_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.farmland(
+fun BaseMenuBuilder.farmland(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FARMLAND, slots.toList(), block)
 
-fun MenuBuilder.fern(
+fun BaseMenuBuilder.fern(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FERN, slots.toList(), block)
 
-fun MenuBuilder.fire(
+fun BaseMenuBuilder.fire(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FIRE, slots.toList(), block)
 
-fun MenuBuilder.fireCoral(
+fun BaseMenuBuilder.fireCoral(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FIRE_CORAL, slots.toList(), block)
 
-fun MenuBuilder.fireCoralBlock(
+fun BaseMenuBuilder.fireCoralBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FIRE_CORAL_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.fireCoralFan(
+fun BaseMenuBuilder.fireCoralFan(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FIRE_CORAL_FAN, slots.toList(), block)
 
-fun MenuBuilder.fireCoralWallFan(
+fun BaseMenuBuilder.fireCoralWallFan(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FIRE_CORAL_WALL_FAN, slots.toList(), block)
 
-fun MenuBuilder.fireflyBush(
+fun BaseMenuBuilder.fireflyBush(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FIREFLY_BUSH, slots.toList(), block)
 
-fun MenuBuilder.fletchingTable(
+fun BaseMenuBuilder.fletchingTable(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FLETCHING_TABLE, slots.toList(), block)
 
-fun MenuBuilder.flowerPot(
+fun BaseMenuBuilder.flowerPot(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FLOWER_POT, slots.toList(), block)
 
-fun MenuBuilder.floweringAzalea(
+fun BaseMenuBuilder.floweringAzalea(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FLOWERING_AZALEA, slots.toList(), block)
 
-fun MenuBuilder.floweringAzaleaLeaves(
+fun BaseMenuBuilder.floweringAzaleaLeaves(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FLOWERING_AZALEA_LEAVES, slots.toList(), block)
 
-fun MenuBuilder.frogspawn(
+fun BaseMenuBuilder.frogspawn(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FROGSPAWN, slots.toList(), block)
 
-fun MenuBuilder.frostedIce(
+fun BaseMenuBuilder.frostedIce(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FROSTED_ICE, slots.toList(), block)
 
-fun MenuBuilder.furnace(
+fun BaseMenuBuilder.furnace(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.FURNACE, slots.toList(), block)
 
-fun MenuBuilder.gildedBlackstone(
+fun BaseMenuBuilder.gildedBlackstone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GILDED_BLACKSTONE, slots.toList(), block)
 
-fun MenuBuilder.glass(
+fun BaseMenuBuilder.glass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GLASS, slots.toList(), block)
 
-fun MenuBuilder.glassPane(
+fun BaseMenuBuilder.glassPane(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GLASS_PANE, slots.toList(), block)
 
-fun MenuBuilder.glowLichen(
+fun BaseMenuBuilder.glowLichen(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GLOW_LICHEN, slots.toList(), block)
 
-fun MenuBuilder.glowstone(
+fun BaseMenuBuilder.glowstone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GLOWSTONE, slots.toList(), block)
 
-fun MenuBuilder.goldBlock(
+fun BaseMenuBuilder.goldBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GOLD_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.goldOre(
+fun BaseMenuBuilder.goldOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GOLD_ORE, slots.toList(), block)
 
-fun MenuBuilder.granite(
+fun BaseMenuBuilder.granite(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRANITE, slots.toList(), block)
 
-fun MenuBuilder.graniteSlab(
+fun BaseMenuBuilder.graniteSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRANITE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.graniteStairs(
+fun BaseMenuBuilder.graniteStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRANITE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.graniteWall(
+fun BaseMenuBuilder.graniteWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRANITE_WALL, slots.toList(), block)
 
-fun MenuBuilder.grassBlock(
+fun BaseMenuBuilder.grassBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRASS_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.gravel(
+fun BaseMenuBuilder.gravel(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRAVEL, slots.toList(), block)
 
-fun MenuBuilder.grayBanner(
+fun BaseMenuBuilder.grayBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRAY_BANNER, slots.toList(), block)
 
-fun MenuBuilder.grayBed(
+fun BaseMenuBuilder.grayBed(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRAY_BED, slots.toList(), block)
 
-fun MenuBuilder.grayCandle(
+fun BaseMenuBuilder.grayCandle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRAY_CANDLE, slots.toList(), block)
 
-fun MenuBuilder.grayCandleCake(
+fun BaseMenuBuilder.grayCandleCake(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRAY_CANDLE_CAKE, slots.toList(), block)
 
-fun MenuBuilder.grayCarpet(
+fun BaseMenuBuilder.grayCarpet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRAY_CARPET, slots.toList(), block)
 
-fun MenuBuilder.grayConcrete(
+fun BaseMenuBuilder.grayConcrete(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRAY_CONCRETE, slots.toList(), block)
 
-fun MenuBuilder.grayConcretePowder(
+fun BaseMenuBuilder.grayConcretePowder(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRAY_CONCRETE_POWDER, slots.toList(), block)
 
-fun MenuBuilder.grayGlazedTerracotta(
+fun BaseMenuBuilder.grayGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRAY_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.grayShulkerBox(
+fun BaseMenuBuilder.grayShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRAY_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.grayStainedGlass(
+fun BaseMenuBuilder.grayStainedGlass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRAY_STAINED_GLASS, slots.toList(), block)
 
-fun MenuBuilder.grayStainedGlassPane(
+fun BaseMenuBuilder.grayStainedGlassPane(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRAY_STAINED_GLASS_PANE, slots.toList(), block)
 
-fun MenuBuilder.grayTerracotta(
+fun BaseMenuBuilder.grayTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRAY_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.grayWallBanner(
+fun BaseMenuBuilder.grayWallBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRAY_WALL_BANNER, slots.toList(), block)
 
-fun MenuBuilder.grayWool(
+fun BaseMenuBuilder.grayWool(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRAY_WOOL, slots.toList(), block)
 
-fun MenuBuilder.greenBanner(
+fun BaseMenuBuilder.greenBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GREEN_BANNER, slots.toList(), block)
 
-fun MenuBuilder.greenBed(
+fun BaseMenuBuilder.greenBed(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GREEN_BED, slots.toList(), block)
 
-fun MenuBuilder.greenCandle(
+fun BaseMenuBuilder.greenCandle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GREEN_CANDLE, slots.toList(), block)
 
-fun MenuBuilder.greenCandleCake(
+fun BaseMenuBuilder.greenCandleCake(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GREEN_CANDLE_CAKE, slots.toList(), block)
 
-fun MenuBuilder.greenCarpet(
+fun BaseMenuBuilder.greenCarpet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GREEN_CARPET, slots.toList(), block)
 
-fun MenuBuilder.greenConcrete(
+fun BaseMenuBuilder.greenConcrete(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GREEN_CONCRETE, slots.toList(), block)
 
-fun MenuBuilder.greenConcretePowder(
+fun BaseMenuBuilder.greenConcretePowder(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GREEN_CONCRETE_POWDER, slots.toList(), block)
 
-fun MenuBuilder.greenGlazedTerracotta(
+fun BaseMenuBuilder.greenGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GREEN_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.greenShulkerBox(
+fun BaseMenuBuilder.greenShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GREEN_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.greenStainedGlass(
+fun BaseMenuBuilder.greenStainedGlass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GREEN_STAINED_GLASS, slots.toList(), block)
 
-fun MenuBuilder.greenStainedGlassPane(
+fun BaseMenuBuilder.greenStainedGlassPane(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GREEN_STAINED_GLASS_PANE, slots.toList(), block)
 
-fun MenuBuilder.greenTerracotta(
+fun BaseMenuBuilder.greenTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GREEN_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.greenWallBanner(
+fun BaseMenuBuilder.greenWallBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GREEN_WALL_BANNER, slots.toList(), block)
 
-fun MenuBuilder.greenWool(
+fun BaseMenuBuilder.greenWool(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GREEN_WOOL, slots.toList(), block)
 
-fun MenuBuilder.grindstone(
+fun BaseMenuBuilder.grindstone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.GRINDSTONE, slots.toList(), block)
 
-fun MenuBuilder.hangingRoots(
+fun BaseMenuBuilder.hangingRoots(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.HANGING_ROOTS, slots.toList(), block)
 
-fun MenuBuilder.hayBlock(
+fun BaseMenuBuilder.hayBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.HAY_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.heavyCore(
+fun BaseMenuBuilder.heavyCore(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.HEAVY_CORE, slots.toList(), block)
 
-fun MenuBuilder.heavyWeightedPressurePlate(
+fun BaseMenuBuilder.heavyWeightedPressurePlate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.HEAVY_WEIGHTED_PRESSURE_PLATE, slots.toList(), block)
 
-fun MenuBuilder.honeyBlock(
+fun BaseMenuBuilder.honeyBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.HONEY_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.honeycombBlock(
+fun BaseMenuBuilder.honeycombBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.HONEYCOMB_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.hopper(
+fun BaseMenuBuilder.hopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.HOPPER, slots.toList(), block)
 
-fun MenuBuilder.hornCoral(
+fun BaseMenuBuilder.hornCoral(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.HORN_CORAL, slots.toList(), block)
 
-fun MenuBuilder.hornCoralBlock(
+fun BaseMenuBuilder.hornCoralBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.HORN_CORAL_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.hornCoralFan(
+fun BaseMenuBuilder.hornCoralFan(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.HORN_CORAL_FAN, slots.toList(), block)
 
-fun MenuBuilder.hornCoralWallFan(
+fun BaseMenuBuilder.hornCoralWallFan(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.HORN_CORAL_WALL_FAN, slots.toList(), block)
 
-fun MenuBuilder.ice(
+fun BaseMenuBuilder.ice(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ICE, slots.toList(), block)
 
-fun MenuBuilder.infestedChiseledStoneBricks(
+fun BaseMenuBuilder.infestedChiseledStoneBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.INFESTED_CHISELED_STONE_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.infestedCobblestone(
+fun BaseMenuBuilder.infestedCobblestone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.INFESTED_COBBLESTONE, slots.toList(), block)
 
-fun MenuBuilder.infestedCrackedStoneBricks(
+fun BaseMenuBuilder.infestedCrackedStoneBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.INFESTED_CRACKED_STONE_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.infestedDeepslate(
+fun BaseMenuBuilder.infestedDeepslate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.INFESTED_DEEPSLATE, slots.toList(), block)
 
-fun MenuBuilder.infestedMossyStoneBricks(
+fun BaseMenuBuilder.infestedMossyStoneBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.INFESTED_MOSSY_STONE_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.infestedStone(
+fun BaseMenuBuilder.infestedStone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.INFESTED_STONE, slots.toList(), block)
 
-fun MenuBuilder.infestedStoneBricks(
+fun BaseMenuBuilder.infestedStoneBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.INFESTED_STONE_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.ironBars(
+fun BaseMenuBuilder.ironBars(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.IRON_BARS, slots.toList(), block)
 
-fun MenuBuilder.ironBlock(
+fun BaseMenuBuilder.ironBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.IRON_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.ironDoor(
+fun BaseMenuBuilder.ironDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.IRON_DOOR, slots.toList(), block)
 
-fun MenuBuilder.ironOre(
+fun BaseMenuBuilder.ironOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.IRON_ORE, slots.toList(), block)
 
-fun MenuBuilder.ironTrapdoor(
+fun BaseMenuBuilder.ironTrapdoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.IRON_TRAPDOOR, slots.toList(), block)
 
-fun MenuBuilder.jackOLantern(
+fun BaseMenuBuilder.jackOLantern(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.JACK_O_LANTERN, slots.toList(), block)
 
-fun MenuBuilder.jigsaw(
+fun BaseMenuBuilder.jigsaw(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.JIGSAW, slots.toList(), block)
 
-fun MenuBuilder.jukebox(
+fun BaseMenuBuilder.jukebox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.JUKEBOX, slots.toList(), block)
 
-fun MenuBuilder.jungleButton(
+fun BaseMenuBuilder.jungleButton(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.JUNGLE_BUTTON, slots.toList(), block)
 
-fun MenuBuilder.jungleDoor(
+fun BaseMenuBuilder.jungleDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.JUNGLE_DOOR, slots.toList(), block)
 
-fun MenuBuilder.jungleFence(
+fun BaseMenuBuilder.jungleFence(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.JUNGLE_FENCE, slots.toList(), block)
 
-fun MenuBuilder.jungleFenceGate(
+fun BaseMenuBuilder.jungleFenceGate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.JUNGLE_FENCE_GATE, slots.toList(), block)
 
-fun MenuBuilder.jungleHangingSign(
+fun BaseMenuBuilder.jungleHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.JUNGLE_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.jungleLeaves(
+fun BaseMenuBuilder.jungleLeaves(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.JUNGLE_LEAVES, slots.toList(), block)
 
-fun MenuBuilder.jungleLog(
+fun BaseMenuBuilder.jungleLog(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.JUNGLE_LOG, slots.toList(), block)
 
-fun MenuBuilder.junglePlanks(
+fun BaseMenuBuilder.junglePlanks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.JUNGLE_PLANKS, slots.toList(), block)
 
-fun MenuBuilder.junglePressurePlate(
+fun BaseMenuBuilder.junglePressurePlate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.JUNGLE_PRESSURE_PLATE, slots.toList(), block)
 
-fun MenuBuilder.jungleSapling(
+fun BaseMenuBuilder.jungleSapling(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.JUNGLE_SAPLING, slots.toList(), block)
 
-fun MenuBuilder.jungleSign(
+fun BaseMenuBuilder.jungleSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.JUNGLE_SIGN, slots.toList(), block)
 
-fun MenuBuilder.jungleSlab(
+fun BaseMenuBuilder.jungleSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.JUNGLE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.jungleStairs(
+fun BaseMenuBuilder.jungleStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.JUNGLE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.jungleTrapdoor(
+fun BaseMenuBuilder.jungleTrapdoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.JUNGLE_TRAPDOOR, slots.toList(), block)
 
-fun MenuBuilder.jungleWallHangingSign(
+fun BaseMenuBuilder.jungleWallHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.JUNGLE_WALL_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.jungleWallSign(
+fun BaseMenuBuilder.jungleWallSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.JUNGLE_WALL_SIGN, slots.toList(), block)
 
-fun MenuBuilder.jungleWood(
+fun BaseMenuBuilder.jungleWood(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.JUNGLE_WOOD, slots.toList(), block)
 
-fun MenuBuilder.kelp(
+fun BaseMenuBuilder.kelp(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.KELP, slots.toList(), block)
 
-fun MenuBuilder.kelpPlant(
+fun BaseMenuBuilder.kelpPlant(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.KELP_PLANT, slots.toList(), block)
 
-fun MenuBuilder.ladder(
+fun BaseMenuBuilder.ladder(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LADDER, slots.toList(), block)
 
-fun MenuBuilder.lantern(
+fun BaseMenuBuilder.lantern(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LANTERN, slots.toList(), block)
 
-fun MenuBuilder.lapisBlock(
+fun BaseMenuBuilder.lapisBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LAPIS_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.lapisOre(
+fun BaseMenuBuilder.lapisOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LAPIS_ORE, slots.toList(), block)
 
-fun MenuBuilder.largeAmethystBud(
+fun BaseMenuBuilder.largeAmethystBud(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LARGE_AMETHYST_BUD, slots.toList(), block)
 
-fun MenuBuilder.largeFern(
+fun BaseMenuBuilder.largeFern(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LARGE_FERN, slots.toList(), block)
 
-fun MenuBuilder.lava(
+fun BaseMenuBuilder.lava(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LAVA, slots.toList(), block)
 
-fun MenuBuilder.lavaCauldron(
+fun BaseMenuBuilder.lavaCauldron(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LAVA_CAULDRON, slots.toList(), block)
 
-fun MenuBuilder.leafLitter(
+fun BaseMenuBuilder.leafLitter(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEAF_LITTER, slots.toList(), block)
 
-fun MenuBuilder.lectern(
+fun BaseMenuBuilder.lectern(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LECTERN, slots.toList(), block)
 
-fun MenuBuilder.lever(
+fun BaseMenuBuilder.lever(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEVER, slots.toList(), block)
 
-fun MenuBuilder.light(
+fun BaseMenuBuilder.light(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT, slots.toList(), block)
 
-fun MenuBuilder.lightBlueBanner(
+fun BaseMenuBuilder.lightBlueBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_BLUE_BANNER, slots.toList(), block)
 
-fun MenuBuilder.lightBlueBed(
+fun BaseMenuBuilder.lightBlueBed(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_BLUE_BED, slots.toList(), block)
 
-fun MenuBuilder.lightBlueCandle(
+fun BaseMenuBuilder.lightBlueCandle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_BLUE_CANDLE, slots.toList(), block)
 
-fun MenuBuilder.lightBlueCandleCake(
+fun BaseMenuBuilder.lightBlueCandleCake(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_BLUE_CANDLE_CAKE, slots.toList(), block)
 
-fun MenuBuilder.lightBlueCarpet(
+fun BaseMenuBuilder.lightBlueCarpet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_BLUE_CARPET, slots.toList(), block)
 
-fun MenuBuilder.lightBlueConcrete(
+fun BaseMenuBuilder.lightBlueConcrete(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_BLUE_CONCRETE, slots.toList(), block)
 
-fun MenuBuilder.lightBlueConcretePowder(
+fun BaseMenuBuilder.lightBlueConcretePowder(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_BLUE_CONCRETE_POWDER, slots.toList(), block)
 
-fun MenuBuilder.lightBlueGlazedTerracotta(
+fun BaseMenuBuilder.lightBlueGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_BLUE_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.lightBlueShulkerBox(
+fun BaseMenuBuilder.lightBlueShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_BLUE_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.lightBlueStainedGlass(
+fun BaseMenuBuilder.lightBlueStainedGlass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_BLUE_STAINED_GLASS, slots.toList(), block)
 
-fun MenuBuilder.lightBlueStainedGlassPane(
+fun BaseMenuBuilder.lightBlueStainedGlassPane(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_BLUE_STAINED_GLASS_PANE, slots.toList(), block)
 
-fun MenuBuilder.lightBlueTerracotta(
+fun BaseMenuBuilder.lightBlueTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_BLUE_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.lightBlueWallBanner(
+fun BaseMenuBuilder.lightBlueWallBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_BLUE_WALL_BANNER, slots.toList(), block)
 
-fun MenuBuilder.lightBlueWool(
+fun BaseMenuBuilder.lightBlueWool(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_BLUE_WOOL, slots.toList(), block)
 
-fun MenuBuilder.lightGrayBanner(
+fun BaseMenuBuilder.lightGrayBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_GRAY_BANNER, slots.toList(), block)
 
-fun MenuBuilder.lightGrayBed(
+fun BaseMenuBuilder.lightGrayBed(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_GRAY_BED, slots.toList(), block)
 
-fun MenuBuilder.lightGrayCandle(
+fun BaseMenuBuilder.lightGrayCandle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_GRAY_CANDLE, slots.toList(), block)
 
-fun MenuBuilder.lightGrayCandleCake(
+fun BaseMenuBuilder.lightGrayCandleCake(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_GRAY_CANDLE_CAKE, slots.toList(), block)
 
-fun MenuBuilder.lightGrayCarpet(
+fun BaseMenuBuilder.lightGrayCarpet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_GRAY_CARPET, slots.toList(), block)
 
-fun MenuBuilder.lightGrayConcrete(
+fun BaseMenuBuilder.lightGrayConcrete(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_GRAY_CONCRETE, slots.toList(), block)
 
-fun MenuBuilder.lightGrayConcretePowder(
+fun BaseMenuBuilder.lightGrayConcretePowder(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_GRAY_CONCRETE_POWDER, slots.toList(), block)
 
-fun MenuBuilder.lightGrayGlazedTerracotta(
+fun BaseMenuBuilder.lightGrayGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_GRAY_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.lightGrayShulkerBox(
+fun BaseMenuBuilder.lightGrayShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_GRAY_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.lightGrayStainedGlass(
+fun BaseMenuBuilder.lightGrayStainedGlass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_GRAY_STAINED_GLASS, slots.toList(), block)
 
-fun MenuBuilder.lightGrayStainedGlassPane(
+fun BaseMenuBuilder.lightGrayStainedGlassPane(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_GRAY_STAINED_GLASS_PANE, slots.toList(), block)
 
-fun MenuBuilder.lightGrayTerracotta(
+fun BaseMenuBuilder.lightGrayTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_GRAY_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.lightGrayWallBanner(
+fun BaseMenuBuilder.lightGrayWallBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_GRAY_WALL_BANNER, slots.toList(), block)
 
-fun MenuBuilder.lightGrayWool(
+fun BaseMenuBuilder.lightGrayWool(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_GRAY_WOOL, slots.toList(), block)
 
-fun MenuBuilder.lightWeightedPressurePlate(
+fun BaseMenuBuilder.lightWeightedPressurePlate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHT_WEIGHTED_PRESSURE_PLATE, slots.toList(), block)
 
-fun MenuBuilder.lightningRod(
+fun BaseMenuBuilder.lightningRod(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIGHTNING_ROD, slots.toList(), block)
 
-fun MenuBuilder.lilac(
+fun BaseMenuBuilder.lilac(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LILAC, slots.toList(), block)
 
-fun MenuBuilder.lilyOfTheValley(
+fun BaseMenuBuilder.lilyOfTheValley(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LILY_OF_THE_VALLEY, slots.toList(), block)
 
-fun MenuBuilder.lilyPad(
+fun BaseMenuBuilder.lilyPad(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LILY_PAD, slots.toList(), block)
 
-fun MenuBuilder.limeBanner(
+fun BaseMenuBuilder.limeBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIME_BANNER, slots.toList(), block)
 
-fun MenuBuilder.limeBed(
+fun BaseMenuBuilder.limeBed(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIME_BED, slots.toList(), block)
 
-fun MenuBuilder.limeCandle(
+fun BaseMenuBuilder.limeCandle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIME_CANDLE, slots.toList(), block)
 
-fun MenuBuilder.limeCandleCake(
+fun BaseMenuBuilder.limeCandleCake(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIME_CANDLE_CAKE, slots.toList(), block)
 
-fun MenuBuilder.limeCarpet(
+fun BaseMenuBuilder.limeCarpet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIME_CARPET, slots.toList(), block)
 
-fun MenuBuilder.limeConcrete(
+fun BaseMenuBuilder.limeConcrete(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIME_CONCRETE, slots.toList(), block)
 
-fun MenuBuilder.limeConcretePowder(
+fun BaseMenuBuilder.limeConcretePowder(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIME_CONCRETE_POWDER, slots.toList(), block)
 
-fun MenuBuilder.limeGlazedTerracotta(
+fun BaseMenuBuilder.limeGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIME_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.limeShulkerBox(
+fun BaseMenuBuilder.limeShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIME_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.limeStainedGlass(
+fun BaseMenuBuilder.limeStainedGlass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIME_STAINED_GLASS, slots.toList(), block)
 
-fun MenuBuilder.limeStainedGlassPane(
+fun BaseMenuBuilder.limeStainedGlassPane(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIME_STAINED_GLASS_PANE, slots.toList(), block)
 
-fun MenuBuilder.limeTerracotta(
+fun BaseMenuBuilder.limeTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIME_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.limeWallBanner(
+fun BaseMenuBuilder.limeWallBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIME_WALL_BANNER, slots.toList(), block)
 
-fun MenuBuilder.limeWool(
+fun BaseMenuBuilder.limeWool(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LIME_WOOL, slots.toList(), block)
 
-fun MenuBuilder.lodestone(
+fun BaseMenuBuilder.lodestone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LODESTONE, slots.toList(), block)
 
-fun MenuBuilder.loom(
+fun BaseMenuBuilder.loom(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LOOM, slots.toList(), block)
 
-fun MenuBuilder.magentaBanner(
+fun BaseMenuBuilder.magentaBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MAGENTA_BANNER, slots.toList(), block)
 
-fun MenuBuilder.magentaBed(
+fun BaseMenuBuilder.magentaBed(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MAGENTA_BED, slots.toList(), block)
 
-fun MenuBuilder.magentaCandle(
+fun BaseMenuBuilder.magentaCandle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MAGENTA_CANDLE, slots.toList(), block)
 
-fun MenuBuilder.magentaCandleCake(
+fun BaseMenuBuilder.magentaCandleCake(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MAGENTA_CANDLE_CAKE, slots.toList(), block)
 
-fun MenuBuilder.magentaCarpet(
+fun BaseMenuBuilder.magentaCarpet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MAGENTA_CARPET, slots.toList(), block)
 
-fun MenuBuilder.magentaConcrete(
+fun BaseMenuBuilder.magentaConcrete(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MAGENTA_CONCRETE, slots.toList(), block)
 
-fun MenuBuilder.magentaConcretePowder(
+fun BaseMenuBuilder.magentaConcretePowder(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MAGENTA_CONCRETE_POWDER, slots.toList(), block)
 
-fun MenuBuilder.magentaGlazedTerracotta(
+fun BaseMenuBuilder.magentaGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MAGENTA_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.magentaShulkerBox(
+fun BaseMenuBuilder.magentaShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MAGENTA_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.magentaStainedGlass(
+fun BaseMenuBuilder.magentaStainedGlass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MAGENTA_STAINED_GLASS, slots.toList(), block)
 
-fun MenuBuilder.magentaStainedGlassPane(
+fun BaseMenuBuilder.magentaStainedGlassPane(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MAGENTA_STAINED_GLASS_PANE, slots.toList(), block)
 
-fun MenuBuilder.magentaTerracotta(
+fun BaseMenuBuilder.magentaTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MAGENTA_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.magentaWallBanner(
+fun BaseMenuBuilder.magentaWallBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MAGENTA_WALL_BANNER, slots.toList(), block)
 
-fun MenuBuilder.magentaWool(
+fun BaseMenuBuilder.magentaWool(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MAGENTA_WOOL, slots.toList(), block)
 
-fun MenuBuilder.magmaBlock(
+fun BaseMenuBuilder.magmaBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MAGMA_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.mangroveButton(
+fun BaseMenuBuilder.mangroveButton(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MANGROVE_BUTTON, slots.toList(), block)
 
-fun MenuBuilder.mangroveDoor(
+fun BaseMenuBuilder.mangroveDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MANGROVE_DOOR, slots.toList(), block)
 
-fun MenuBuilder.mangroveFence(
+fun BaseMenuBuilder.mangroveFence(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MANGROVE_FENCE, slots.toList(), block)
 
-fun MenuBuilder.mangroveFenceGate(
+fun BaseMenuBuilder.mangroveFenceGate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MANGROVE_FENCE_GATE, slots.toList(), block)
 
-fun MenuBuilder.mangroveHangingSign(
+fun BaseMenuBuilder.mangroveHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MANGROVE_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.mangroveLeaves(
+fun BaseMenuBuilder.mangroveLeaves(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MANGROVE_LEAVES, slots.toList(), block)
 
-fun MenuBuilder.mangroveLog(
+fun BaseMenuBuilder.mangroveLog(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MANGROVE_LOG, slots.toList(), block)
 
-fun MenuBuilder.mangrovePlanks(
+fun BaseMenuBuilder.mangrovePlanks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MANGROVE_PLANKS, slots.toList(), block)
 
-fun MenuBuilder.mangrovePressurePlate(
+fun BaseMenuBuilder.mangrovePressurePlate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MANGROVE_PRESSURE_PLATE, slots.toList(), block)
 
-fun MenuBuilder.mangrovePropagule(
+fun BaseMenuBuilder.mangrovePropagule(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MANGROVE_PROPAGULE, slots.toList(), block)
 
-fun MenuBuilder.mangroveRoots(
+fun BaseMenuBuilder.mangroveRoots(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MANGROVE_ROOTS, slots.toList(), block)
 
-fun MenuBuilder.mangroveSign(
+fun BaseMenuBuilder.mangroveSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MANGROVE_SIGN, slots.toList(), block)
 
-fun MenuBuilder.mangroveSlab(
+fun BaseMenuBuilder.mangroveSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MANGROVE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.mangroveStairs(
+fun BaseMenuBuilder.mangroveStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MANGROVE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.mangroveTrapdoor(
+fun BaseMenuBuilder.mangroveTrapdoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MANGROVE_TRAPDOOR, slots.toList(), block)
 
-fun MenuBuilder.mangroveWallHangingSign(
+fun BaseMenuBuilder.mangroveWallHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MANGROVE_WALL_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.mangroveWallSign(
+fun BaseMenuBuilder.mangroveWallSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MANGROVE_WALL_SIGN, slots.toList(), block)
 
-fun MenuBuilder.mangroveWood(
+fun BaseMenuBuilder.mangroveWood(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MANGROVE_WOOD, slots.toList(), block)
 
-fun MenuBuilder.mediumAmethystBud(
+fun BaseMenuBuilder.mediumAmethystBud(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MEDIUM_AMETHYST_BUD, slots.toList(), block)
 
-fun MenuBuilder.melon(
+fun BaseMenuBuilder.melon(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MELON, slots.toList(), block)
 
-fun MenuBuilder.melonStem(
+fun BaseMenuBuilder.melonStem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MELON_STEM, slots.toList(), block)
 
-fun MenuBuilder.mossBlock(
+fun BaseMenuBuilder.mossBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MOSS_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.mossCarpet(
+fun BaseMenuBuilder.mossCarpet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MOSS_CARPET, slots.toList(), block)
 
-fun MenuBuilder.mossyCobblestone(
+fun BaseMenuBuilder.mossyCobblestone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MOSSY_COBBLESTONE, slots.toList(), block)
 
-fun MenuBuilder.mossyCobblestoneSlab(
+fun BaseMenuBuilder.mossyCobblestoneSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MOSSY_COBBLESTONE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.mossyCobblestoneStairs(
+fun BaseMenuBuilder.mossyCobblestoneStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MOSSY_COBBLESTONE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.mossyCobblestoneWall(
+fun BaseMenuBuilder.mossyCobblestoneWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MOSSY_COBBLESTONE_WALL, slots.toList(), block)
 
-fun MenuBuilder.mossyStoneBrickSlab(
+fun BaseMenuBuilder.mossyStoneBrickSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MOSSY_STONE_BRICK_SLAB, slots.toList(), block)
 
-fun MenuBuilder.mossyStoneBrickStairs(
+fun BaseMenuBuilder.mossyStoneBrickStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MOSSY_STONE_BRICK_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.mossyStoneBrickWall(
+fun BaseMenuBuilder.mossyStoneBrickWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MOSSY_STONE_BRICK_WALL, slots.toList(), block)
 
-fun MenuBuilder.mossyStoneBricks(
+fun BaseMenuBuilder.mossyStoneBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MOSSY_STONE_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.movingPiston(
+fun BaseMenuBuilder.movingPiston(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MOVING_PISTON, slots.toList(), block)
 
-fun MenuBuilder.mud(
+fun BaseMenuBuilder.mud(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUD, slots.toList(), block)
 
-fun MenuBuilder.mudBrickSlab(
+fun BaseMenuBuilder.mudBrickSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUD_BRICK_SLAB, slots.toList(), block)
 
-fun MenuBuilder.mudBrickStairs(
+fun BaseMenuBuilder.mudBrickStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUD_BRICK_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.mudBrickWall(
+fun BaseMenuBuilder.mudBrickWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUD_BRICK_WALL, slots.toList(), block)
 
-fun MenuBuilder.mudBricks(
+fun BaseMenuBuilder.mudBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUD_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.muddyMangroveRoots(
+fun BaseMenuBuilder.muddyMangroveRoots(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUDDY_MANGROVE_ROOTS, slots.toList(), block)
 
-fun MenuBuilder.mushroomStem(
+fun BaseMenuBuilder.mushroomStem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MUSHROOM_STEM, slots.toList(), block)
 
-fun MenuBuilder.mycelium(
+fun BaseMenuBuilder.mycelium(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.MYCELIUM, slots.toList(), block)
 
-fun MenuBuilder.netherBrickFence(
+fun BaseMenuBuilder.netherBrickFence(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHER_BRICK_FENCE, slots.toList(), block)
 
-fun MenuBuilder.netherBrickSlab(
+fun BaseMenuBuilder.netherBrickSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHER_BRICK_SLAB, slots.toList(), block)
 
-fun MenuBuilder.netherBrickStairs(
+fun BaseMenuBuilder.netherBrickStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHER_BRICK_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.netherBrickWall(
+fun BaseMenuBuilder.netherBrickWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHER_BRICK_WALL, slots.toList(), block)
 
-fun MenuBuilder.netherBricks(
+fun BaseMenuBuilder.netherBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHER_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.netherGoldOre(
+fun BaseMenuBuilder.netherGoldOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHER_GOLD_ORE, slots.toList(), block)
 
-fun MenuBuilder.netherPortal(
+fun BaseMenuBuilder.netherPortal(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHER_PORTAL, slots.toList(), block)
 
-fun MenuBuilder.netherQuartzOre(
+fun BaseMenuBuilder.netherQuartzOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHER_QUARTZ_ORE, slots.toList(), block)
 
-fun MenuBuilder.netherSprouts(
+fun BaseMenuBuilder.netherSprouts(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHER_SPROUTS, slots.toList(), block)
 
-fun MenuBuilder.netherWart(
+fun BaseMenuBuilder.netherWart(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHER_WART, slots.toList(), block)
 
-fun MenuBuilder.netherWartBlock(
+fun BaseMenuBuilder.netherWartBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHER_WART_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.netheriteBlock(
+fun BaseMenuBuilder.netheriteBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHERITE_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.netherrack(
+fun BaseMenuBuilder.netherrack(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NETHERRACK, slots.toList(), block)
 
-fun MenuBuilder.noteBlock(
+fun BaseMenuBuilder.noteBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.NOTE_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.oakButton(
+fun BaseMenuBuilder.oakButton(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OAK_BUTTON, slots.toList(), block)
 
-fun MenuBuilder.oakDoor(
+fun BaseMenuBuilder.oakDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OAK_DOOR, slots.toList(), block)
 
-fun MenuBuilder.oakFence(
+fun BaseMenuBuilder.oakFence(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OAK_FENCE, slots.toList(), block)
 
-fun MenuBuilder.oakFenceGate(
+fun BaseMenuBuilder.oakFenceGate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OAK_FENCE_GATE, slots.toList(), block)
 
-fun MenuBuilder.oakHangingSign(
+fun BaseMenuBuilder.oakHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OAK_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.oakLeaves(
+fun BaseMenuBuilder.oakLeaves(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OAK_LEAVES, slots.toList(), block)
 
-fun MenuBuilder.oakLog(
+fun BaseMenuBuilder.oakLog(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OAK_LOG, slots.toList(), block)
 
-fun MenuBuilder.oakPlanks(
+fun BaseMenuBuilder.oakPlanks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OAK_PLANKS, slots.toList(), block)
 
-fun MenuBuilder.oakPressurePlate(
+fun BaseMenuBuilder.oakPressurePlate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OAK_PRESSURE_PLATE, slots.toList(), block)
 
-fun MenuBuilder.oakSapling(
+fun BaseMenuBuilder.oakSapling(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OAK_SAPLING, slots.toList(), block)
 
-fun MenuBuilder.oakSign(
+fun BaseMenuBuilder.oakSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OAK_SIGN, slots.toList(), block)
 
-fun MenuBuilder.oakSlab(
+fun BaseMenuBuilder.oakSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OAK_SLAB, slots.toList(), block)
 
-fun MenuBuilder.oakStairs(
+fun BaseMenuBuilder.oakStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OAK_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.oakTrapdoor(
+fun BaseMenuBuilder.oakTrapdoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OAK_TRAPDOOR, slots.toList(), block)
 
-fun MenuBuilder.oakWallHangingSign(
+fun BaseMenuBuilder.oakWallHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OAK_WALL_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.oakWallSign(
+fun BaseMenuBuilder.oakWallSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OAK_WALL_SIGN, slots.toList(), block)
 
-fun MenuBuilder.oakWood(
+fun BaseMenuBuilder.oakWood(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OAK_WOOD, slots.toList(), block)
 
-fun MenuBuilder.observer(
+fun BaseMenuBuilder.observer(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OBSERVER, slots.toList(), block)
 
-fun MenuBuilder.obsidian(
+fun BaseMenuBuilder.obsidian(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OBSIDIAN, slots.toList(), block)
 
-fun MenuBuilder.ochreFroglight(
+fun BaseMenuBuilder.ochreFroglight(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OCHRE_FROGLIGHT, slots.toList(), block)
 
-fun MenuBuilder.openEyeblossom(
+fun BaseMenuBuilder.openEyeblossom(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OPEN_EYEBLOSSOM, slots.toList(), block)
 
-fun MenuBuilder.orangeBanner(
+fun BaseMenuBuilder.orangeBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ORANGE_BANNER, slots.toList(), block)
 
-fun MenuBuilder.orangeBed(
+fun BaseMenuBuilder.orangeBed(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ORANGE_BED, slots.toList(), block)
 
-fun MenuBuilder.orangeCandle(
+fun BaseMenuBuilder.orangeCandle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ORANGE_CANDLE, slots.toList(), block)
 
-fun MenuBuilder.orangeCandleCake(
+fun BaseMenuBuilder.orangeCandleCake(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ORANGE_CANDLE_CAKE, slots.toList(), block)
 
-fun MenuBuilder.orangeCarpet(
+fun BaseMenuBuilder.orangeCarpet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ORANGE_CARPET, slots.toList(), block)
 
-fun MenuBuilder.orangeConcrete(
+fun BaseMenuBuilder.orangeConcrete(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ORANGE_CONCRETE, slots.toList(), block)
 
-fun MenuBuilder.orangeConcretePowder(
+fun BaseMenuBuilder.orangeConcretePowder(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ORANGE_CONCRETE_POWDER, slots.toList(), block)
 
-fun MenuBuilder.orangeGlazedTerracotta(
+fun BaseMenuBuilder.orangeGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ORANGE_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.orangeShulkerBox(
+fun BaseMenuBuilder.orangeShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ORANGE_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.orangeStainedGlass(
+fun BaseMenuBuilder.orangeStainedGlass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ORANGE_STAINED_GLASS, slots.toList(), block)
 
-fun MenuBuilder.orangeStainedGlassPane(
+fun BaseMenuBuilder.orangeStainedGlassPane(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ORANGE_STAINED_GLASS_PANE, slots.toList(), block)
 
-fun MenuBuilder.orangeTerracotta(
+fun BaseMenuBuilder.orangeTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ORANGE_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.orangeTulip(
+fun BaseMenuBuilder.orangeTulip(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ORANGE_TULIP, slots.toList(), block)
 
-fun MenuBuilder.orangeWallBanner(
+fun BaseMenuBuilder.orangeWallBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ORANGE_WALL_BANNER, slots.toList(), block)
 
-fun MenuBuilder.orangeWool(
+fun BaseMenuBuilder.orangeWool(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ORANGE_WOOL, slots.toList(), block)
 
-fun MenuBuilder.oxeyeDaisy(
+fun BaseMenuBuilder.oxeyeDaisy(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OXEYE_DAISY, slots.toList(), block)
 
-fun MenuBuilder.oxidizedChiseledCopper(
+fun BaseMenuBuilder.oxidizedChiseledCopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OXIDIZED_CHISELED_COPPER, slots.toList(), block)
 
-fun MenuBuilder.oxidizedCopper(
+fun BaseMenuBuilder.oxidizedCopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OXIDIZED_COPPER, slots.toList(), block)
 
-fun MenuBuilder.oxidizedCopperBulb(
+fun BaseMenuBuilder.oxidizedCopperBulb(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OXIDIZED_COPPER_BULB, slots.toList(), block)
 
-fun MenuBuilder.oxidizedCopperDoor(
+fun BaseMenuBuilder.oxidizedCopperDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OXIDIZED_COPPER_DOOR, slots.toList(), block)
 
-fun MenuBuilder.oxidizedCopperGrate(
+fun BaseMenuBuilder.oxidizedCopperGrate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OXIDIZED_COPPER_GRATE, slots.toList(), block)
 
-fun MenuBuilder.oxidizedCopperTrapdoor(
+fun BaseMenuBuilder.oxidizedCopperTrapdoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OXIDIZED_COPPER_TRAPDOOR, slots.toList(), block)
 
-fun MenuBuilder.oxidizedCutCopper(
+fun BaseMenuBuilder.oxidizedCutCopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OXIDIZED_CUT_COPPER, slots.toList(), block)
 
-fun MenuBuilder.oxidizedCutCopperSlab(
+fun BaseMenuBuilder.oxidizedCutCopperSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OXIDIZED_CUT_COPPER_SLAB, slots.toList(), block)
 
-fun MenuBuilder.oxidizedCutCopperStairs(
+fun BaseMenuBuilder.oxidizedCutCopperStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.OXIDIZED_CUT_COPPER_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.packedIce(
+fun BaseMenuBuilder.packedIce(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PACKED_ICE, slots.toList(), block)
 
-fun MenuBuilder.packedMud(
+fun BaseMenuBuilder.packedMud(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PACKED_MUD, slots.toList(), block)
 
-fun MenuBuilder.paleHangingMoss(
+fun BaseMenuBuilder.paleHangingMoss(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PALE_HANGING_MOSS, slots.toList(), block)
 
-fun MenuBuilder.paleMossBlock(
+fun BaseMenuBuilder.paleMossBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PALE_MOSS_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.paleMossCarpet(
+fun BaseMenuBuilder.paleMossCarpet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PALE_MOSS_CARPET, slots.toList(), block)
 
-fun MenuBuilder.paleOakButton(
+fun BaseMenuBuilder.paleOakButton(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PALE_OAK_BUTTON, slots.toList(), block)
 
-fun MenuBuilder.paleOakDoor(
+fun BaseMenuBuilder.paleOakDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PALE_OAK_DOOR, slots.toList(), block)
 
-fun MenuBuilder.paleOakFence(
+fun BaseMenuBuilder.paleOakFence(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PALE_OAK_FENCE, slots.toList(), block)
 
-fun MenuBuilder.paleOakFenceGate(
+fun BaseMenuBuilder.paleOakFenceGate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PALE_OAK_FENCE_GATE, slots.toList(), block)
 
-fun MenuBuilder.paleOakHangingSign(
+fun BaseMenuBuilder.paleOakHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PALE_OAK_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.paleOakLeaves(
+fun BaseMenuBuilder.paleOakLeaves(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PALE_OAK_LEAVES, slots.toList(), block)
 
-fun MenuBuilder.paleOakLog(
+fun BaseMenuBuilder.paleOakLog(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PALE_OAK_LOG, slots.toList(), block)
 
-fun MenuBuilder.paleOakPlanks(
+fun BaseMenuBuilder.paleOakPlanks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PALE_OAK_PLANKS, slots.toList(), block)
 
-fun MenuBuilder.paleOakPressurePlate(
+fun BaseMenuBuilder.paleOakPressurePlate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PALE_OAK_PRESSURE_PLATE, slots.toList(), block)
 
-fun MenuBuilder.paleOakSapling(
+fun BaseMenuBuilder.paleOakSapling(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PALE_OAK_SAPLING, slots.toList(), block)
 
-fun MenuBuilder.paleOakSign(
+fun BaseMenuBuilder.paleOakSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PALE_OAK_SIGN, slots.toList(), block)
 
-fun MenuBuilder.paleOakSlab(
+fun BaseMenuBuilder.paleOakSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PALE_OAK_SLAB, slots.toList(), block)
 
-fun MenuBuilder.paleOakStairs(
+fun BaseMenuBuilder.paleOakStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PALE_OAK_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.paleOakTrapdoor(
+fun BaseMenuBuilder.paleOakTrapdoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PALE_OAK_TRAPDOOR, slots.toList(), block)
 
-fun MenuBuilder.paleOakWallHangingSign(
+fun BaseMenuBuilder.paleOakWallHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PALE_OAK_WALL_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.paleOakWallSign(
+fun BaseMenuBuilder.paleOakWallSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PALE_OAK_WALL_SIGN, slots.toList(), block)
 
-fun MenuBuilder.paleOakWood(
+fun BaseMenuBuilder.paleOakWood(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PALE_OAK_WOOD, slots.toList(), block)
 
-fun MenuBuilder.pearlescentFroglight(
+fun BaseMenuBuilder.pearlescentFroglight(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PEARLESCENT_FROGLIGHT, slots.toList(), block)
 
-fun MenuBuilder.peony(
+fun BaseMenuBuilder.peony(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PEONY, slots.toList(), block)
 
-fun MenuBuilder.petrifiedOakSlab(
+fun BaseMenuBuilder.petrifiedOakSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PETRIFIED_OAK_SLAB, slots.toList(), block)
 
-fun MenuBuilder.piglinHead(
+fun BaseMenuBuilder.piglinHead(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PIGLIN_HEAD, slots.toList(), block)
 
-fun MenuBuilder.piglinWallHead(
+fun BaseMenuBuilder.piglinWallHead(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PIGLIN_WALL_HEAD, slots.toList(), block)
 
-fun MenuBuilder.pinkBanner(
+fun BaseMenuBuilder.pinkBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PINK_BANNER, slots.toList(), block)
 
-fun MenuBuilder.pinkBed(
+fun BaseMenuBuilder.pinkBed(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PINK_BED, slots.toList(), block)
 
-fun MenuBuilder.pinkCandle(
+fun BaseMenuBuilder.pinkCandle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PINK_CANDLE, slots.toList(), block)
 
-fun MenuBuilder.pinkCandleCake(
+fun BaseMenuBuilder.pinkCandleCake(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PINK_CANDLE_CAKE, slots.toList(), block)
 
-fun MenuBuilder.pinkCarpet(
+fun BaseMenuBuilder.pinkCarpet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PINK_CARPET, slots.toList(), block)
 
-fun MenuBuilder.pinkConcrete(
+fun BaseMenuBuilder.pinkConcrete(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PINK_CONCRETE, slots.toList(), block)
 
-fun MenuBuilder.pinkConcretePowder(
+fun BaseMenuBuilder.pinkConcretePowder(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PINK_CONCRETE_POWDER, slots.toList(), block)
 
-fun MenuBuilder.pinkGlazedTerracotta(
+fun BaseMenuBuilder.pinkGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PINK_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.pinkPetals(
+fun BaseMenuBuilder.pinkPetals(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PINK_PETALS, slots.toList(), block)
 
-fun MenuBuilder.pinkShulkerBox(
+fun BaseMenuBuilder.pinkShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PINK_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.pinkStainedGlass(
+fun BaseMenuBuilder.pinkStainedGlass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PINK_STAINED_GLASS, slots.toList(), block)
 
-fun MenuBuilder.pinkStainedGlassPane(
+fun BaseMenuBuilder.pinkStainedGlassPane(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PINK_STAINED_GLASS_PANE, slots.toList(), block)
 
-fun MenuBuilder.pinkTerracotta(
+fun BaseMenuBuilder.pinkTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PINK_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.pinkTulip(
+fun BaseMenuBuilder.pinkTulip(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PINK_TULIP, slots.toList(), block)
 
-fun MenuBuilder.pinkWallBanner(
+fun BaseMenuBuilder.pinkWallBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PINK_WALL_BANNER, slots.toList(), block)
 
-fun MenuBuilder.pinkWool(
+fun BaseMenuBuilder.pinkWool(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PINK_WOOL, slots.toList(), block)
 
-fun MenuBuilder.piston(
+fun BaseMenuBuilder.piston(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PISTON, slots.toList(), block)
 
-fun MenuBuilder.pistonHead(
+fun BaseMenuBuilder.pistonHead(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PISTON_HEAD, slots.toList(), block)
 
-fun MenuBuilder.pitcherCrop(
+fun BaseMenuBuilder.pitcherCrop(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PITCHER_CROP, slots.toList(), block)
 
-fun MenuBuilder.pitcherPlant(
+fun BaseMenuBuilder.pitcherPlant(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PITCHER_PLANT, slots.toList(), block)
 
-fun MenuBuilder.playerHead(
+fun BaseMenuBuilder.playerHead(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PLAYER_HEAD, slots.toList(), block)
 
-fun MenuBuilder.playerWallHead(
+fun BaseMenuBuilder.playerWallHead(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PLAYER_WALL_HEAD, slots.toList(), block)
 
-fun MenuBuilder.podzol(
+fun BaseMenuBuilder.podzol(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PODZOL, slots.toList(), block)
 
-fun MenuBuilder.pointedDripstone(
+fun BaseMenuBuilder.pointedDripstone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POINTED_DRIPSTONE, slots.toList(), block)
 
-fun MenuBuilder.polishedAndesite(
+fun BaseMenuBuilder.polishedAndesite(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_ANDESITE, slots.toList(), block)
 
-fun MenuBuilder.polishedAndesiteSlab(
+fun BaseMenuBuilder.polishedAndesiteSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_ANDESITE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.polishedAndesiteStairs(
+fun BaseMenuBuilder.polishedAndesiteStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_ANDESITE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.polishedBasalt(
+fun BaseMenuBuilder.polishedBasalt(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_BASALT, slots.toList(), block)
 
-fun MenuBuilder.polishedBlackstone(
+fun BaseMenuBuilder.polishedBlackstone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_BLACKSTONE, slots.toList(), block)
 
-fun MenuBuilder.polishedBlackstoneBrickSlab(
+fun BaseMenuBuilder.polishedBlackstoneBrickSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_BLACKSTONE_BRICK_SLAB, slots.toList(), block)
 
-fun MenuBuilder.polishedBlackstoneBrickStairs(
+fun BaseMenuBuilder.polishedBlackstoneBrickStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_BLACKSTONE_BRICK_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.polishedBlackstoneBrickWall(
+fun BaseMenuBuilder.polishedBlackstoneBrickWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_BLACKSTONE_BRICK_WALL, slots.toList(), block)
 
-fun MenuBuilder.polishedBlackstoneBricks(
+fun BaseMenuBuilder.polishedBlackstoneBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_BLACKSTONE_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.polishedBlackstoneButton(
+fun BaseMenuBuilder.polishedBlackstoneButton(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_BLACKSTONE_BUTTON, slots.toList(), block)
 
-fun MenuBuilder.polishedBlackstonePressurePlate(
+fun BaseMenuBuilder.polishedBlackstonePressurePlate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_BLACKSTONE_PRESSURE_PLATE, slots.toList(), block)
 
-fun MenuBuilder.polishedBlackstoneSlab(
+fun BaseMenuBuilder.polishedBlackstoneSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_BLACKSTONE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.polishedBlackstoneStairs(
+fun BaseMenuBuilder.polishedBlackstoneStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_BLACKSTONE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.polishedBlackstoneWall(
+fun BaseMenuBuilder.polishedBlackstoneWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_BLACKSTONE_WALL, slots.toList(), block)
 
-fun MenuBuilder.polishedDeepslate(
+fun BaseMenuBuilder.polishedDeepslate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_DEEPSLATE, slots.toList(), block)
 
-fun MenuBuilder.polishedDeepslateSlab(
+fun BaseMenuBuilder.polishedDeepslateSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_DEEPSLATE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.polishedDeepslateStairs(
+fun BaseMenuBuilder.polishedDeepslateStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_DEEPSLATE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.polishedDeepslateWall(
+fun BaseMenuBuilder.polishedDeepslateWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_DEEPSLATE_WALL, slots.toList(), block)
 
-fun MenuBuilder.polishedDiorite(
+fun BaseMenuBuilder.polishedDiorite(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_DIORITE, slots.toList(), block)
 
-fun MenuBuilder.polishedDioriteSlab(
+fun BaseMenuBuilder.polishedDioriteSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_DIORITE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.polishedDioriteStairs(
+fun BaseMenuBuilder.polishedDioriteStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_DIORITE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.polishedGranite(
+fun BaseMenuBuilder.polishedGranite(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_GRANITE, slots.toList(), block)
 
-fun MenuBuilder.polishedGraniteSlab(
+fun BaseMenuBuilder.polishedGraniteSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_GRANITE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.polishedGraniteStairs(
+fun BaseMenuBuilder.polishedGraniteStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_GRANITE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.polishedTuff(
+fun BaseMenuBuilder.polishedTuff(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_TUFF, slots.toList(), block)
 
-fun MenuBuilder.polishedTuffSlab(
+fun BaseMenuBuilder.polishedTuffSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_TUFF_SLAB, slots.toList(), block)
 
-fun MenuBuilder.polishedTuffStairs(
+fun BaseMenuBuilder.polishedTuffStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_TUFF_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.polishedTuffWall(
+fun BaseMenuBuilder.polishedTuffWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POLISHED_TUFF_WALL, slots.toList(), block)
 
-fun MenuBuilder.poppy(
+fun BaseMenuBuilder.poppy(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POPPY, slots.toList(), block)
 
-fun MenuBuilder.potatoes(
+fun BaseMenuBuilder.potatoes(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTATOES, slots.toList(), block)
 
-fun MenuBuilder.pottedAcaciaSapling(
+fun BaseMenuBuilder.pottedAcaciaSapling(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_ACACIA_SAPLING, slots.toList(), block)
 
-fun MenuBuilder.pottedAllium(
+fun BaseMenuBuilder.pottedAllium(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_ALLIUM, slots.toList(), block)
 
-fun MenuBuilder.pottedAzaleaBush(
+fun BaseMenuBuilder.pottedAzaleaBush(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_AZALEA_BUSH, slots.toList(), block)
 
-fun MenuBuilder.pottedAzureBluet(
+fun BaseMenuBuilder.pottedAzureBluet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_AZURE_BLUET, slots.toList(), block)
 
-fun MenuBuilder.pottedBamboo(
+fun BaseMenuBuilder.pottedBamboo(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_BAMBOO, slots.toList(), block)
 
-fun MenuBuilder.pottedBirchSapling(
+fun BaseMenuBuilder.pottedBirchSapling(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_BIRCH_SAPLING, slots.toList(), block)
 
-fun MenuBuilder.pottedBlueOrchid(
+fun BaseMenuBuilder.pottedBlueOrchid(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_BLUE_ORCHID, slots.toList(), block)
 
-fun MenuBuilder.pottedBrownMushroom(
+fun BaseMenuBuilder.pottedBrownMushroom(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_BROWN_MUSHROOM, slots.toList(), block)
 
-fun MenuBuilder.pottedCactus(
+fun BaseMenuBuilder.pottedCactus(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_CACTUS, slots.toList(), block)
 
-fun MenuBuilder.pottedCherrySapling(
+fun BaseMenuBuilder.pottedCherrySapling(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_CHERRY_SAPLING, slots.toList(), block)
 
-fun MenuBuilder.pottedClosedEyeblossom(
+fun BaseMenuBuilder.pottedClosedEyeblossom(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_CLOSED_EYEBLOSSOM, slots.toList(), block)
 
-fun MenuBuilder.pottedCornflower(
+fun BaseMenuBuilder.pottedCornflower(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_CORNFLOWER, slots.toList(), block)
 
-fun MenuBuilder.pottedCrimsonFungus(
+fun BaseMenuBuilder.pottedCrimsonFungus(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_CRIMSON_FUNGUS, slots.toList(), block)
 
-fun MenuBuilder.pottedCrimsonRoots(
+fun BaseMenuBuilder.pottedCrimsonRoots(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_CRIMSON_ROOTS, slots.toList(), block)
 
-fun MenuBuilder.pottedDandelion(
+fun BaseMenuBuilder.pottedDandelion(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_DANDELION, slots.toList(), block)
 
-fun MenuBuilder.pottedDarkOakSapling(
+fun BaseMenuBuilder.pottedDarkOakSapling(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_DARK_OAK_SAPLING, slots.toList(), block)
 
-fun MenuBuilder.pottedDeadBush(
+fun BaseMenuBuilder.pottedDeadBush(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_DEAD_BUSH, slots.toList(), block)
 
-fun MenuBuilder.pottedFern(
+fun BaseMenuBuilder.pottedFern(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_FERN, slots.toList(), block)
 
-fun MenuBuilder.pottedFloweringAzaleaBush(
+fun BaseMenuBuilder.pottedFloweringAzaleaBush(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_FLOWERING_AZALEA_BUSH, slots.toList(), block)
 
-fun MenuBuilder.pottedJungleSapling(
+fun BaseMenuBuilder.pottedJungleSapling(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_JUNGLE_SAPLING, slots.toList(), block)
 
-fun MenuBuilder.pottedLilyOfTheValley(
+fun BaseMenuBuilder.pottedLilyOfTheValley(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_LILY_OF_THE_VALLEY, slots.toList(), block)
 
-fun MenuBuilder.pottedMangrovePropagule(
+fun BaseMenuBuilder.pottedMangrovePropagule(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_MANGROVE_PROPAGULE, slots.toList(), block)
 
-fun MenuBuilder.pottedOakSapling(
+fun BaseMenuBuilder.pottedOakSapling(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_OAK_SAPLING, slots.toList(), block)
 
-fun MenuBuilder.pottedOpenEyeblossom(
+fun BaseMenuBuilder.pottedOpenEyeblossom(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_OPEN_EYEBLOSSOM, slots.toList(), block)
 
-fun MenuBuilder.pottedOrangeTulip(
+fun BaseMenuBuilder.pottedOrangeTulip(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_ORANGE_TULIP, slots.toList(), block)
 
-fun MenuBuilder.pottedOxeyeDaisy(
+fun BaseMenuBuilder.pottedOxeyeDaisy(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_OXEYE_DAISY, slots.toList(), block)
 
-fun MenuBuilder.pottedPaleOakSapling(
+fun BaseMenuBuilder.pottedPaleOakSapling(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_PALE_OAK_SAPLING, slots.toList(), block)
 
-fun MenuBuilder.pottedPinkTulip(
+fun BaseMenuBuilder.pottedPinkTulip(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_PINK_TULIP, slots.toList(), block)
 
-fun MenuBuilder.pottedPoppy(
+fun BaseMenuBuilder.pottedPoppy(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_POPPY, slots.toList(), block)
 
-fun MenuBuilder.pottedRedMushroom(
+fun BaseMenuBuilder.pottedRedMushroom(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_RED_MUSHROOM, slots.toList(), block)
 
-fun MenuBuilder.pottedRedTulip(
+fun BaseMenuBuilder.pottedRedTulip(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_RED_TULIP, slots.toList(), block)
 
-fun MenuBuilder.pottedSpruceSapling(
+fun BaseMenuBuilder.pottedSpruceSapling(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_SPRUCE_SAPLING, slots.toList(), block)
 
-fun MenuBuilder.pottedTorchflower(
+fun BaseMenuBuilder.pottedTorchflower(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_TORCHFLOWER, slots.toList(), block)
 
-fun MenuBuilder.pottedWarpedFungus(
+fun BaseMenuBuilder.pottedWarpedFungus(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_WARPED_FUNGUS, slots.toList(), block)
 
-fun MenuBuilder.pottedWarpedRoots(
+fun BaseMenuBuilder.pottedWarpedRoots(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_WARPED_ROOTS, slots.toList(), block)
 
-fun MenuBuilder.pottedWhiteTulip(
+fun BaseMenuBuilder.pottedWhiteTulip(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_WHITE_TULIP, slots.toList(), block)
 
-fun MenuBuilder.pottedWitherRose(
+fun BaseMenuBuilder.pottedWitherRose(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POTTED_WITHER_ROSE, slots.toList(), block)
 
-fun MenuBuilder.powderSnow(
+fun BaseMenuBuilder.powderSnow(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POWDER_SNOW, slots.toList(), block)
 
-fun MenuBuilder.powderSnowCauldron(
+fun BaseMenuBuilder.powderSnowCauldron(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POWDER_SNOW_CAULDRON, slots.toList(), block)
 
-fun MenuBuilder.poweredRail(
+fun BaseMenuBuilder.poweredRail(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.POWERED_RAIL, slots.toList(), block)
 
-fun MenuBuilder.prismarine(
+fun BaseMenuBuilder.prismarine(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PRISMARINE, slots.toList(), block)
 
-fun MenuBuilder.prismarineBrickSlab(
+fun BaseMenuBuilder.prismarineBrickSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PRISMARINE_BRICK_SLAB, slots.toList(), block)
 
-fun MenuBuilder.prismarineBrickStairs(
+fun BaseMenuBuilder.prismarineBrickStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PRISMARINE_BRICK_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.prismarineBricks(
+fun BaseMenuBuilder.prismarineBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PRISMARINE_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.prismarineSlab(
+fun BaseMenuBuilder.prismarineSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PRISMARINE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.prismarineStairs(
+fun BaseMenuBuilder.prismarineStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PRISMARINE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.prismarineWall(
+fun BaseMenuBuilder.prismarineWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PRISMARINE_WALL, slots.toList(), block)
 
-fun MenuBuilder.pumpkin(
+fun BaseMenuBuilder.pumpkin(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PUMPKIN, slots.toList(), block)
 
-fun MenuBuilder.pumpkinStem(
+fun BaseMenuBuilder.pumpkinStem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PUMPKIN_STEM, slots.toList(), block)
 
-fun MenuBuilder.purpleBanner(
+fun BaseMenuBuilder.purpleBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PURPLE_BANNER, slots.toList(), block)
 
-fun MenuBuilder.purpleBed(
+fun BaseMenuBuilder.purpleBed(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PURPLE_BED, slots.toList(), block)
 
-fun MenuBuilder.purpleCandle(
+fun BaseMenuBuilder.purpleCandle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PURPLE_CANDLE, slots.toList(), block)
 
-fun MenuBuilder.purpleCandleCake(
+fun BaseMenuBuilder.purpleCandleCake(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PURPLE_CANDLE_CAKE, slots.toList(), block)
 
-fun MenuBuilder.purpleCarpet(
+fun BaseMenuBuilder.purpleCarpet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PURPLE_CARPET, slots.toList(), block)
 
-fun MenuBuilder.purpleConcrete(
+fun BaseMenuBuilder.purpleConcrete(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PURPLE_CONCRETE, slots.toList(), block)
 
-fun MenuBuilder.purpleConcretePowder(
+fun BaseMenuBuilder.purpleConcretePowder(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PURPLE_CONCRETE_POWDER, slots.toList(), block)
 
-fun MenuBuilder.purpleGlazedTerracotta(
+fun BaseMenuBuilder.purpleGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PURPLE_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.purpleShulkerBox(
+fun BaseMenuBuilder.purpleShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PURPLE_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.purpleStainedGlass(
+fun BaseMenuBuilder.purpleStainedGlass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PURPLE_STAINED_GLASS, slots.toList(), block)
 
-fun MenuBuilder.purpleStainedGlassPane(
+fun BaseMenuBuilder.purpleStainedGlassPane(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PURPLE_STAINED_GLASS_PANE, slots.toList(), block)
 
-fun MenuBuilder.purpleTerracotta(
+fun BaseMenuBuilder.purpleTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PURPLE_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.purpleWallBanner(
+fun BaseMenuBuilder.purpleWallBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PURPLE_WALL_BANNER, slots.toList(), block)
 
-fun MenuBuilder.purpleWool(
+fun BaseMenuBuilder.purpleWool(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PURPLE_WOOL, slots.toList(), block)
 
-fun MenuBuilder.purpurBlock(
+fun BaseMenuBuilder.purpurBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PURPUR_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.purpurPillar(
+fun BaseMenuBuilder.purpurPillar(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PURPUR_PILLAR, slots.toList(), block)
 
-fun MenuBuilder.purpurSlab(
+fun BaseMenuBuilder.purpurSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PURPUR_SLAB, slots.toList(), block)
 
-fun MenuBuilder.purpurStairs(
+fun BaseMenuBuilder.purpurStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.PURPUR_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.quartzBlock(
+fun BaseMenuBuilder.quartzBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.QUARTZ_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.quartzBricks(
+fun BaseMenuBuilder.quartzBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.QUARTZ_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.quartzPillar(
+fun BaseMenuBuilder.quartzPillar(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.QUARTZ_PILLAR, slots.toList(), block)
 
-fun MenuBuilder.quartzSlab(
+fun BaseMenuBuilder.quartzSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.QUARTZ_SLAB, slots.toList(), block)
 
-fun MenuBuilder.quartzStairs(
+fun BaseMenuBuilder.quartzStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.QUARTZ_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.rail(
+fun BaseMenuBuilder.rail(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RAIL, slots.toList(), block)
 
-fun MenuBuilder.rawCopperBlock(
+fun BaseMenuBuilder.rawCopperBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RAW_COPPER_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.rawGoldBlock(
+fun BaseMenuBuilder.rawGoldBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RAW_GOLD_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.rawIronBlock(
+fun BaseMenuBuilder.rawIronBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RAW_IRON_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.redBanner(
+fun BaseMenuBuilder.redBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_BANNER, slots.toList(), block)
 
-fun MenuBuilder.redBed(
+fun BaseMenuBuilder.redBed(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_BED, slots.toList(), block)
 
-fun MenuBuilder.redCandle(
+fun BaseMenuBuilder.redCandle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_CANDLE, slots.toList(), block)
 
-fun MenuBuilder.redCandleCake(
+fun BaseMenuBuilder.redCandleCake(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_CANDLE_CAKE, slots.toList(), block)
 
-fun MenuBuilder.redCarpet(
+fun BaseMenuBuilder.redCarpet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_CARPET, slots.toList(), block)
 
-fun MenuBuilder.redConcrete(
+fun BaseMenuBuilder.redConcrete(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_CONCRETE, slots.toList(), block)
 
-fun MenuBuilder.redConcretePowder(
+fun BaseMenuBuilder.redConcretePowder(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_CONCRETE_POWDER, slots.toList(), block)
 
-fun MenuBuilder.redGlazedTerracotta(
+fun BaseMenuBuilder.redGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.redMushroom(
+fun BaseMenuBuilder.redMushroom(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_MUSHROOM, slots.toList(), block)
 
-fun MenuBuilder.redMushroomBlock(
+fun BaseMenuBuilder.redMushroomBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_MUSHROOM_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.redNetherBrickSlab(
+fun BaseMenuBuilder.redNetherBrickSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_NETHER_BRICK_SLAB, slots.toList(), block)
 
-fun MenuBuilder.redNetherBrickStairs(
+fun BaseMenuBuilder.redNetherBrickStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_NETHER_BRICK_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.redNetherBrickWall(
+fun BaseMenuBuilder.redNetherBrickWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_NETHER_BRICK_WALL, slots.toList(), block)
 
-fun MenuBuilder.redNetherBricks(
+fun BaseMenuBuilder.redNetherBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_NETHER_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.redSand(
+fun BaseMenuBuilder.redSand(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_SAND, slots.toList(), block)
 
-fun MenuBuilder.redSandstone(
+fun BaseMenuBuilder.redSandstone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_SANDSTONE, slots.toList(), block)
 
-fun MenuBuilder.redSandstoneSlab(
+fun BaseMenuBuilder.redSandstoneSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_SANDSTONE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.redSandstoneStairs(
+fun BaseMenuBuilder.redSandstoneStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_SANDSTONE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.redSandstoneWall(
+fun BaseMenuBuilder.redSandstoneWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_SANDSTONE_WALL, slots.toList(), block)
 
-fun MenuBuilder.redShulkerBox(
+fun BaseMenuBuilder.redShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.redStainedGlass(
+fun BaseMenuBuilder.redStainedGlass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_STAINED_GLASS, slots.toList(), block)
 
-fun MenuBuilder.redStainedGlassPane(
+fun BaseMenuBuilder.redStainedGlassPane(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_STAINED_GLASS_PANE, slots.toList(), block)
 
-fun MenuBuilder.redTerracotta(
+fun BaseMenuBuilder.redTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.redTulip(
+fun BaseMenuBuilder.redTulip(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_TULIP, slots.toList(), block)
 
-fun MenuBuilder.redWallBanner(
+fun BaseMenuBuilder.redWallBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_WALL_BANNER, slots.toList(), block)
 
-fun MenuBuilder.redWool(
+fun BaseMenuBuilder.redWool(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RED_WOOL, slots.toList(), block)
 
-fun MenuBuilder.redstoneBlock(
+fun BaseMenuBuilder.redstoneBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.REDSTONE_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.redstoneLamp(
+fun BaseMenuBuilder.redstoneLamp(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.REDSTONE_LAMP, slots.toList(), block)
 
-fun MenuBuilder.redstoneOre(
+fun BaseMenuBuilder.redstoneOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.REDSTONE_ORE, slots.toList(), block)
 
-fun MenuBuilder.redstoneTorch(
+fun BaseMenuBuilder.redstoneTorch(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.REDSTONE_TORCH, slots.toList(), block)
 
-fun MenuBuilder.redstoneWallTorch(
+fun BaseMenuBuilder.redstoneWallTorch(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.REDSTONE_WALL_TORCH, slots.toList(), block)
 
-fun MenuBuilder.redstoneWire(
+fun BaseMenuBuilder.redstoneWire(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.REDSTONE_WIRE, slots.toList(), block)
 
-fun MenuBuilder.reinforcedDeepslate(
+fun BaseMenuBuilder.reinforcedDeepslate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.REINFORCED_DEEPSLATE, slots.toList(), block)
 
-fun MenuBuilder.repeater(
+fun BaseMenuBuilder.repeater(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.REPEATER, slots.toList(), block)
 
-fun MenuBuilder.repeatingCommandBlock(
+fun BaseMenuBuilder.repeatingCommandBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.REPEATING_COMMAND_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.resinBlock(
+fun BaseMenuBuilder.resinBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RESIN_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.resinBrickSlab(
+fun BaseMenuBuilder.resinBrickSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RESIN_BRICK_SLAB, slots.toList(), block)
 
-fun MenuBuilder.resinBrickStairs(
+fun BaseMenuBuilder.resinBrickStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RESIN_BRICK_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.resinBrickWall(
+fun BaseMenuBuilder.resinBrickWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RESIN_BRICK_WALL, slots.toList(), block)
 
-fun MenuBuilder.resinBricks(
+fun BaseMenuBuilder.resinBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RESIN_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.resinClump(
+fun BaseMenuBuilder.resinClump(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RESIN_CLUMP, slots.toList(), block)
 
-fun MenuBuilder.respawnAnchor(
+fun BaseMenuBuilder.respawnAnchor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.RESPAWN_ANCHOR, slots.toList(), block)
 
-fun MenuBuilder.rootedDirt(
+fun BaseMenuBuilder.rootedDirt(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ROOTED_DIRT, slots.toList(), block)
 
-fun MenuBuilder.roseBush(
+fun BaseMenuBuilder.roseBush(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ROSE_BUSH, slots.toList(), block)
 
-fun MenuBuilder.sand(
+fun BaseMenuBuilder.sand(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SAND, slots.toList(), block)
 
-fun MenuBuilder.sandstone(
+fun BaseMenuBuilder.sandstone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SANDSTONE, slots.toList(), block)
 
-fun MenuBuilder.sandstoneSlab(
+fun BaseMenuBuilder.sandstoneSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SANDSTONE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.sandstoneStairs(
+fun BaseMenuBuilder.sandstoneStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SANDSTONE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.sandstoneWall(
+fun BaseMenuBuilder.sandstoneWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SANDSTONE_WALL, slots.toList(), block)
 
-fun MenuBuilder.scaffolding(
+fun BaseMenuBuilder.scaffolding(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SCAFFOLDING, slots.toList(), block)
 
-fun MenuBuilder.sculk(
+fun BaseMenuBuilder.sculk(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SCULK, slots.toList(), block)
 
-fun MenuBuilder.sculkCatalyst(
+fun BaseMenuBuilder.sculkCatalyst(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SCULK_CATALYST, slots.toList(), block)
 
-fun MenuBuilder.sculkSensor(
+fun BaseMenuBuilder.sculkSensor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SCULK_SENSOR, slots.toList(), block)
 
-fun MenuBuilder.sculkShrieker(
+fun BaseMenuBuilder.sculkShrieker(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SCULK_SHRIEKER, slots.toList(), block)
 
-fun MenuBuilder.sculkVein(
+fun BaseMenuBuilder.sculkVein(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SCULK_VEIN, slots.toList(), block)
 
-fun MenuBuilder.seaLantern(
+fun BaseMenuBuilder.seaLantern(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SEA_LANTERN, slots.toList(), block)
 
-fun MenuBuilder.seaPickle(
+fun BaseMenuBuilder.seaPickle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SEA_PICKLE, slots.toList(), block)
 
-fun MenuBuilder.seagrass(
+fun BaseMenuBuilder.seagrass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SEAGRASS, slots.toList(), block)
 
-fun MenuBuilder.shortDryGrass(
+fun BaseMenuBuilder.shortDryGrass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SHORT_DRY_GRASS, slots.toList(), block)
 
-fun MenuBuilder.shortGrass(
+fun BaseMenuBuilder.shortGrass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SHORT_GRASS, slots.toList(), block)
 
-fun MenuBuilder.shroomlight(
+fun BaseMenuBuilder.shroomlight(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SHROOMLIGHT, slots.toList(), block)
 
-fun MenuBuilder.shulkerBox(
+fun BaseMenuBuilder.shulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.skeletonSkull(
+fun BaseMenuBuilder.skeletonSkull(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SKELETON_SKULL, slots.toList(), block)
 
-fun MenuBuilder.skeletonWallSkull(
+fun BaseMenuBuilder.skeletonWallSkull(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SKELETON_WALL_SKULL, slots.toList(), block)
 
-fun MenuBuilder.slimeBlock(
+fun BaseMenuBuilder.slimeBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SLIME_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.smallAmethystBud(
+fun BaseMenuBuilder.smallAmethystBud(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SMALL_AMETHYST_BUD, slots.toList(), block)
 
-fun MenuBuilder.smallDripleaf(
+fun BaseMenuBuilder.smallDripleaf(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SMALL_DRIPLEAF, slots.toList(), block)
 
-fun MenuBuilder.smithingTable(
+fun BaseMenuBuilder.smithingTable(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SMITHING_TABLE, slots.toList(), block)
 
-fun MenuBuilder.smoker(
+fun BaseMenuBuilder.smoker(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SMOKER, slots.toList(), block)
 
-fun MenuBuilder.smoothBasalt(
+fun BaseMenuBuilder.smoothBasalt(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SMOOTH_BASALT, slots.toList(), block)
 
-fun MenuBuilder.smoothQuartz(
+fun BaseMenuBuilder.smoothQuartz(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SMOOTH_QUARTZ, slots.toList(), block)
 
-fun MenuBuilder.smoothQuartzSlab(
+fun BaseMenuBuilder.smoothQuartzSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SMOOTH_QUARTZ_SLAB, slots.toList(), block)
 
-fun MenuBuilder.smoothQuartzStairs(
+fun BaseMenuBuilder.smoothQuartzStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SMOOTH_QUARTZ_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.smoothRedSandstone(
+fun BaseMenuBuilder.smoothRedSandstone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SMOOTH_RED_SANDSTONE, slots.toList(), block)
 
-fun MenuBuilder.smoothRedSandstoneSlab(
+fun BaseMenuBuilder.smoothRedSandstoneSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SMOOTH_RED_SANDSTONE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.smoothRedSandstoneStairs(
+fun BaseMenuBuilder.smoothRedSandstoneStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SMOOTH_RED_SANDSTONE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.smoothSandstone(
+fun BaseMenuBuilder.smoothSandstone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SMOOTH_SANDSTONE, slots.toList(), block)
 
-fun MenuBuilder.smoothSandstoneSlab(
+fun BaseMenuBuilder.smoothSandstoneSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SMOOTH_SANDSTONE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.smoothSandstoneStairs(
+fun BaseMenuBuilder.smoothSandstoneStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SMOOTH_SANDSTONE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.smoothStone(
+fun BaseMenuBuilder.smoothStone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SMOOTH_STONE, slots.toList(), block)
 
-fun MenuBuilder.smoothStoneSlab(
+fun BaseMenuBuilder.smoothStoneSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SMOOTH_STONE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.snifferEgg(
+fun BaseMenuBuilder.snifferEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SNIFFER_EGG, slots.toList(), block)
 
-fun MenuBuilder.snow(
+fun BaseMenuBuilder.snow(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SNOW, slots.toList(), block)
 
-fun MenuBuilder.snowBlock(
+fun BaseMenuBuilder.snowBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SNOW_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.soulCampfire(
+fun BaseMenuBuilder.soulCampfire(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SOUL_CAMPFIRE, slots.toList(), block)
 
-fun MenuBuilder.soulFire(
+fun BaseMenuBuilder.soulFire(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SOUL_FIRE, slots.toList(), block)
 
-fun MenuBuilder.soulLantern(
+fun BaseMenuBuilder.soulLantern(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SOUL_LANTERN, slots.toList(), block)
 
-fun MenuBuilder.soulSand(
+fun BaseMenuBuilder.soulSand(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SOUL_SAND, slots.toList(), block)
 
-fun MenuBuilder.soulSoil(
+fun BaseMenuBuilder.soulSoil(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SOUL_SOIL, slots.toList(), block)
 
-fun MenuBuilder.soulTorch(
+fun BaseMenuBuilder.soulTorch(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SOUL_TORCH, slots.toList(), block)
 
-fun MenuBuilder.soulWallTorch(
+fun BaseMenuBuilder.soulWallTorch(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SOUL_WALL_TORCH, slots.toList(), block)
 
-fun MenuBuilder.spawner(
+fun BaseMenuBuilder.spawner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPAWNER, slots.toList(), block)
 
-fun MenuBuilder.sponge(
+fun BaseMenuBuilder.sponge(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPONGE, slots.toList(), block)
 
-fun MenuBuilder.sporeBlossom(
+fun BaseMenuBuilder.sporeBlossom(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPORE_BLOSSOM, slots.toList(), block)
 
-fun MenuBuilder.spruceButton(
+fun BaseMenuBuilder.spruceButton(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPRUCE_BUTTON, slots.toList(), block)
 
-fun MenuBuilder.spruceDoor(
+fun BaseMenuBuilder.spruceDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPRUCE_DOOR, slots.toList(), block)
 
-fun MenuBuilder.spruceFence(
+fun BaseMenuBuilder.spruceFence(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPRUCE_FENCE, slots.toList(), block)
 
-fun MenuBuilder.spruceFenceGate(
+fun BaseMenuBuilder.spruceFenceGate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPRUCE_FENCE_GATE, slots.toList(), block)
 
-fun MenuBuilder.spruceHangingSign(
+fun BaseMenuBuilder.spruceHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPRUCE_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.spruceLeaves(
+fun BaseMenuBuilder.spruceLeaves(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPRUCE_LEAVES, slots.toList(), block)
 
-fun MenuBuilder.spruceLog(
+fun BaseMenuBuilder.spruceLog(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPRUCE_LOG, slots.toList(), block)
 
-fun MenuBuilder.sprucePlanks(
+fun BaseMenuBuilder.sprucePlanks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPRUCE_PLANKS, slots.toList(), block)
 
-fun MenuBuilder.sprucePressurePlate(
+fun BaseMenuBuilder.sprucePressurePlate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPRUCE_PRESSURE_PLATE, slots.toList(), block)
 
-fun MenuBuilder.spruceSapling(
+fun BaseMenuBuilder.spruceSapling(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPRUCE_SAPLING, slots.toList(), block)
 
-fun MenuBuilder.spruceSign(
+fun BaseMenuBuilder.spruceSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPRUCE_SIGN, slots.toList(), block)
 
-fun MenuBuilder.spruceSlab(
+fun BaseMenuBuilder.spruceSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPRUCE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.spruceStairs(
+fun BaseMenuBuilder.spruceStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPRUCE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.spruceTrapdoor(
+fun BaseMenuBuilder.spruceTrapdoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPRUCE_TRAPDOOR, slots.toList(), block)
 
-fun MenuBuilder.spruceWallHangingSign(
+fun BaseMenuBuilder.spruceWallHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPRUCE_WALL_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.spruceWallSign(
+fun BaseMenuBuilder.spruceWallSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPRUCE_WALL_SIGN, slots.toList(), block)
 
-fun MenuBuilder.spruceWood(
+fun BaseMenuBuilder.spruceWood(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SPRUCE_WOOD, slots.toList(), block)
 
-fun MenuBuilder.stickyPiston(
+fun BaseMenuBuilder.stickyPiston(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STICKY_PISTON, slots.toList(), block)
 
-fun MenuBuilder.stone(
+fun BaseMenuBuilder.stone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STONE, slots.toList(), block)
 
-fun MenuBuilder.stoneBrickSlab(
+fun BaseMenuBuilder.stoneBrickSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STONE_BRICK_SLAB, slots.toList(), block)
 
-fun MenuBuilder.stoneBrickStairs(
+fun BaseMenuBuilder.stoneBrickStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STONE_BRICK_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.stoneBrickWall(
+fun BaseMenuBuilder.stoneBrickWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STONE_BRICK_WALL, slots.toList(), block)
 
-fun MenuBuilder.stoneBricks(
+fun BaseMenuBuilder.stoneBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STONE_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.stoneButton(
+fun BaseMenuBuilder.stoneButton(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STONE_BUTTON, slots.toList(), block)
 
-fun MenuBuilder.stonePressurePlate(
+fun BaseMenuBuilder.stonePressurePlate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STONE_PRESSURE_PLATE, slots.toList(), block)
 
-fun MenuBuilder.stoneSlab(
+fun BaseMenuBuilder.stoneSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STONE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.stoneStairs(
+fun BaseMenuBuilder.stoneStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STONE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.stonecutter(
+fun BaseMenuBuilder.stonecutter(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STONECUTTER, slots.toList(), block)
 
-fun MenuBuilder.strippedAcaciaLog(
+fun BaseMenuBuilder.strippedAcaciaLog(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIPPED_ACACIA_LOG, slots.toList(), block)
 
-fun MenuBuilder.strippedAcaciaWood(
+fun BaseMenuBuilder.strippedAcaciaWood(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIPPED_ACACIA_WOOD, slots.toList(), block)
 
-fun MenuBuilder.strippedBambooBlock(
+fun BaseMenuBuilder.strippedBambooBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIPPED_BAMBOO_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.strippedBirchLog(
+fun BaseMenuBuilder.strippedBirchLog(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIPPED_BIRCH_LOG, slots.toList(), block)
 
-fun MenuBuilder.strippedBirchWood(
+fun BaseMenuBuilder.strippedBirchWood(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIPPED_BIRCH_WOOD, slots.toList(), block)
 
-fun MenuBuilder.strippedCherryLog(
+fun BaseMenuBuilder.strippedCherryLog(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIPPED_CHERRY_LOG, slots.toList(), block)
 
-fun MenuBuilder.strippedCherryWood(
+fun BaseMenuBuilder.strippedCherryWood(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIPPED_CHERRY_WOOD, slots.toList(), block)
 
-fun MenuBuilder.strippedCrimsonHyphae(
+fun BaseMenuBuilder.strippedCrimsonHyphae(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIPPED_CRIMSON_HYPHAE, slots.toList(), block)
 
-fun MenuBuilder.strippedCrimsonStem(
+fun BaseMenuBuilder.strippedCrimsonStem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIPPED_CRIMSON_STEM, slots.toList(), block)
 
-fun MenuBuilder.strippedDarkOakLog(
+fun BaseMenuBuilder.strippedDarkOakLog(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIPPED_DARK_OAK_LOG, slots.toList(), block)
 
-fun MenuBuilder.strippedDarkOakWood(
+fun BaseMenuBuilder.strippedDarkOakWood(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIPPED_DARK_OAK_WOOD, slots.toList(), block)
 
-fun MenuBuilder.strippedJungleLog(
+fun BaseMenuBuilder.strippedJungleLog(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIPPED_JUNGLE_LOG, slots.toList(), block)
 
-fun MenuBuilder.strippedJungleWood(
+fun BaseMenuBuilder.strippedJungleWood(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIPPED_JUNGLE_WOOD, slots.toList(), block)
 
-fun MenuBuilder.strippedMangroveLog(
+fun BaseMenuBuilder.strippedMangroveLog(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIPPED_MANGROVE_LOG, slots.toList(), block)
 
-fun MenuBuilder.strippedMangroveWood(
+fun BaseMenuBuilder.strippedMangroveWood(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIPPED_MANGROVE_WOOD, slots.toList(), block)
 
-fun MenuBuilder.strippedOakLog(
+fun BaseMenuBuilder.strippedOakLog(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIPPED_OAK_LOG, slots.toList(), block)
 
-fun MenuBuilder.strippedOakWood(
+fun BaseMenuBuilder.strippedOakWood(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIPPED_OAK_WOOD, slots.toList(), block)
 
-fun MenuBuilder.strippedPaleOakLog(
+fun BaseMenuBuilder.strippedPaleOakLog(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIPPED_PALE_OAK_LOG, slots.toList(), block)
 
-fun MenuBuilder.strippedPaleOakWood(
+fun BaseMenuBuilder.strippedPaleOakWood(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIPPED_PALE_OAK_WOOD, slots.toList(), block)
 
-fun MenuBuilder.strippedSpruceLog(
+fun BaseMenuBuilder.strippedSpruceLog(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIPPED_SPRUCE_LOG, slots.toList(), block)
 
-fun MenuBuilder.strippedSpruceWood(
+fun BaseMenuBuilder.strippedSpruceWood(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIPPED_SPRUCE_WOOD, slots.toList(), block)
 
-fun MenuBuilder.strippedWarpedHyphae(
+fun BaseMenuBuilder.strippedWarpedHyphae(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIPPED_WARPED_HYPHAE, slots.toList(), block)
 
-fun MenuBuilder.strippedWarpedStem(
+fun BaseMenuBuilder.strippedWarpedStem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRIPPED_WARPED_STEM, slots.toList(), block)
 
-fun MenuBuilder.structureBlock(
+fun BaseMenuBuilder.structureBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRUCTURE_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.structureVoid(
+fun BaseMenuBuilder.structureVoid(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.STRUCTURE_VOID, slots.toList(), block)
 
-fun MenuBuilder.sugarCane(
+fun BaseMenuBuilder.sugarCane(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SUGAR_CANE, slots.toList(), block)
 
-fun MenuBuilder.sunflower(
+fun BaseMenuBuilder.sunflower(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SUNFLOWER, slots.toList(), block)
 
-fun MenuBuilder.suspiciousGravel(
+fun BaseMenuBuilder.suspiciousGravel(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SUSPICIOUS_GRAVEL, slots.toList(), block)
 
-fun MenuBuilder.suspiciousSand(
+fun BaseMenuBuilder.suspiciousSand(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SUSPICIOUS_SAND, slots.toList(), block)
 
-fun MenuBuilder.sweetBerryBush(
+fun BaseMenuBuilder.sweetBerryBush(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.SWEET_BERRY_BUSH, slots.toList(), block)
 
-fun MenuBuilder.tallDryGrass(
+fun BaseMenuBuilder.tallDryGrass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TALL_DRY_GRASS, slots.toList(), block)
 
-fun MenuBuilder.tallGrass(
+fun BaseMenuBuilder.tallGrass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TALL_GRASS, slots.toList(), block)
 
-fun MenuBuilder.tallSeagrass(
+fun BaseMenuBuilder.tallSeagrass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TALL_SEAGRASS, slots.toList(), block)
 
-fun MenuBuilder.target(
+fun BaseMenuBuilder.target(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TARGET, slots.toList(), block)
 
-fun MenuBuilder.terracotta(
+fun BaseMenuBuilder.terracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.testBlock(
+fun BaseMenuBuilder.testBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TEST_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.testInstanceBlock(
+fun BaseMenuBuilder.testInstanceBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TEST_INSTANCE_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.tintedGlass(
+fun BaseMenuBuilder.tintedGlass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TINTED_GLASS, slots.toList(), block)
 
-fun MenuBuilder.tnt(
+fun BaseMenuBuilder.tnt(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TNT, slots.toList(), block)
 
-fun MenuBuilder.torch(
+fun BaseMenuBuilder.torch(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TORCH, slots.toList(), block)
 
-fun MenuBuilder.torchflower(
+fun BaseMenuBuilder.torchflower(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TORCHFLOWER, slots.toList(), block)
 
-fun MenuBuilder.torchflowerCrop(
+fun BaseMenuBuilder.torchflowerCrop(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TORCHFLOWER_CROP, slots.toList(), block)
 
-fun MenuBuilder.trappedChest(
+fun BaseMenuBuilder.trappedChest(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TRAPPED_CHEST, slots.toList(), block)
 
-fun MenuBuilder.trialSpawner(
+fun BaseMenuBuilder.trialSpawner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TRIAL_SPAWNER, slots.toList(), block)
 
-fun MenuBuilder.tripwire(
+fun BaseMenuBuilder.tripwire(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TRIPWIRE, slots.toList(), block)
 
-fun MenuBuilder.tripwireHook(
+fun BaseMenuBuilder.tripwireHook(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TRIPWIRE_HOOK, slots.toList(), block)
 
-fun MenuBuilder.tubeCoral(
+fun BaseMenuBuilder.tubeCoral(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TUBE_CORAL, slots.toList(), block)
 
-fun MenuBuilder.tubeCoralBlock(
+fun BaseMenuBuilder.tubeCoralBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TUBE_CORAL_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.tubeCoralFan(
+fun BaseMenuBuilder.tubeCoralFan(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TUBE_CORAL_FAN, slots.toList(), block)
 
-fun MenuBuilder.tubeCoralWallFan(
+fun BaseMenuBuilder.tubeCoralWallFan(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TUBE_CORAL_WALL_FAN, slots.toList(), block)
 
-fun MenuBuilder.tuff(
+fun BaseMenuBuilder.tuff(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TUFF, slots.toList(), block)
 
-fun MenuBuilder.tuffBrickSlab(
+fun BaseMenuBuilder.tuffBrickSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TUFF_BRICK_SLAB, slots.toList(), block)
 
-fun MenuBuilder.tuffBrickStairs(
+fun BaseMenuBuilder.tuffBrickStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TUFF_BRICK_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.tuffBrickWall(
+fun BaseMenuBuilder.tuffBrickWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TUFF_BRICK_WALL, slots.toList(), block)
 
-fun MenuBuilder.tuffBricks(
+fun BaseMenuBuilder.tuffBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TUFF_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.tuffSlab(
+fun BaseMenuBuilder.tuffSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TUFF_SLAB, slots.toList(), block)
 
-fun MenuBuilder.tuffStairs(
+fun BaseMenuBuilder.tuffStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TUFF_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.tuffWall(
+fun BaseMenuBuilder.tuffWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TUFF_WALL, slots.toList(), block)
 
-fun MenuBuilder.turtleEgg(
+fun BaseMenuBuilder.turtleEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TURTLE_EGG, slots.toList(), block)
 
-fun MenuBuilder.twistingVines(
+fun BaseMenuBuilder.twistingVines(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TWISTING_VINES, slots.toList(), block)
 
-fun MenuBuilder.twistingVinesPlant(
+fun BaseMenuBuilder.twistingVinesPlant(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.TWISTING_VINES_PLANT, slots.toList(), block)
 
-fun MenuBuilder.vault(
+fun BaseMenuBuilder.vault(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.VAULT, slots.toList(), block)
 
-fun MenuBuilder.verdantFroglight(
+fun BaseMenuBuilder.verdantFroglight(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.VERDANT_FROGLIGHT, slots.toList(), block)
 
-fun MenuBuilder.vine(
+fun BaseMenuBuilder.vine(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.VINE, slots.toList(), block)
 
-fun MenuBuilder.voidAir(
+fun BaseMenuBuilder.voidAir(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.VOID_AIR, slots.toList(), block)
 
-fun MenuBuilder.wallTorch(
+fun BaseMenuBuilder.wallTorch(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WALL_TORCH, slots.toList(), block)
 
-fun MenuBuilder.warpedButton(
+fun BaseMenuBuilder.warpedButton(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WARPED_BUTTON, slots.toList(), block)
 
-fun MenuBuilder.warpedDoor(
+fun BaseMenuBuilder.warpedDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WARPED_DOOR, slots.toList(), block)
 
-fun MenuBuilder.warpedFence(
+fun BaseMenuBuilder.warpedFence(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WARPED_FENCE, slots.toList(), block)
 
-fun MenuBuilder.warpedFenceGate(
+fun BaseMenuBuilder.warpedFenceGate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WARPED_FENCE_GATE, slots.toList(), block)
 
-fun MenuBuilder.warpedFungus(
+fun BaseMenuBuilder.warpedFungus(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WARPED_FUNGUS, slots.toList(), block)
 
-fun MenuBuilder.warpedHangingSign(
+fun BaseMenuBuilder.warpedHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WARPED_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.warpedHyphae(
+fun BaseMenuBuilder.warpedHyphae(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WARPED_HYPHAE, slots.toList(), block)
 
-fun MenuBuilder.warpedNylium(
+fun BaseMenuBuilder.warpedNylium(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WARPED_NYLIUM, slots.toList(), block)
 
-fun MenuBuilder.warpedPlanks(
+fun BaseMenuBuilder.warpedPlanks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WARPED_PLANKS, slots.toList(), block)
 
-fun MenuBuilder.warpedPressurePlate(
+fun BaseMenuBuilder.warpedPressurePlate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WARPED_PRESSURE_PLATE, slots.toList(), block)
 
-fun MenuBuilder.warpedRoots(
+fun BaseMenuBuilder.warpedRoots(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WARPED_ROOTS, slots.toList(), block)
 
-fun MenuBuilder.warpedSign(
+fun BaseMenuBuilder.warpedSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WARPED_SIGN, slots.toList(), block)
 
-fun MenuBuilder.warpedSlab(
+fun BaseMenuBuilder.warpedSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WARPED_SLAB, slots.toList(), block)
 
-fun MenuBuilder.warpedStairs(
+fun BaseMenuBuilder.warpedStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WARPED_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.warpedStem(
+fun BaseMenuBuilder.warpedStem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WARPED_STEM, slots.toList(), block)
 
-fun MenuBuilder.warpedTrapdoor(
+fun BaseMenuBuilder.warpedTrapdoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WARPED_TRAPDOOR, slots.toList(), block)
 
-fun MenuBuilder.warpedWallHangingSign(
+fun BaseMenuBuilder.warpedWallHangingSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WARPED_WALL_HANGING_SIGN, slots.toList(), block)
 
-fun MenuBuilder.warpedWallSign(
+fun BaseMenuBuilder.warpedWallSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WARPED_WALL_SIGN, slots.toList(), block)
 
-fun MenuBuilder.warpedWartBlock(
+fun BaseMenuBuilder.warpedWartBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WARPED_WART_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.water(
+fun BaseMenuBuilder.water(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WATER, slots.toList(), block)
 
-fun MenuBuilder.waterCauldron(
+fun BaseMenuBuilder.waterCauldron(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WATER_CAULDRON, slots.toList(), block)
 
-fun MenuBuilder.waxedChiseledCopper(
+fun BaseMenuBuilder.waxedChiseledCopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_CHISELED_COPPER, slots.toList(), block)
 
-fun MenuBuilder.waxedCopperBlock(
+fun BaseMenuBuilder.waxedCopperBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_COPPER_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.waxedCopperBulb(
+fun BaseMenuBuilder.waxedCopperBulb(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_COPPER_BULB, slots.toList(), block)
 
-fun MenuBuilder.waxedCopperDoor(
+fun BaseMenuBuilder.waxedCopperDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_COPPER_DOOR, slots.toList(), block)
 
-fun MenuBuilder.waxedCopperGrate(
+fun BaseMenuBuilder.waxedCopperGrate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_COPPER_GRATE, slots.toList(), block)
 
-fun MenuBuilder.waxedCopperTrapdoor(
+fun BaseMenuBuilder.waxedCopperTrapdoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_COPPER_TRAPDOOR, slots.toList(), block)
 
-fun MenuBuilder.waxedCutCopper(
+fun BaseMenuBuilder.waxedCutCopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_CUT_COPPER, slots.toList(), block)
 
-fun MenuBuilder.waxedCutCopperSlab(
+fun BaseMenuBuilder.waxedCutCopperSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_CUT_COPPER_SLAB, slots.toList(), block)
 
-fun MenuBuilder.waxedCutCopperStairs(
+fun BaseMenuBuilder.waxedCutCopperStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_CUT_COPPER_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.waxedExposedChiseledCopper(
+fun BaseMenuBuilder.waxedExposedChiseledCopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_EXPOSED_CHISELED_COPPER, slots.toList(), block)
 
-fun MenuBuilder.waxedExposedCopper(
+fun BaseMenuBuilder.waxedExposedCopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_EXPOSED_COPPER, slots.toList(), block)
 
-fun MenuBuilder.waxedExposedCopperBulb(
+fun BaseMenuBuilder.waxedExposedCopperBulb(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_EXPOSED_COPPER_BULB, slots.toList(), block)
 
-fun MenuBuilder.waxedExposedCopperDoor(
+fun BaseMenuBuilder.waxedExposedCopperDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_EXPOSED_COPPER_DOOR, slots.toList(), block)
 
-fun MenuBuilder.waxedExposedCopperGrate(
+fun BaseMenuBuilder.waxedExposedCopperGrate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_EXPOSED_COPPER_GRATE, slots.toList(), block)
 
-fun MenuBuilder.waxedExposedCopperTrapdoor(
+fun BaseMenuBuilder.waxedExposedCopperTrapdoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_EXPOSED_COPPER_TRAPDOOR, slots.toList(), block)
 
-fun MenuBuilder.waxedExposedCutCopper(
+fun BaseMenuBuilder.waxedExposedCutCopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_EXPOSED_CUT_COPPER, slots.toList(), block)
 
-fun MenuBuilder.waxedExposedCutCopperSlab(
+fun BaseMenuBuilder.waxedExposedCutCopperSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_EXPOSED_CUT_COPPER_SLAB, slots.toList(), block)
 
-fun MenuBuilder.waxedExposedCutCopperStairs(
+fun BaseMenuBuilder.waxedExposedCutCopperStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_EXPOSED_CUT_COPPER_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.waxedOxidizedChiseledCopper(
+fun BaseMenuBuilder.waxedOxidizedChiseledCopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_OXIDIZED_CHISELED_COPPER, slots.toList(), block)
 
-fun MenuBuilder.waxedOxidizedCopper(
+fun BaseMenuBuilder.waxedOxidizedCopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_OXIDIZED_COPPER, slots.toList(), block)
 
-fun MenuBuilder.waxedOxidizedCopperBulb(
+fun BaseMenuBuilder.waxedOxidizedCopperBulb(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_OXIDIZED_COPPER_BULB, slots.toList(), block)
 
-fun MenuBuilder.waxedOxidizedCopperDoor(
+fun BaseMenuBuilder.waxedOxidizedCopperDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_OXIDIZED_COPPER_DOOR, slots.toList(), block)
 
-fun MenuBuilder.waxedOxidizedCopperGrate(
+fun BaseMenuBuilder.waxedOxidizedCopperGrate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_OXIDIZED_COPPER_GRATE, slots.toList(), block)
 
-fun MenuBuilder.waxedOxidizedCopperTrapdoor(
+fun BaseMenuBuilder.waxedOxidizedCopperTrapdoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_OXIDIZED_COPPER_TRAPDOOR, slots.toList(), block)
 
-fun MenuBuilder.waxedOxidizedCutCopper(
+fun BaseMenuBuilder.waxedOxidizedCutCopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_OXIDIZED_CUT_COPPER, slots.toList(), block)
 
-fun MenuBuilder.waxedOxidizedCutCopperSlab(
+fun BaseMenuBuilder.waxedOxidizedCutCopperSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_OXIDIZED_CUT_COPPER_SLAB, slots.toList(), block)
 
-fun MenuBuilder.waxedOxidizedCutCopperStairs(
+fun BaseMenuBuilder.waxedOxidizedCutCopperStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_OXIDIZED_CUT_COPPER_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.waxedWeatheredChiseledCopper(
+fun BaseMenuBuilder.waxedWeatheredChiseledCopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_WEATHERED_CHISELED_COPPER, slots.toList(), block)
 
-fun MenuBuilder.waxedWeatheredCopper(
+fun BaseMenuBuilder.waxedWeatheredCopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_WEATHERED_COPPER, slots.toList(), block)
 
-fun MenuBuilder.waxedWeatheredCopperBulb(
+fun BaseMenuBuilder.waxedWeatheredCopperBulb(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_WEATHERED_COPPER_BULB, slots.toList(), block)
 
-fun MenuBuilder.waxedWeatheredCopperDoor(
+fun BaseMenuBuilder.waxedWeatheredCopperDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_WEATHERED_COPPER_DOOR, slots.toList(), block)
 
-fun MenuBuilder.waxedWeatheredCopperGrate(
+fun BaseMenuBuilder.waxedWeatheredCopperGrate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_WEATHERED_COPPER_GRATE, slots.toList(), block)
 
-fun MenuBuilder.waxedWeatheredCopperTrapdoor(
+fun BaseMenuBuilder.waxedWeatheredCopperTrapdoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_WEATHERED_COPPER_TRAPDOOR, slots.toList(), block)
 
-fun MenuBuilder.waxedWeatheredCutCopper(
+fun BaseMenuBuilder.waxedWeatheredCutCopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_WEATHERED_CUT_COPPER, slots.toList(), block)
 
-fun MenuBuilder.waxedWeatheredCutCopperSlab(
+fun BaseMenuBuilder.waxedWeatheredCutCopperSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_WEATHERED_CUT_COPPER_SLAB, slots.toList(), block)
 
-fun MenuBuilder.waxedWeatheredCutCopperStairs(
+fun BaseMenuBuilder.waxedWeatheredCutCopperStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WAXED_WEATHERED_CUT_COPPER_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.weatheredChiseledCopper(
+fun BaseMenuBuilder.weatheredChiseledCopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WEATHERED_CHISELED_COPPER, slots.toList(), block)
 
-fun MenuBuilder.weatheredCopper(
+fun BaseMenuBuilder.weatheredCopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WEATHERED_COPPER, slots.toList(), block)
 
-fun MenuBuilder.weatheredCopperBulb(
+fun BaseMenuBuilder.weatheredCopperBulb(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WEATHERED_COPPER_BULB, slots.toList(), block)
 
-fun MenuBuilder.weatheredCopperDoor(
+fun BaseMenuBuilder.weatheredCopperDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WEATHERED_COPPER_DOOR, slots.toList(), block)
 
-fun MenuBuilder.weatheredCopperGrate(
+fun BaseMenuBuilder.weatheredCopperGrate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WEATHERED_COPPER_GRATE, slots.toList(), block)
 
-fun MenuBuilder.weatheredCopperTrapdoor(
+fun BaseMenuBuilder.weatheredCopperTrapdoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WEATHERED_COPPER_TRAPDOOR, slots.toList(), block)
 
-fun MenuBuilder.weatheredCutCopper(
+fun BaseMenuBuilder.weatheredCutCopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WEATHERED_CUT_COPPER, slots.toList(), block)
 
-fun MenuBuilder.weatheredCutCopperSlab(
+fun BaseMenuBuilder.weatheredCutCopperSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WEATHERED_CUT_COPPER_SLAB, slots.toList(), block)
 
-fun MenuBuilder.weatheredCutCopperStairs(
+fun BaseMenuBuilder.weatheredCutCopperStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WEATHERED_CUT_COPPER_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.weepingVines(
+fun BaseMenuBuilder.weepingVines(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WEEPING_VINES, slots.toList(), block)
 
-fun MenuBuilder.weepingVinesPlant(
+fun BaseMenuBuilder.weepingVinesPlant(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WEEPING_VINES_PLANT, slots.toList(), block)
 
-fun MenuBuilder.wetSponge(
+fun BaseMenuBuilder.wetSponge(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WET_SPONGE, slots.toList(), block)
 
-fun MenuBuilder.wheat(
+fun BaseMenuBuilder.wheat(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WHEAT, slots.toList(), block)
 
-fun MenuBuilder.whiteBanner(
+fun BaseMenuBuilder.whiteBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WHITE_BANNER, slots.toList(), block)
 
-fun MenuBuilder.whiteBed(
+fun BaseMenuBuilder.whiteBed(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WHITE_BED, slots.toList(), block)
 
-fun MenuBuilder.whiteCandle(
+fun BaseMenuBuilder.whiteCandle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WHITE_CANDLE, slots.toList(), block)
 
-fun MenuBuilder.whiteCandleCake(
+fun BaseMenuBuilder.whiteCandleCake(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WHITE_CANDLE_CAKE, slots.toList(), block)
 
-fun MenuBuilder.whiteCarpet(
+fun BaseMenuBuilder.whiteCarpet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WHITE_CARPET, slots.toList(), block)
 
-fun MenuBuilder.whiteConcrete(
+fun BaseMenuBuilder.whiteConcrete(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WHITE_CONCRETE, slots.toList(), block)
 
-fun MenuBuilder.whiteConcretePowder(
+fun BaseMenuBuilder.whiteConcretePowder(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WHITE_CONCRETE_POWDER, slots.toList(), block)
 
-fun MenuBuilder.whiteGlazedTerracotta(
+fun BaseMenuBuilder.whiteGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WHITE_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.whiteShulkerBox(
+fun BaseMenuBuilder.whiteShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WHITE_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.whiteStainedGlass(
+fun BaseMenuBuilder.whiteStainedGlass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WHITE_STAINED_GLASS, slots.toList(), block)
 
-fun MenuBuilder.whiteStainedGlassPane(
+fun BaseMenuBuilder.whiteStainedGlassPane(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WHITE_STAINED_GLASS_PANE, slots.toList(), block)
 
-fun MenuBuilder.whiteTerracotta(
+fun BaseMenuBuilder.whiteTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WHITE_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.whiteTulip(
+fun BaseMenuBuilder.whiteTulip(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WHITE_TULIP, slots.toList(), block)
 
-fun MenuBuilder.whiteWallBanner(
+fun BaseMenuBuilder.whiteWallBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WHITE_WALL_BANNER, slots.toList(), block)
 
-fun MenuBuilder.whiteWool(
+fun BaseMenuBuilder.whiteWool(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WHITE_WOOL, slots.toList(), block)
 
-fun MenuBuilder.wildflowers(
+fun BaseMenuBuilder.wildflowers(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WILDFLOWERS, slots.toList(), block)
 
-fun MenuBuilder.witherRose(
+fun BaseMenuBuilder.witherRose(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WITHER_ROSE, slots.toList(), block)
 
-fun MenuBuilder.witherSkeletonSkull(
+fun BaseMenuBuilder.witherSkeletonSkull(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WITHER_SKELETON_SKULL, slots.toList(), block)
 
-fun MenuBuilder.witherSkeletonWallSkull(
+fun BaseMenuBuilder.witherSkeletonWallSkull(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.WITHER_SKELETON_WALL_SKULL, slots.toList(), block)
 
-fun MenuBuilder.yellowBanner(
+fun BaseMenuBuilder.yellowBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.YELLOW_BANNER, slots.toList(), block)
 
-fun MenuBuilder.yellowBed(
+fun BaseMenuBuilder.yellowBed(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.YELLOW_BED, slots.toList(), block)
 
-fun MenuBuilder.yellowCandle(
+fun BaseMenuBuilder.yellowCandle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.YELLOW_CANDLE, slots.toList(), block)
 
-fun MenuBuilder.yellowCandleCake(
+fun BaseMenuBuilder.yellowCandleCake(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.YELLOW_CANDLE_CAKE, slots.toList(), block)
 
-fun MenuBuilder.yellowCarpet(
+fun BaseMenuBuilder.yellowCarpet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.YELLOW_CARPET, slots.toList(), block)
 
-fun MenuBuilder.yellowConcrete(
+fun BaseMenuBuilder.yellowConcrete(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.YELLOW_CONCRETE, slots.toList(), block)
 
-fun MenuBuilder.yellowConcretePowder(
+fun BaseMenuBuilder.yellowConcretePowder(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.YELLOW_CONCRETE_POWDER, slots.toList(), block)
 
-fun MenuBuilder.yellowGlazedTerracotta(
+fun BaseMenuBuilder.yellowGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.YELLOW_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.yellowShulkerBox(
+fun BaseMenuBuilder.yellowShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.YELLOW_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.yellowStainedGlass(
+fun BaseMenuBuilder.yellowStainedGlass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.YELLOW_STAINED_GLASS, slots.toList(), block)
 
-fun MenuBuilder.yellowStainedGlassPane(
+fun BaseMenuBuilder.yellowStainedGlassPane(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.YELLOW_STAINED_GLASS_PANE, slots.toList(), block)
 
-fun MenuBuilder.yellowTerracotta(
+fun BaseMenuBuilder.yellowTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.YELLOW_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.yellowWallBanner(
+fun BaseMenuBuilder.yellowWallBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.YELLOW_WALL_BANNER, slots.toList(), block)
 
-fun MenuBuilder.yellowWool(
+fun BaseMenuBuilder.yellowWool(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.YELLOW_WOOL, slots.toList(), block)
 
-fun MenuBuilder.zombieHead(
+fun BaseMenuBuilder.zombieHead(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ZOMBIE_HEAD, slots.toList(), block)
 
-fun MenuBuilder.zombieWallHead(
+fun BaseMenuBuilder.zombieWallHead(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.ZOMBIE_WALL_HEAD, slots.toList(), block)
 
-fun MenuBuilder.legacyAir(
+fun BaseMenuBuilder.legacyAir(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_AIR, slots.toList(), block)
 
-fun MenuBuilder.legacyStone(
+fun BaseMenuBuilder.legacyStone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_STONE, slots.toList(), block)
 
-fun MenuBuilder.legacyGrass(
+fun BaseMenuBuilder.legacyGrass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GRASS, slots.toList(), block)
 
-fun MenuBuilder.legacyDirt(
+fun BaseMenuBuilder.legacyDirt(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DIRT, slots.toList(), block)
 
-fun MenuBuilder.legacyCobblestone(
+fun BaseMenuBuilder.legacyCobblestone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_COBBLESTONE, slots.toList(), block)
 
-fun MenuBuilder.legacyWood(
+fun BaseMenuBuilder.legacyWood(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WOOD, slots.toList(), block)
 
-fun MenuBuilder.legacySapling(
+fun BaseMenuBuilder.legacySapling(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SAPLING, slots.toList(), block)
 
-fun MenuBuilder.legacyBedrock(
+fun BaseMenuBuilder.legacyBedrock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BEDROCK, slots.toList(), block)
 
-fun MenuBuilder.legacyWater(
+fun BaseMenuBuilder.legacyWater(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WATER, slots.toList(), block)
 
-fun MenuBuilder.legacyStationaryWater(
+fun BaseMenuBuilder.legacyStationaryWater(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_STATIONARY_WATER, slots.toList(), block)
 
-fun MenuBuilder.legacyLava(
+fun BaseMenuBuilder.legacyLava(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_LAVA, slots.toList(), block)
 
-fun MenuBuilder.legacyStationaryLava(
+fun BaseMenuBuilder.legacyStationaryLava(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_STATIONARY_LAVA, slots.toList(), block)
 
-fun MenuBuilder.legacySand(
+fun BaseMenuBuilder.legacySand(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SAND, slots.toList(), block)
 
-fun MenuBuilder.legacyGravel(
+fun BaseMenuBuilder.legacyGravel(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GRAVEL, slots.toList(), block)
 
-fun MenuBuilder.legacyGoldOre(
+fun BaseMenuBuilder.legacyGoldOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GOLD_ORE, slots.toList(), block)
 
-fun MenuBuilder.legacyIronOre(
+fun BaseMenuBuilder.legacyIronOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_IRON_ORE, slots.toList(), block)
 
-fun MenuBuilder.legacyCoalOre(
+fun BaseMenuBuilder.legacyCoalOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_COAL_ORE, slots.toList(), block)
 
-fun MenuBuilder.legacyLog(
+fun BaseMenuBuilder.legacyLog(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_LOG, slots.toList(), block)
 
-fun MenuBuilder.legacyLeaves(
+fun BaseMenuBuilder.legacyLeaves(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_LEAVES, slots.toList(), block)
 
-fun MenuBuilder.legacySponge(
+fun BaseMenuBuilder.legacySponge(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SPONGE, slots.toList(), block)
 
-fun MenuBuilder.legacyGlass(
+fun BaseMenuBuilder.legacyGlass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GLASS, slots.toList(), block)
 
-fun MenuBuilder.legacyLapisOre(
+fun BaseMenuBuilder.legacyLapisOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_LAPIS_ORE, slots.toList(), block)
 
-fun MenuBuilder.legacyLapisBlock(
+fun BaseMenuBuilder.legacyLapisBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_LAPIS_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.legacyDispenser(
+fun BaseMenuBuilder.legacyDispenser(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DISPENSER, slots.toList(), block)
 
-fun MenuBuilder.legacySandstone(
+fun BaseMenuBuilder.legacySandstone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SANDSTONE, slots.toList(), block)
 
-fun MenuBuilder.legacyNoteBlock(
+fun BaseMenuBuilder.legacyNoteBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_NOTE_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.legacyBedBlock(
+fun BaseMenuBuilder.legacyBedBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BED_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.legacyPoweredRail(
+fun BaseMenuBuilder.legacyPoweredRail(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_POWERED_RAIL, slots.toList(), block)
 
-fun MenuBuilder.legacyDetectorRail(
+fun BaseMenuBuilder.legacyDetectorRail(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DETECTOR_RAIL, slots.toList(), block)
 
-fun MenuBuilder.legacyPistonStickyBase(
+fun BaseMenuBuilder.legacyPistonStickyBase(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PISTON_STICKY_BASE, slots.toList(), block)
 
-fun MenuBuilder.legacyWeb(
+fun BaseMenuBuilder.legacyWeb(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WEB, slots.toList(), block)
 
-fun MenuBuilder.legacyLongGrass(
+fun BaseMenuBuilder.legacyLongGrass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_LONG_GRASS, slots.toList(), block)
 
-fun MenuBuilder.legacyDeadBush(
+fun BaseMenuBuilder.legacyDeadBush(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DEAD_BUSH, slots.toList(), block)
 
-fun MenuBuilder.legacyPistonBase(
+fun BaseMenuBuilder.legacyPistonBase(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PISTON_BASE, slots.toList(), block)
 
-fun MenuBuilder.legacyPistonExtension(
+fun BaseMenuBuilder.legacyPistonExtension(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PISTON_EXTENSION, slots.toList(), block)
 
-fun MenuBuilder.legacyWool(
+fun BaseMenuBuilder.legacyWool(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WOOL, slots.toList(), block)
 
-fun MenuBuilder.legacyPistonMovingPiece(
+fun BaseMenuBuilder.legacyPistonMovingPiece(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PISTON_MOVING_PIECE, slots.toList(), block)
 
-fun MenuBuilder.legacyYellowFlower(
+fun BaseMenuBuilder.legacyYellowFlower(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_YELLOW_FLOWER, slots.toList(), block)
 
-fun MenuBuilder.legacyRedRose(
+fun BaseMenuBuilder.legacyRedRose(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RED_ROSE, slots.toList(), block)
 
-fun MenuBuilder.legacyBrownMushroom(
+fun BaseMenuBuilder.legacyBrownMushroom(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BROWN_MUSHROOM, slots.toList(), block)
 
-fun MenuBuilder.legacyRedMushroom(
+fun BaseMenuBuilder.legacyRedMushroom(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RED_MUSHROOM, slots.toList(), block)
 
-fun MenuBuilder.legacyGoldBlock(
+fun BaseMenuBuilder.legacyGoldBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GOLD_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.legacyIronBlock(
+fun BaseMenuBuilder.legacyIronBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_IRON_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.legacyDoubleStep(
+fun BaseMenuBuilder.legacyDoubleStep(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DOUBLE_STEP, slots.toList(), block)
 
-fun MenuBuilder.legacyStep(
+fun BaseMenuBuilder.legacyStep(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_STEP, slots.toList(), block)
 
-fun MenuBuilder.legacyBrick(
+fun BaseMenuBuilder.legacyBrick(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BRICK, slots.toList(), block)
 
-fun MenuBuilder.legacyTnt(
+fun BaseMenuBuilder.legacyTnt(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_TNT, slots.toList(), block)
 
-fun MenuBuilder.legacyBookshelf(
+fun BaseMenuBuilder.legacyBookshelf(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BOOKSHELF, slots.toList(), block)
 
-fun MenuBuilder.legacyMossyCobblestone(
+fun BaseMenuBuilder.legacyMossyCobblestone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_MOSSY_COBBLESTONE, slots.toList(), block)
 
-fun MenuBuilder.legacyObsidian(
+fun BaseMenuBuilder.legacyObsidian(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_OBSIDIAN, slots.toList(), block)
 
-fun MenuBuilder.legacyTorch(
+fun BaseMenuBuilder.legacyTorch(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_TORCH, slots.toList(), block)
 
-fun MenuBuilder.legacyFire(
+fun BaseMenuBuilder.legacyFire(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_FIRE, slots.toList(), block)
 
-fun MenuBuilder.legacyMobSpawner(
+fun BaseMenuBuilder.legacyMobSpawner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_MOB_SPAWNER, slots.toList(), block)
 
-fun MenuBuilder.legacyWoodStairs(
+fun BaseMenuBuilder.legacyWoodStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WOOD_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.legacyChest(
+fun BaseMenuBuilder.legacyChest(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CHEST, slots.toList(), block)
 
-fun MenuBuilder.legacyRedstoneWire(
+fun BaseMenuBuilder.legacyRedstoneWire(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_REDSTONE_WIRE, slots.toList(), block)
 
-fun MenuBuilder.legacyDiamondOre(
+fun BaseMenuBuilder.legacyDiamondOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DIAMOND_ORE, slots.toList(), block)
 
-fun MenuBuilder.legacyDiamondBlock(
+fun BaseMenuBuilder.legacyDiamondBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DIAMOND_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.legacyWorkbench(
+fun BaseMenuBuilder.legacyWorkbench(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WORKBENCH, slots.toList(), block)
 
-fun MenuBuilder.legacyCrops(
+fun BaseMenuBuilder.legacyCrops(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CROPS, slots.toList(), block)
 
-fun MenuBuilder.legacySoil(
+fun BaseMenuBuilder.legacySoil(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SOIL, slots.toList(), block)
 
-fun MenuBuilder.legacyFurnace(
+fun BaseMenuBuilder.legacyFurnace(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_FURNACE, slots.toList(), block)
 
-fun MenuBuilder.legacyBurningFurnace(
+fun BaseMenuBuilder.legacyBurningFurnace(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BURNING_FURNACE, slots.toList(), block)
 
-fun MenuBuilder.legacySignPost(
+fun BaseMenuBuilder.legacySignPost(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SIGN_POST, slots.toList(), block)
 
-fun MenuBuilder.legacyWoodenDoor(
+fun BaseMenuBuilder.legacyWoodenDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WOODEN_DOOR, slots.toList(), block)
 
-fun MenuBuilder.legacyLadder(
+fun BaseMenuBuilder.legacyLadder(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_LADDER, slots.toList(), block)
 
-fun MenuBuilder.legacyRails(
+fun BaseMenuBuilder.legacyRails(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RAILS, slots.toList(), block)
 
-fun MenuBuilder.legacyCobblestoneStairs(
+fun BaseMenuBuilder.legacyCobblestoneStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_COBBLESTONE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.legacyWallSign(
+fun BaseMenuBuilder.legacyWallSign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WALL_SIGN, slots.toList(), block)
 
-fun MenuBuilder.legacyLever(
+fun BaseMenuBuilder.legacyLever(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_LEVER, slots.toList(), block)
 
-fun MenuBuilder.legacyStonePlate(
+fun BaseMenuBuilder.legacyStonePlate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_STONE_PLATE, slots.toList(), block)
 
-fun MenuBuilder.legacyIronDoorBlock(
+fun BaseMenuBuilder.legacyIronDoorBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_IRON_DOOR_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.legacyWoodPlate(
+fun BaseMenuBuilder.legacyWoodPlate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WOOD_PLATE, slots.toList(), block)
 
-fun MenuBuilder.legacyRedstoneOre(
+fun BaseMenuBuilder.legacyRedstoneOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_REDSTONE_ORE, slots.toList(), block)
 
-fun MenuBuilder.legacyGlowingRedstoneOre(
+fun BaseMenuBuilder.legacyGlowingRedstoneOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GLOWING_REDSTONE_ORE, slots.toList(), block)
 
-fun MenuBuilder.legacyRedstoneTorchOff(
+fun BaseMenuBuilder.legacyRedstoneTorchOff(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_REDSTONE_TORCH_OFF, slots.toList(), block)
 
-fun MenuBuilder.legacyRedstoneTorchOn(
+fun BaseMenuBuilder.legacyRedstoneTorchOn(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_REDSTONE_TORCH_ON, slots.toList(), block)
 
-fun MenuBuilder.legacyStoneButton(
+fun BaseMenuBuilder.legacyStoneButton(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_STONE_BUTTON, slots.toList(), block)
 
-fun MenuBuilder.legacySnow(
+fun BaseMenuBuilder.legacySnow(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SNOW, slots.toList(), block)
 
-fun MenuBuilder.legacyIce(
+fun BaseMenuBuilder.legacyIce(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_ICE, slots.toList(), block)
 
-fun MenuBuilder.legacySnowBlock(
+fun BaseMenuBuilder.legacySnowBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SNOW_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.legacyCactus(
+fun BaseMenuBuilder.legacyCactus(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CACTUS, slots.toList(), block)
 
-fun MenuBuilder.legacyClay(
+fun BaseMenuBuilder.legacyClay(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CLAY, slots.toList(), block)
 
-fun MenuBuilder.legacySugarCaneBlock(
+fun BaseMenuBuilder.legacySugarCaneBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SUGAR_CANE_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.legacyJukebox(
+fun BaseMenuBuilder.legacyJukebox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_JUKEBOX, slots.toList(), block)
 
-fun MenuBuilder.legacyFence(
+fun BaseMenuBuilder.legacyFence(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_FENCE, slots.toList(), block)
 
-fun MenuBuilder.legacyPumpkin(
+fun BaseMenuBuilder.legacyPumpkin(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PUMPKIN, slots.toList(), block)
 
-fun MenuBuilder.legacyNetherrack(
+fun BaseMenuBuilder.legacyNetherrack(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_NETHERRACK, slots.toList(), block)
 
-fun MenuBuilder.legacySoulSand(
+fun BaseMenuBuilder.legacySoulSand(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SOUL_SAND, slots.toList(), block)
 
-fun MenuBuilder.legacyGlowstone(
+fun BaseMenuBuilder.legacyGlowstone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GLOWSTONE, slots.toList(), block)
 
-fun MenuBuilder.legacyPortal(
+fun BaseMenuBuilder.legacyPortal(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PORTAL, slots.toList(), block)
 
-fun MenuBuilder.legacyJackOLantern(
+fun BaseMenuBuilder.legacyJackOLantern(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_JACK_O_LANTERN, slots.toList(), block)
 
-fun MenuBuilder.legacyCakeBlock(
+fun BaseMenuBuilder.legacyCakeBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CAKE_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.legacyDiodeBlockOff(
+fun BaseMenuBuilder.legacyDiodeBlockOff(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DIODE_BLOCK_OFF, slots.toList(), block)
 
-fun MenuBuilder.legacyDiodeBlockOn(
+fun BaseMenuBuilder.legacyDiodeBlockOn(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DIODE_BLOCK_ON, slots.toList(), block)
 
-fun MenuBuilder.legacyStainedGlass(
+fun BaseMenuBuilder.legacyStainedGlass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_STAINED_GLASS, slots.toList(), block)
 
-fun MenuBuilder.legacyTrapDoor(
+fun BaseMenuBuilder.legacyTrapDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_TRAP_DOOR, slots.toList(), block)
 
-fun MenuBuilder.legacyMonsterEggs(
+fun BaseMenuBuilder.legacyMonsterEggs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_MONSTER_EGGS, slots.toList(), block)
 
-fun MenuBuilder.legacySmoothBrick(
+fun BaseMenuBuilder.legacySmoothBrick(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SMOOTH_BRICK, slots.toList(), block)
 
-fun MenuBuilder.legacyHugeMushroom1(
+fun BaseMenuBuilder.legacyHugeMushroom1(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_HUGE_MUSHROOM_1, slots.toList(), block)
 
-fun MenuBuilder.legacyHugeMushroom2(
+fun BaseMenuBuilder.legacyHugeMushroom2(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_HUGE_MUSHROOM_2, slots.toList(), block)
 
-fun MenuBuilder.legacyIronFence(
+fun BaseMenuBuilder.legacyIronFence(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_IRON_FENCE, slots.toList(), block)
 
-fun MenuBuilder.legacyThinGlass(
+fun BaseMenuBuilder.legacyThinGlass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_THIN_GLASS, slots.toList(), block)
 
-fun MenuBuilder.legacyMelonBlock(
+fun BaseMenuBuilder.legacyMelonBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_MELON_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.legacyPumpkinStem(
+fun BaseMenuBuilder.legacyPumpkinStem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PUMPKIN_STEM, slots.toList(), block)
 
-fun MenuBuilder.legacyMelonStem(
+fun BaseMenuBuilder.legacyMelonStem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_MELON_STEM, slots.toList(), block)
 
-fun MenuBuilder.legacyVine(
+fun BaseMenuBuilder.legacyVine(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_VINE, slots.toList(), block)
 
-fun MenuBuilder.legacyFenceGate(
+fun BaseMenuBuilder.legacyFenceGate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_FENCE_GATE, slots.toList(), block)
 
-fun MenuBuilder.legacyBrickStairs(
+fun BaseMenuBuilder.legacyBrickStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BRICK_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.legacySmoothStairs(
+fun BaseMenuBuilder.legacySmoothStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SMOOTH_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.legacyMycel(
+fun BaseMenuBuilder.legacyMycel(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_MYCEL, slots.toList(), block)
 
-fun MenuBuilder.legacyWaterLily(
+fun BaseMenuBuilder.legacyWaterLily(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WATER_LILY, slots.toList(), block)
 
-fun MenuBuilder.legacyNetherBrick(
+fun BaseMenuBuilder.legacyNetherBrick(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_NETHER_BRICK, slots.toList(), block)
 
-fun MenuBuilder.legacyNetherFence(
+fun BaseMenuBuilder.legacyNetherFence(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_NETHER_FENCE, slots.toList(), block)
 
-fun MenuBuilder.legacyNetherBrickStairs(
+fun BaseMenuBuilder.legacyNetherBrickStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_NETHER_BRICK_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.legacyNetherWarts(
+fun BaseMenuBuilder.legacyNetherWarts(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_NETHER_WARTS, slots.toList(), block)
 
-fun MenuBuilder.legacyEnchantmentTable(
+fun BaseMenuBuilder.legacyEnchantmentTable(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_ENCHANTMENT_TABLE, slots.toList(), block)
 
-fun MenuBuilder.legacyBrewingStand(
+fun BaseMenuBuilder.legacyBrewingStand(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BREWING_STAND, slots.toList(), block)
 
-fun MenuBuilder.legacyCauldron(
+fun BaseMenuBuilder.legacyCauldron(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CAULDRON, slots.toList(), block)
 
-fun MenuBuilder.legacyEnderPortal(
+fun BaseMenuBuilder.legacyEnderPortal(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_ENDER_PORTAL, slots.toList(), block)
 
-fun MenuBuilder.legacyEnderPortalFrame(
+fun BaseMenuBuilder.legacyEnderPortalFrame(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_ENDER_PORTAL_FRAME, slots.toList(), block)
 
-fun MenuBuilder.legacyEnderStone(
+fun BaseMenuBuilder.legacyEnderStone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_ENDER_STONE, slots.toList(), block)
 
-fun MenuBuilder.legacyDragonEgg(
+fun BaseMenuBuilder.legacyDragonEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DRAGON_EGG, slots.toList(), block)
 
-fun MenuBuilder.legacyRedstoneLampOff(
+fun BaseMenuBuilder.legacyRedstoneLampOff(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_REDSTONE_LAMP_OFF, slots.toList(), block)
 
-fun MenuBuilder.legacyRedstoneLampOn(
+fun BaseMenuBuilder.legacyRedstoneLampOn(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_REDSTONE_LAMP_ON, slots.toList(), block)
 
-fun MenuBuilder.legacyWoodDoubleStep(
+fun BaseMenuBuilder.legacyWoodDoubleStep(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WOOD_DOUBLE_STEP, slots.toList(), block)
 
-fun MenuBuilder.legacyWoodStep(
+fun BaseMenuBuilder.legacyWoodStep(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WOOD_STEP, slots.toList(), block)
 
-fun MenuBuilder.legacyCocoa(
+fun BaseMenuBuilder.legacyCocoa(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_COCOA, slots.toList(), block)
 
-fun MenuBuilder.legacySandstoneStairs(
+fun BaseMenuBuilder.legacySandstoneStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SANDSTONE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.legacyEmeraldOre(
+fun BaseMenuBuilder.legacyEmeraldOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_EMERALD_ORE, slots.toList(), block)
 
-fun MenuBuilder.legacyEnderChest(
+fun BaseMenuBuilder.legacyEnderChest(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_ENDER_CHEST, slots.toList(), block)
 
-fun MenuBuilder.legacyTripwireHook(
+fun BaseMenuBuilder.legacyTripwireHook(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_TRIPWIRE_HOOK, slots.toList(), block)
 
-fun MenuBuilder.legacyTripwire(
+fun BaseMenuBuilder.legacyTripwire(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_TRIPWIRE, slots.toList(), block)
 
-fun MenuBuilder.legacyEmeraldBlock(
+fun BaseMenuBuilder.legacyEmeraldBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_EMERALD_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.legacySpruceWoodStairs(
+fun BaseMenuBuilder.legacySpruceWoodStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SPRUCE_WOOD_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.legacyBirchWoodStairs(
+fun BaseMenuBuilder.legacyBirchWoodStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BIRCH_WOOD_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.legacyJungleWoodStairs(
+fun BaseMenuBuilder.legacyJungleWoodStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_JUNGLE_WOOD_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.legacyCommand(
+fun BaseMenuBuilder.legacyCommand(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_COMMAND, slots.toList(), block)
 
-fun MenuBuilder.legacyBeacon(
+fun BaseMenuBuilder.legacyBeacon(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BEACON, slots.toList(), block)
 
-fun MenuBuilder.legacyCobbleWall(
+fun BaseMenuBuilder.legacyCobbleWall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_COBBLE_WALL, slots.toList(), block)
 
-fun MenuBuilder.legacyFlowerPot(
+fun BaseMenuBuilder.legacyFlowerPot(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_FLOWER_POT, slots.toList(), block)
 
-fun MenuBuilder.legacyCarrot(
+fun BaseMenuBuilder.legacyCarrot(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CARROT, slots.toList(), block)
 
-fun MenuBuilder.legacyPotato(
+fun BaseMenuBuilder.legacyPotato(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_POTATO, slots.toList(), block)
 
-fun MenuBuilder.legacyWoodButton(
+fun BaseMenuBuilder.legacyWoodButton(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WOOD_BUTTON, slots.toList(), block)
 
-fun MenuBuilder.legacySkull(
+fun BaseMenuBuilder.legacySkull(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SKULL, slots.toList(), block)
 
-fun MenuBuilder.legacyAnvil(
+fun BaseMenuBuilder.legacyAnvil(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_ANVIL, slots.toList(), block)
 
-fun MenuBuilder.legacyTrappedChest(
+fun BaseMenuBuilder.legacyTrappedChest(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_TRAPPED_CHEST, slots.toList(), block)
 
-fun MenuBuilder.legacyGoldPlate(
+fun BaseMenuBuilder.legacyGoldPlate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GOLD_PLATE, slots.toList(), block)
 
-fun MenuBuilder.legacyIronPlate(
+fun BaseMenuBuilder.legacyIronPlate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_IRON_PLATE, slots.toList(), block)
 
-fun MenuBuilder.legacyRedstoneComparatorOff(
+fun BaseMenuBuilder.legacyRedstoneComparatorOff(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_REDSTONE_COMPARATOR_OFF, slots.toList(), block)
 
-fun MenuBuilder.legacyRedstoneComparatorOn(
+fun BaseMenuBuilder.legacyRedstoneComparatorOn(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_REDSTONE_COMPARATOR_ON, slots.toList(), block)
 
-fun MenuBuilder.legacyDaylightDetector(
+fun BaseMenuBuilder.legacyDaylightDetector(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DAYLIGHT_DETECTOR, slots.toList(), block)
 
-fun MenuBuilder.legacyRedstoneBlock(
+fun BaseMenuBuilder.legacyRedstoneBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_REDSTONE_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.legacyQuartzOre(
+fun BaseMenuBuilder.legacyQuartzOre(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_QUARTZ_ORE, slots.toList(), block)
 
-fun MenuBuilder.legacyHopper(
+fun BaseMenuBuilder.legacyHopper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_HOPPER, slots.toList(), block)
 
-fun MenuBuilder.legacyQuartzBlock(
+fun BaseMenuBuilder.legacyQuartzBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_QUARTZ_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.legacyQuartzStairs(
+fun BaseMenuBuilder.legacyQuartzStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_QUARTZ_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.legacyActivatorRail(
+fun BaseMenuBuilder.legacyActivatorRail(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_ACTIVATOR_RAIL, slots.toList(), block)
 
-fun MenuBuilder.legacyDropper(
+fun BaseMenuBuilder.legacyDropper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DROPPER, slots.toList(), block)
 
-fun MenuBuilder.legacyStainedClay(
+fun BaseMenuBuilder.legacyStainedClay(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_STAINED_CLAY, slots.toList(), block)
 
-fun MenuBuilder.legacyStainedGlassPane(
+fun BaseMenuBuilder.legacyStainedGlassPane(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_STAINED_GLASS_PANE, slots.toList(), block)
 
-fun MenuBuilder.legacyLeaves2(
+fun BaseMenuBuilder.legacyLeaves2(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_LEAVES_2, slots.toList(), block)
 
-fun MenuBuilder.legacyLog2(
+fun BaseMenuBuilder.legacyLog2(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_LOG_2, slots.toList(), block)
 
-fun MenuBuilder.legacyAcaciaStairs(
+fun BaseMenuBuilder.legacyAcaciaStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_ACACIA_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.legacyDarkOakStairs(
+fun BaseMenuBuilder.legacyDarkOakStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DARK_OAK_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.legacySlimeBlock(
+fun BaseMenuBuilder.legacySlimeBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SLIME_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.legacyBarrier(
+fun BaseMenuBuilder.legacyBarrier(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BARRIER, slots.toList(), block)
 
-fun MenuBuilder.legacyIronTrapdoor(
+fun BaseMenuBuilder.legacyIronTrapdoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_IRON_TRAPDOOR, slots.toList(), block)
 
-fun MenuBuilder.legacyPrismarine(
+fun BaseMenuBuilder.legacyPrismarine(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PRISMARINE, slots.toList(), block)
 
-fun MenuBuilder.legacySeaLantern(
+fun BaseMenuBuilder.legacySeaLantern(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SEA_LANTERN, slots.toList(), block)
 
-fun MenuBuilder.legacyHayBlock(
+fun BaseMenuBuilder.legacyHayBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_HAY_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.legacyCarpet(
+fun BaseMenuBuilder.legacyCarpet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CARPET, slots.toList(), block)
 
-fun MenuBuilder.legacyHardClay(
+fun BaseMenuBuilder.legacyHardClay(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_HARD_CLAY, slots.toList(), block)
 
-fun MenuBuilder.legacyCoalBlock(
+fun BaseMenuBuilder.legacyCoalBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_COAL_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.legacyPackedIce(
+fun BaseMenuBuilder.legacyPackedIce(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PACKED_ICE, slots.toList(), block)
 
-fun MenuBuilder.legacyDoublePlant(
+fun BaseMenuBuilder.legacyDoublePlant(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DOUBLE_PLANT, slots.toList(), block)
 
-fun MenuBuilder.legacyStandingBanner(
+fun BaseMenuBuilder.legacyStandingBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_STANDING_BANNER, slots.toList(), block)
 
-fun MenuBuilder.legacyWallBanner(
+fun BaseMenuBuilder.legacyWallBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WALL_BANNER, slots.toList(), block)
 
-fun MenuBuilder.legacyDaylightDetectorInverted(
+fun BaseMenuBuilder.legacyDaylightDetectorInverted(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DAYLIGHT_DETECTOR_INVERTED, slots.toList(), block)
 
-fun MenuBuilder.legacyRedSandstone(
+fun BaseMenuBuilder.legacyRedSandstone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RED_SANDSTONE, slots.toList(), block)
 
-fun MenuBuilder.legacyRedSandstoneStairs(
+fun BaseMenuBuilder.legacyRedSandstoneStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RED_SANDSTONE_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.legacyDoubleStoneSlab2(
+fun BaseMenuBuilder.legacyDoubleStoneSlab2(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DOUBLE_STONE_SLAB2, slots.toList(), block)
 
-fun MenuBuilder.legacyStoneSlab2(
+fun BaseMenuBuilder.legacyStoneSlab2(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_STONE_SLAB2, slots.toList(), block)
 
-fun MenuBuilder.legacySpruceFenceGate(
+fun BaseMenuBuilder.legacySpruceFenceGate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SPRUCE_FENCE_GATE, slots.toList(), block)
 
-fun MenuBuilder.legacyBirchFenceGate(
+fun BaseMenuBuilder.legacyBirchFenceGate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BIRCH_FENCE_GATE, slots.toList(), block)
 
-fun MenuBuilder.legacyJungleFenceGate(
+fun BaseMenuBuilder.legacyJungleFenceGate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_JUNGLE_FENCE_GATE, slots.toList(), block)
 
-fun MenuBuilder.legacyDarkOakFenceGate(
+fun BaseMenuBuilder.legacyDarkOakFenceGate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DARK_OAK_FENCE_GATE, slots.toList(), block)
 
-fun MenuBuilder.legacyAcaciaFenceGate(
+fun BaseMenuBuilder.legacyAcaciaFenceGate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_ACACIA_FENCE_GATE, slots.toList(), block)
 
-fun MenuBuilder.legacySpruceFence(
+fun BaseMenuBuilder.legacySpruceFence(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SPRUCE_FENCE, slots.toList(), block)
 
-fun MenuBuilder.legacyBirchFence(
+fun BaseMenuBuilder.legacyBirchFence(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BIRCH_FENCE, slots.toList(), block)
 
-fun MenuBuilder.legacyJungleFence(
+fun BaseMenuBuilder.legacyJungleFence(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_JUNGLE_FENCE, slots.toList(), block)
 
-fun MenuBuilder.legacyDarkOakFence(
+fun BaseMenuBuilder.legacyDarkOakFence(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DARK_OAK_FENCE, slots.toList(), block)
 
-fun MenuBuilder.legacyAcaciaFence(
+fun BaseMenuBuilder.legacyAcaciaFence(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_ACACIA_FENCE, slots.toList(), block)
 
-fun MenuBuilder.legacySpruceDoor(
+fun BaseMenuBuilder.legacySpruceDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SPRUCE_DOOR, slots.toList(), block)
 
-fun MenuBuilder.legacyBirchDoor(
+fun BaseMenuBuilder.legacyBirchDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BIRCH_DOOR, slots.toList(), block)
 
-fun MenuBuilder.legacyJungleDoor(
+fun BaseMenuBuilder.legacyJungleDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_JUNGLE_DOOR, slots.toList(), block)
 
-fun MenuBuilder.legacyAcaciaDoor(
+fun BaseMenuBuilder.legacyAcaciaDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_ACACIA_DOOR, slots.toList(), block)
 
-fun MenuBuilder.legacyDarkOakDoor(
+fun BaseMenuBuilder.legacyDarkOakDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DARK_OAK_DOOR, slots.toList(), block)
 
-fun MenuBuilder.legacyEndRod(
+fun BaseMenuBuilder.legacyEndRod(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_END_ROD, slots.toList(), block)
 
-fun MenuBuilder.legacyChorusPlant(
+fun BaseMenuBuilder.legacyChorusPlant(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CHORUS_PLANT, slots.toList(), block)
 
-fun MenuBuilder.legacyChorusFlower(
+fun BaseMenuBuilder.legacyChorusFlower(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CHORUS_FLOWER, slots.toList(), block)
 
-fun MenuBuilder.legacyPurpurBlock(
+fun BaseMenuBuilder.legacyPurpurBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PURPUR_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.legacyPurpurPillar(
+fun BaseMenuBuilder.legacyPurpurPillar(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PURPUR_PILLAR, slots.toList(), block)
 
-fun MenuBuilder.legacyPurpurStairs(
+fun BaseMenuBuilder.legacyPurpurStairs(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PURPUR_STAIRS, slots.toList(), block)
 
-fun MenuBuilder.legacyPurpurDoubleSlab(
+fun BaseMenuBuilder.legacyPurpurDoubleSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PURPUR_DOUBLE_SLAB, slots.toList(), block)
 
-fun MenuBuilder.legacyPurpurSlab(
+fun BaseMenuBuilder.legacyPurpurSlab(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PURPUR_SLAB, slots.toList(), block)
 
-fun MenuBuilder.legacyEndBricks(
+fun BaseMenuBuilder.legacyEndBricks(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_END_BRICKS, slots.toList(), block)
 
-fun MenuBuilder.legacyBeetrootBlock(
+fun BaseMenuBuilder.legacyBeetrootBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BEETROOT_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.legacyGrassPath(
+fun BaseMenuBuilder.legacyGrassPath(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GRASS_PATH, slots.toList(), block)
 
-fun MenuBuilder.legacyEndGateway(
+fun BaseMenuBuilder.legacyEndGateway(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_END_GATEWAY, slots.toList(), block)
 
-fun MenuBuilder.legacyCommandRepeating(
+fun BaseMenuBuilder.legacyCommandRepeating(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_COMMAND_REPEATING, slots.toList(), block)
 
-fun MenuBuilder.legacyCommandChain(
+fun BaseMenuBuilder.legacyCommandChain(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_COMMAND_CHAIN, slots.toList(), block)
 
-fun MenuBuilder.legacyFrostedIce(
+fun BaseMenuBuilder.legacyFrostedIce(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_FROSTED_ICE, slots.toList(), block)
 
-fun MenuBuilder.legacyMagma(
+fun BaseMenuBuilder.legacyMagma(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_MAGMA, slots.toList(), block)
 
-fun MenuBuilder.legacyNetherWartBlock(
+fun BaseMenuBuilder.legacyNetherWartBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_NETHER_WART_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.legacyRedNetherBrick(
+fun BaseMenuBuilder.legacyRedNetherBrick(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RED_NETHER_BRICK, slots.toList(), block)
 
-fun MenuBuilder.legacyBoneBlock(
+fun BaseMenuBuilder.legacyBoneBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BONE_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.legacyStructureVoid(
+fun BaseMenuBuilder.legacyStructureVoid(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_STRUCTURE_VOID, slots.toList(), block)
 
-fun MenuBuilder.legacyObserver(
+fun BaseMenuBuilder.legacyObserver(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_OBSERVER, slots.toList(), block)
 
-fun MenuBuilder.legacyWhiteShulkerBox(
+fun BaseMenuBuilder.legacyWhiteShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WHITE_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.legacyOrangeShulkerBox(
+fun BaseMenuBuilder.legacyOrangeShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_ORANGE_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.legacyMagentaShulkerBox(
+fun BaseMenuBuilder.legacyMagentaShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_MAGENTA_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.legacyLightBlueShulkerBox(
+fun BaseMenuBuilder.legacyLightBlueShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_LIGHT_BLUE_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.legacyYellowShulkerBox(
+fun BaseMenuBuilder.legacyYellowShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_YELLOW_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.legacyLimeShulkerBox(
+fun BaseMenuBuilder.legacyLimeShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_LIME_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.legacyPinkShulkerBox(
+fun BaseMenuBuilder.legacyPinkShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PINK_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.legacyGrayShulkerBox(
+fun BaseMenuBuilder.legacyGrayShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GRAY_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.legacySilverShulkerBox(
+fun BaseMenuBuilder.legacySilverShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SILVER_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.legacyCyanShulkerBox(
+fun BaseMenuBuilder.legacyCyanShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CYAN_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.legacyPurpleShulkerBox(
+fun BaseMenuBuilder.legacyPurpleShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PURPLE_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.legacyBlueShulkerBox(
+fun BaseMenuBuilder.legacyBlueShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BLUE_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.legacyBrownShulkerBox(
+fun BaseMenuBuilder.legacyBrownShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BROWN_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.legacyGreenShulkerBox(
+fun BaseMenuBuilder.legacyGreenShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GREEN_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.legacyRedShulkerBox(
+fun BaseMenuBuilder.legacyRedShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RED_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.legacyBlackShulkerBox(
+fun BaseMenuBuilder.legacyBlackShulkerBox(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BLACK_SHULKER_BOX, slots.toList(), block)
 
-fun MenuBuilder.legacyWhiteGlazedTerracotta(
+fun BaseMenuBuilder.legacyWhiteGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WHITE_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.legacyOrangeGlazedTerracotta(
+fun BaseMenuBuilder.legacyOrangeGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_ORANGE_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.legacyMagentaGlazedTerracotta(
+fun BaseMenuBuilder.legacyMagentaGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_MAGENTA_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.legacyLightBlueGlazedTerracotta(
+fun BaseMenuBuilder.legacyLightBlueGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_LIGHT_BLUE_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.legacyYellowGlazedTerracotta(
+fun BaseMenuBuilder.legacyYellowGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_YELLOW_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.legacyLimeGlazedTerracotta(
+fun BaseMenuBuilder.legacyLimeGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_LIME_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.legacyPinkGlazedTerracotta(
+fun BaseMenuBuilder.legacyPinkGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PINK_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.legacyGrayGlazedTerracotta(
+fun BaseMenuBuilder.legacyGrayGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GRAY_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.legacySilverGlazedTerracotta(
+fun BaseMenuBuilder.legacySilverGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SILVER_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.legacyCyanGlazedTerracotta(
+fun BaseMenuBuilder.legacyCyanGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CYAN_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.legacyPurpleGlazedTerracotta(
+fun BaseMenuBuilder.legacyPurpleGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PURPLE_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.legacyBlueGlazedTerracotta(
+fun BaseMenuBuilder.legacyBlueGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BLUE_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.legacyBrownGlazedTerracotta(
+fun BaseMenuBuilder.legacyBrownGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BROWN_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.legacyGreenGlazedTerracotta(
+fun BaseMenuBuilder.legacyGreenGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GREEN_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.legacyRedGlazedTerracotta(
+fun BaseMenuBuilder.legacyRedGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RED_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.legacyBlackGlazedTerracotta(
+fun BaseMenuBuilder.legacyBlackGlazedTerracotta(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BLACK_GLAZED_TERRACOTTA, slots.toList(), block)
 
-fun MenuBuilder.legacyConcrete(
+fun BaseMenuBuilder.legacyConcrete(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CONCRETE, slots.toList(), block)
 
-fun MenuBuilder.legacyConcretePowder(
+fun BaseMenuBuilder.legacyConcretePowder(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CONCRETE_POWDER, slots.toList(), block)
 
-fun MenuBuilder.legacyStructureBlock(
+fun BaseMenuBuilder.legacyStructureBlock(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_STRUCTURE_BLOCK, slots.toList(), block)
 
-fun MenuBuilder.legacyIronSpade(
+fun BaseMenuBuilder.legacyIronSpade(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_IRON_SPADE, slots.toList(), block)
 
-fun MenuBuilder.legacyIronPickaxe(
+fun BaseMenuBuilder.legacyIronPickaxe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_IRON_PICKAXE, slots.toList(), block)
 
-fun MenuBuilder.legacyIronAxe(
+fun BaseMenuBuilder.legacyIronAxe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_IRON_AXE, slots.toList(), block)
 
-fun MenuBuilder.legacyFlintAndSteel(
+fun BaseMenuBuilder.legacyFlintAndSteel(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_FLINT_AND_STEEL, slots.toList(), block)
 
-fun MenuBuilder.legacyApple(
+fun BaseMenuBuilder.legacyApple(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_APPLE, slots.toList(), block)
 
-fun MenuBuilder.legacyBow(
+fun BaseMenuBuilder.legacyBow(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BOW, slots.toList(), block)
 
-fun MenuBuilder.legacyArrow(
+fun BaseMenuBuilder.legacyArrow(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_ARROW, slots.toList(), block)
 
-fun MenuBuilder.legacyCoal(
+fun BaseMenuBuilder.legacyCoal(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_COAL, slots.toList(), block)
 
-fun MenuBuilder.legacyDiamond(
+fun BaseMenuBuilder.legacyDiamond(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DIAMOND, slots.toList(), block)
 
-fun MenuBuilder.legacyIronIngot(
+fun BaseMenuBuilder.legacyIronIngot(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_IRON_INGOT, slots.toList(), block)
 
-fun MenuBuilder.legacyGoldIngot(
+fun BaseMenuBuilder.legacyGoldIngot(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GOLD_INGOT, slots.toList(), block)
 
-fun MenuBuilder.legacyIronSword(
+fun BaseMenuBuilder.legacyIronSword(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_IRON_SWORD, slots.toList(), block)
 
-fun MenuBuilder.legacyWoodSword(
+fun BaseMenuBuilder.legacyWoodSword(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WOOD_SWORD, slots.toList(), block)
 
-fun MenuBuilder.legacyWoodSpade(
+fun BaseMenuBuilder.legacyWoodSpade(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WOOD_SPADE, slots.toList(), block)
 
-fun MenuBuilder.legacyWoodPickaxe(
+fun BaseMenuBuilder.legacyWoodPickaxe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WOOD_PICKAXE, slots.toList(), block)
 
-fun MenuBuilder.legacyWoodAxe(
+fun BaseMenuBuilder.legacyWoodAxe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WOOD_AXE, slots.toList(), block)
 
-fun MenuBuilder.legacyStoneSword(
+fun BaseMenuBuilder.legacyStoneSword(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_STONE_SWORD, slots.toList(), block)
 
-fun MenuBuilder.legacyStoneSpade(
+fun BaseMenuBuilder.legacyStoneSpade(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_STONE_SPADE, slots.toList(), block)
 
-fun MenuBuilder.legacyStonePickaxe(
+fun BaseMenuBuilder.legacyStonePickaxe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_STONE_PICKAXE, slots.toList(), block)
 
-fun MenuBuilder.legacyStoneAxe(
+fun BaseMenuBuilder.legacyStoneAxe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_STONE_AXE, slots.toList(), block)
 
-fun MenuBuilder.legacyDiamondSword(
+fun BaseMenuBuilder.legacyDiamondSword(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DIAMOND_SWORD, slots.toList(), block)
 
-fun MenuBuilder.legacyDiamondSpade(
+fun BaseMenuBuilder.legacyDiamondSpade(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DIAMOND_SPADE, slots.toList(), block)
 
-fun MenuBuilder.legacyDiamondPickaxe(
+fun BaseMenuBuilder.legacyDiamondPickaxe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DIAMOND_PICKAXE, slots.toList(), block)
 
-fun MenuBuilder.legacyDiamondAxe(
+fun BaseMenuBuilder.legacyDiamondAxe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DIAMOND_AXE, slots.toList(), block)
 
-fun MenuBuilder.legacyStick(
+fun BaseMenuBuilder.legacyStick(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_STICK, slots.toList(), block)
 
-fun MenuBuilder.legacyBowl(
+fun BaseMenuBuilder.legacyBowl(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BOWL, slots.toList(), block)
 
-fun MenuBuilder.legacyMushroomSoup(
+fun BaseMenuBuilder.legacyMushroomSoup(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_MUSHROOM_SOUP, slots.toList(), block)
 
-fun MenuBuilder.legacyGoldSword(
+fun BaseMenuBuilder.legacyGoldSword(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GOLD_SWORD, slots.toList(), block)
 
-fun MenuBuilder.legacyGoldSpade(
+fun BaseMenuBuilder.legacyGoldSpade(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GOLD_SPADE, slots.toList(), block)
 
-fun MenuBuilder.legacyGoldPickaxe(
+fun BaseMenuBuilder.legacyGoldPickaxe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GOLD_PICKAXE, slots.toList(), block)
 
-fun MenuBuilder.legacyGoldAxe(
+fun BaseMenuBuilder.legacyGoldAxe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GOLD_AXE, slots.toList(), block)
 
-fun MenuBuilder.legacyString(
+fun BaseMenuBuilder.legacyString(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_STRING, slots.toList(), block)
 
-fun MenuBuilder.legacyFeather(
+fun BaseMenuBuilder.legacyFeather(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_FEATHER, slots.toList(), block)
 
-fun MenuBuilder.legacySulphur(
+fun BaseMenuBuilder.legacySulphur(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SULPHUR, slots.toList(), block)
 
-fun MenuBuilder.legacyWoodHoe(
+fun BaseMenuBuilder.legacyWoodHoe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WOOD_HOE, slots.toList(), block)
 
-fun MenuBuilder.legacyStoneHoe(
+fun BaseMenuBuilder.legacyStoneHoe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_STONE_HOE, slots.toList(), block)
 
-fun MenuBuilder.legacyIronHoe(
+fun BaseMenuBuilder.legacyIronHoe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_IRON_HOE, slots.toList(), block)
 
-fun MenuBuilder.legacyDiamondHoe(
+fun BaseMenuBuilder.legacyDiamondHoe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DIAMOND_HOE, slots.toList(), block)
 
-fun MenuBuilder.legacyGoldHoe(
+fun BaseMenuBuilder.legacyGoldHoe(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GOLD_HOE, slots.toList(), block)
 
-fun MenuBuilder.legacySeeds(
+fun BaseMenuBuilder.legacySeeds(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SEEDS, slots.toList(), block)
 
-fun MenuBuilder.legacyWheat(
+fun BaseMenuBuilder.legacyWheat(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WHEAT, slots.toList(), block)
 
-fun MenuBuilder.legacyBread(
+fun BaseMenuBuilder.legacyBread(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BREAD, slots.toList(), block)
 
-fun MenuBuilder.legacyLeatherHelmet(
+fun BaseMenuBuilder.legacyLeatherHelmet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_LEATHER_HELMET, slots.toList(), block)
 
-fun MenuBuilder.legacyLeatherChestplate(
+fun BaseMenuBuilder.legacyLeatherChestplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_LEATHER_CHESTPLATE, slots.toList(), block)
 
-fun MenuBuilder.legacyLeatherLeggings(
+fun BaseMenuBuilder.legacyLeatherLeggings(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_LEATHER_LEGGINGS, slots.toList(), block)
 
-fun MenuBuilder.legacyLeatherBoots(
+fun BaseMenuBuilder.legacyLeatherBoots(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_LEATHER_BOOTS, slots.toList(), block)
 
-fun MenuBuilder.legacyChainmailHelmet(
+fun BaseMenuBuilder.legacyChainmailHelmet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CHAINMAIL_HELMET, slots.toList(), block)
 
-fun MenuBuilder.legacyChainmailChestplate(
+fun BaseMenuBuilder.legacyChainmailChestplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CHAINMAIL_CHESTPLATE, slots.toList(), block)
 
-fun MenuBuilder.legacyChainmailLeggings(
+fun BaseMenuBuilder.legacyChainmailLeggings(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CHAINMAIL_LEGGINGS, slots.toList(), block)
 
-fun MenuBuilder.legacyChainmailBoots(
+fun BaseMenuBuilder.legacyChainmailBoots(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CHAINMAIL_BOOTS, slots.toList(), block)
 
-fun MenuBuilder.legacyIronHelmet(
+fun BaseMenuBuilder.legacyIronHelmet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_IRON_HELMET, slots.toList(), block)
 
-fun MenuBuilder.legacyIronChestplate(
+fun BaseMenuBuilder.legacyIronChestplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_IRON_CHESTPLATE, slots.toList(), block)
 
-fun MenuBuilder.legacyIronLeggings(
+fun BaseMenuBuilder.legacyIronLeggings(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_IRON_LEGGINGS, slots.toList(), block)
 
-fun MenuBuilder.legacyIronBoots(
+fun BaseMenuBuilder.legacyIronBoots(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_IRON_BOOTS, slots.toList(), block)
 
-fun MenuBuilder.legacyDiamondHelmet(
+fun BaseMenuBuilder.legacyDiamondHelmet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DIAMOND_HELMET, slots.toList(), block)
 
-fun MenuBuilder.legacyDiamondChestplate(
+fun BaseMenuBuilder.legacyDiamondChestplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DIAMOND_CHESTPLATE, slots.toList(), block)
 
-fun MenuBuilder.legacyDiamondLeggings(
+fun BaseMenuBuilder.legacyDiamondLeggings(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DIAMOND_LEGGINGS, slots.toList(), block)
 
-fun MenuBuilder.legacyDiamondBoots(
+fun BaseMenuBuilder.legacyDiamondBoots(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DIAMOND_BOOTS, slots.toList(), block)
 
-fun MenuBuilder.legacyGoldHelmet(
+fun BaseMenuBuilder.legacyGoldHelmet(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GOLD_HELMET, slots.toList(), block)
 
-fun MenuBuilder.legacyGoldChestplate(
+fun BaseMenuBuilder.legacyGoldChestplate(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GOLD_CHESTPLATE, slots.toList(), block)
 
-fun MenuBuilder.legacyGoldLeggings(
+fun BaseMenuBuilder.legacyGoldLeggings(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GOLD_LEGGINGS, slots.toList(), block)
 
-fun MenuBuilder.legacyGoldBoots(
+fun BaseMenuBuilder.legacyGoldBoots(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GOLD_BOOTS, slots.toList(), block)
 
-fun MenuBuilder.legacyFlint(
+fun BaseMenuBuilder.legacyFlint(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_FLINT, slots.toList(), block)
 
-fun MenuBuilder.legacyPork(
+fun BaseMenuBuilder.legacyPork(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PORK, slots.toList(), block)
 
-fun MenuBuilder.legacyGrilledPork(
+fun BaseMenuBuilder.legacyGrilledPork(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GRILLED_PORK, slots.toList(), block)
 
-fun MenuBuilder.legacyPainting(
+fun BaseMenuBuilder.legacyPainting(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PAINTING, slots.toList(), block)
 
-fun MenuBuilder.legacyGoldenApple(
+fun BaseMenuBuilder.legacyGoldenApple(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GOLDEN_APPLE, slots.toList(), block)
 
-fun MenuBuilder.legacySign(
+fun BaseMenuBuilder.legacySign(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SIGN, slots.toList(), block)
 
-fun MenuBuilder.legacyWoodDoor(
+fun BaseMenuBuilder.legacyWoodDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WOOD_DOOR, slots.toList(), block)
 
-fun MenuBuilder.legacyBucket(
+fun BaseMenuBuilder.legacyBucket(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BUCKET, slots.toList(), block)
 
-fun MenuBuilder.legacyWaterBucket(
+fun BaseMenuBuilder.legacyWaterBucket(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WATER_BUCKET, slots.toList(), block)
 
-fun MenuBuilder.legacyLavaBucket(
+fun BaseMenuBuilder.legacyLavaBucket(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_LAVA_BUCKET, slots.toList(), block)
 
-fun MenuBuilder.legacyMinecart(
+fun BaseMenuBuilder.legacyMinecart(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_MINECART, slots.toList(), block)
 
-fun MenuBuilder.legacySaddle(
+fun BaseMenuBuilder.legacySaddle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SADDLE, slots.toList(), block)
 
-fun MenuBuilder.legacyIronDoor(
+fun BaseMenuBuilder.legacyIronDoor(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_IRON_DOOR, slots.toList(), block)
 
-fun MenuBuilder.legacyRedstone(
+fun BaseMenuBuilder.legacyRedstone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_REDSTONE, slots.toList(), block)
 
-fun MenuBuilder.legacySnowBall(
+fun BaseMenuBuilder.legacySnowBall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SNOW_BALL, slots.toList(), block)
 
-fun MenuBuilder.legacyBoat(
+fun BaseMenuBuilder.legacyBoat(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BOAT, slots.toList(), block)
 
-fun MenuBuilder.legacyLeather(
+fun BaseMenuBuilder.legacyLeather(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_LEATHER, slots.toList(), block)
 
-fun MenuBuilder.legacyMilkBucket(
+fun BaseMenuBuilder.legacyMilkBucket(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_MILK_BUCKET, slots.toList(), block)
 
-fun MenuBuilder.legacyClayBrick(
+fun BaseMenuBuilder.legacyClayBrick(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CLAY_BRICK, slots.toList(), block)
 
-fun MenuBuilder.legacyClayBall(
+fun BaseMenuBuilder.legacyClayBall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CLAY_BALL, slots.toList(), block)
 
-fun MenuBuilder.legacySugarCane(
+fun BaseMenuBuilder.legacySugarCane(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SUGAR_CANE, slots.toList(), block)
 
-fun MenuBuilder.legacyPaper(
+fun BaseMenuBuilder.legacyPaper(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PAPER, slots.toList(), block)
 
-fun MenuBuilder.legacyBook(
+fun BaseMenuBuilder.legacyBook(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BOOK, slots.toList(), block)
 
-fun MenuBuilder.legacySlimeBall(
+fun BaseMenuBuilder.legacySlimeBall(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SLIME_BALL, slots.toList(), block)
 
-fun MenuBuilder.legacyStorageMinecart(
+fun BaseMenuBuilder.legacyStorageMinecart(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_STORAGE_MINECART, slots.toList(), block)
 
-fun MenuBuilder.legacyPoweredMinecart(
+fun BaseMenuBuilder.legacyPoweredMinecart(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_POWERED_MINECART, slots.toList(), block)
 
-fun MenuBuilder.legacyEgg(
+fun BaseMenuBuilder.legacyEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_EGG, slots.toList(), block)
 
-fun MenuBuilder.legacyCompass(
+fun BaseMenuBuilder.legacyCompass(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_COMPASS, slots.toList(), block)
 
-fun MenuBuilder.legacyFishingRod(
+fun BaseMenuBuilder.legacyFishingRod(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_FISHING_ROD, slots.toList(), block)
 
-fun MenuBuilder.legacyWatch(
+fun BaseMenuBuilder.legacyWatch(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WATCH, slots.toList(), block)
 
-fun MenuBuilder.legacyGlowstoneDust(
+fun BaseMenuBuilder.legacyGlowstoneDust(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GLOWSTONE_DUST, slots.toList(), block)
 
-fun MenuBuilder.legacyRawFish(
+fun BaseMenuBuilder.legacyRawFish(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RAW_FISH, slots.toList(), block)
 
-fun MenuBuilder.legacyCookedFish(
+fun BaseMenuBuilder.legacyCookedFish(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_COOKED_FISH, slots.toList(), block)
 
-fun MenuBuilder.legacyInkSack(
+fun BaseMenuBuilder.legacyInkSack(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_INK_SACK, slots.toList(), block)
 
-fun MenuBuilder.legacyBone(
+fun BaseMenuBuilder.legacyBone(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BONE, slots.toList(), block)
 
-fun MenuBuilder.legacySugar(
+fun BaseMenuBuilder.legacySugar(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SUGAR, slots.toList(), block)
 
-fun MenuBuilder.legacyCake(
+fun BaseMenuBuilder.legacyCake(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CAKE, slots.toList(), block)
 
-fun MenuBuilder.legacyBed(
+fun BaseMenuBuilder.legacyBed(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BED, slots.toList(), block)
 
-fun MenuBuilder.legacyDiode(
+fun BaseMenuBuilder.legacyDiode(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DIODE, slots.toList(), block)
 
-fun MenuBuilder.legacyCookie(
+fun BaseMenuBuilder.legacyCookie(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_COOKIE, slots.toList(), block)
 
-fun MenuBuilder.legacyMap(
+fun BaseMenuBuilder.legacyMap(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_MAP, slots.toList(), block)
 
-fun MenuBuilder.legacyShears(
+fun BaseMenuBuilder.legacyShears(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SHEARS, slots.toList(), block)
 
-fun MenuBuilder.legacyMelon(
+fun BaseMenuBuilder.legacyMelon(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_MELON, slots.toList(), block)
 
-fun MenuBuilder.legacyPumpkinSeeds(
+fun BaseMenuBuilder.legacyPumpkinSeeds(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PUMPKIN_SEEDS, slots.toList(), block)
 
-fun MenuBuilder.legacyMelonSeeds(
+fun BaseMenuBuilder.legacyMelonSeeds(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_MELON_SEEDS, slots.toList(), block)
 
-fun MenuBuilder.legacyRawBeef(
+fun BaseMenuBuilder.legacyRawBeef(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RAW_BEEF, slots.toList(), block)
 
-fun MenuBuilder.legacyCookedBeef(
+fun BaseMenuBuilder.legacyCookedBeef(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_COOKED_BEEF, slots.toList(), block)
 
-fun MenuBuilder.legacyRawChicken(
+fun BaseMenuBuilder.legacyRawChicken(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RAW_CHICKEN, slots.toList(), block)
 
-fun MenuBuilder.legacyCookedChicken(
+fun BaseMenuBuilder.legacyCookedChicken(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_COOKED_CHICKEN, slots.toList(), block)
 
-fun MenuBuilder.legacyRottenFlesh(
+fun BaseMenuBuilder.legacyRottenFlesh(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_ROTTEN_FLESH, slots.toList(), block)
 
-fun MenuBuilder.legacyEnderPearl(
+fun BaseMenuBuilder.legacyEnderPearl(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_ENDER_PEARL, slots.toList(), block)
 
-fun MenuBuilder.legacyBlazeRod(
+fun BaseMenuBuilder.legacyBlazeRod(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BLAZE_ROD, slots.toList(), block)
 
-fun MenuBuilder.legacyGhastTear(
+fun BaseMenuBuilder.legacyGhastTear(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GHAST_TEAR, slots.toList(), block)
 
-fun MenuBuilder.legacyGoldNugget(
+fun BaseMenuBuilder.legacyGoldNugget(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GOLD_NUGGET, slots.toList(), block)
 
-fun MenuBuilder.legacyNetherStalk(
+fun BaseMenuBuilder.legacyNetherStalk(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_NETHER_STALK, slots.toList(), block)
 
-fun MenuBuilder.legacyPotion(
+fun BaseMenuBuilder.legacyPotion(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_POTION, slots.toList(), block)
 
-fun MenuBuilder.legacyGlassBottle(
+fun BaseMenuBuilder.legacyGlassBottle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GLASS_BOTTLE, slots.toList(), block)
 
-fun MenuBuilder.legacySpiderEye(
+fun BaseMenuBuilder.legacySpiderEye(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SPIDER_EYE, slots.toList(), block)
 
-fun MenuBuilder.legacyFermentedSpiderEye(
+fun BaseMenuBuilder.legacyFermentedSpiderEye(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_FERMENTED_SPIDER_EYE, slots.toList(), block)
 
-fun MenuBuilder.legacyBlazePowder(
+fun BaseMenuBuilder.legacyBlazePowder(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BLAZE_POWDER, slots.toList(), block)
 
-fun MenuBuilder.legacyMagmaCream(
+fun BaseMenuBuilder.legacyMagmaCream(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_MAGMA_CREAM, slots.toList(), block)
 
-fun MenuBuilder.legacyBrewingStandItem(
+fun BaseMenuBuilder.legacyBrewingStandItem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BREWING_STAND_ITEM, slots.toList(), block)
 
-fun MenuBuilder.legacyCauldronItem(
+fun BaseMenuBuilder.legacyCauldronItem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CAULDRON_ITEM, slots.toList(), block)
 
-fun MenuBuilder.legacyEyeOfEnder(
+fun BaseMenuBuilder.legacyEyeOfEnder(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_EYE_OF_ENDER, slots.toList(), block)
 
-fun MenuBuilder.legacySpeckledMelon(
+fun BaseMenuBuilder.legacySpeckledMelon(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SPECKLED_MELON, slots.toList(), block)
 
-fun MenuBuilder.legacyMonsterEgg(
+fun BaseMenuBuilder.legacyMonsterEgg(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_MONSTER_EGG, slots.toList(), block)
 
-fun MenuBuilder.legacyExpBottle(
+fun BaseMenuBuilder.legacyExpBottle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_EXP_BOTTLE, slots.toList(), block)
 
-fun MenuBuilder.legacyFireball(
+fun BaseMenuBuilder.legacyFireball(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_FIREBALL, slots.toList(), block)
 
-fun MenuBuilder.legacyBookAndQuill(
+fun BaseMenuBuilder.legacyBookAndQuill(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BOOK_AND_QUILL, slots.toList(), block)
 
-fun MenuBuilder.legacyWrittenBook(
+fun BaseMenuBuilder.legacyWrittenBook(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_WRITTEN_BOOK, slots.toList(), block)
 
-fun MenuBuilder.legacyEmerald(
+fun BaseMenuBuilder.legacyEmerald(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_EMERALD, slots.toList(), block)
 
-fun MenuBuilder.legacyItemFrame(
+fun BaseMenuBuilder.legacyItemFrame(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_ITEM_FRAME, slots.toList(), block)
 
-fun MenuBuilder.legacyFlowerPotItem(
+fun BaseMenuBuilder.legacyFlowerPotItem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_FLOWER_POT_ITEM, slots.toList(), block)
 
-fun MenuBuilder.legacyCarrotItem(
+fun BaseMenuBuilder.legacyCarrotItem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CARROT_ITEM, slots.toList(), block)
 
-fun MenuBuilder.legacyPotatoItem(
+fun BaseMenuBuilder.legacyPotatoItem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_POTATO_ITEM, slots.toList(), block)
 
-fun MenuBuilder.legacyBakedPotato(
+fun BaseMenuBuilder.legacyBakedPotato(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BAKED_POTATO, slots.toList(), block)
 
-fun MenuBuilder.legacyPoisonousPotato(
+fun BaseMenuBuilder.legacyPoisonousPotato(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_POISONOUS_POTATO, slots.toList(), block)
 
-fun MenuBuilder.legacyEmptyMap(
+fun BaseMenuBuilder.legacyEmptyMap(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_EMPTY_MAP, slots.toList(), block)
 
-fun MenuBuilder.legacyGoldenCarrot(
+fun BaseMenuBuilder.legacyGoldenCarrot(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GOLDEN_CARROT, slots.toList(), block)
 
-fun MenuBuilder.legacySkullItem(
+fun BaseMenuBuilder.legacySkullItem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SKULL_ITEM, slots.toList(), block)
 
-fun MenuBuilder.legacyCarrotStick(
+fun BaseMenuBuilder.legacyCarrotStick(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CARROT_STICK, slots.toList(), block)
 
-fun MenuBuilder.legacyNetherStar(
+fun BaseMenuBuilder.legacyNetherStar(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_NETHER_STAR, slots.toList(), block)
 
-fun MenuBuilder.legacyPumpkinPie(
+fun BaseMenuBuilder.legacyPumpkinPie(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PUMPKIN_PIE, slots.toList(), block)
 
-fun MenuBuilder.legacyFirework(
+fun BaseMenuBuilder.legacyFirework(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_FIREWORK, slots.toList(), block)
 
-fun MenuBuilder.legacyFireworkCharge(
+fun BaseMenuBuilder.legacyFireworkCharge(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_FIREWORK_CHARGE, slots.toList(), block)
 
-fun MenuBuilder.legacyEnchantedBook(
+fun BaseMenuBuilder.legacyEnchantedBook(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_ENCHANTED_BOOK, slots.toList(), block)
 
-fun MenuBuilder.legacyRedstoneComparator(
+fun BaseMenuBuilder.legacyRedstoneComparator(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_REDSTONE_COMPARATOR, slots.toList(), block)
 
-fun MenuBuilder.legacyNetherBrickItem(
+fun BaseMenuBuilder.legacyNetherBrickItem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_NETHER_BRICK_ITEM, slots.toList(), block)
 
-fun MenuBuilder.legacyQuartz(
+fun BaseMenuBuilder.legacyQuartz(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_QUARTZ, slots.toList(), block)
 
-fun MenuBuilder.legacyExplosiveMinecart(
+fun BaseMenuBuilder.legacyExplosiveMinecart(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_EXPLOSIVE_MINECART, slots.toList(), block)
 
-fun MenuBuilder.legacyHopperMinecart(
+fun BaseMenuBuilder.legacyHopperMinecart(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_HOPPER_MINECART, slots.toList(), block)
 
-fun MenuBuilder.legacyPrismarineShard(
+fun BaseMenuBuilder.legacyPrismarineShard(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PRISMARINE_SHARD, slots.toList(), block)
 
-fun MenuBuilder.legacyPrismarineCrystals(
+fun BaseMenuBuilder.legacyPrismarineCrystals(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_PRISMARINE_CRYSTALS, slots.toList(), block)
 
-fun MenuBuilder.legacyRabbit(
+fun BaseMenuBuilder.legacyRabbit(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RABBIT, slots.toList(), block)
 
-fun MenuBuilder.legacyCookedRabbit(
+fun BaseMenuBuilder.legacyCookedRabbit(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_COOKED_RABBIT, slots.toList(), block)
 
-fun MenuBuilder.legacyRabbitStew(
+fun BaseMenuBuilder.legacyRabbitStew(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RABBIT_STEW, slots.toList(), block)
 
-fun MenuBuilder.legacyRabbitFoot(
+fun BaseMenuBuilder.legacyRabbitFoot(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RABBIT_FOOT, slots.toList(), block)
 
-fun MenuBuilder.legacyRabbitHide(
+fun BaseMenuBuilder.legacyRabbitHide(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RABBIT_HIDE, slots.toList(), block)
 
-fun MenuBuilder.legacyArmorStand(
+fun BaseMenuBuilder.legacyArmorStand(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_ARMOR_STAND, slots.toList(), block)
 
-fun MenuBuilder.legacyIronBarding(
+fun BaseMenuBuilder.legacyIronBarding(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_IRON_BARDING, slots.toList(), block)
 
-fun MenuBuilder.legacyGoldBarding(
+fun BaseMenuBuilder.legacyGoldBarding(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GOLD_BARDING, slots.toList(), block)
 
-fun MenuBuilder.legacyDiamondBarding(
+fun BaseMenuBuilder.legacyDiamondBarding(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DIAMOND_BARDING, slots.toList(), block)
 
-fun MenuBuilder.legacyLeash(
+fun BaseMenuBuilder.legacyLeash(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_LEASH, slots.toList(), block)
 
-fun MenuBuilder.legacyNameTag(
+fun BaseMenuBuilder.legacyNameTag(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_NAME_TAG, slots.toList(), block)
 
-fun MenuBuilder.legacyCommandMinecart(
+fun BaseMenuBuilder.legacyCommandMinecart(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_COMMAND_MINECART, slots.toList(), block)
 
-fun MenuBuilder.legacyMutton(
+fun BaseMenuBuilder.legacyMutton(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_MUTTON, slots.toList(), block)
 
-fun MenuBuilder.legacyCookedMutton(
+fun BaseMenuBuilder.legacyCookedMutton(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_COOKED_MUTTON, slots.toList(), block)
 
-fun MenuBuilder.legacyBanner(
+fun BaseMenuBuilder.legacyBanner(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BANNER, slots.toList(), block)
 
-fun MenuBuilder.legacyEndCrystal(
+fun BaseMenuBuilder.legacyEndCrystal(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_END_CRYSTAL, slots.toList(), block)
 
-fun MenuBuilder.legacySpruceDoorItem(
+fun BaseMenuBuilder.legacySpruceDoorItem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SPRUCE_DOOR_ITEM, slots.toList(), block)
 
-fun MenuBuilder.legacyBirchDoorItem(
+fun BaseMenuBuilder.legacyBirchDoorItem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BIRCH_DOOR_ITEM, slots.toList(), block)
 
-fun MenuBuilder.legacyJungleDoorItem(
+fun BaseMenuBuilder.legacyJungleDoorItem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_JUNGLE_DOOR_ITEM, slots.toList(), block)
 
-fun MenuBuilder.legacyAcaciaDoorItem(
+fun BaseMenuBuilder.legacyAcaciaDoorItem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_ACACIA_DOOR_ITEM, slots.toList(), block)
 
-fun MenuBuilder.legacyDarkOakDoorItem(
+fun BaseMenuBuilder.legacyDarkOakDoorItem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DARK_OAK_DOOR_ITEM, slots.toList(), block)
 
-fun MenuBuilder.legacyChorusFruit(
+fun BaseMenuBuilder.legacyChorusFruit(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CHORUS_FRUIT, slots.toList(), block)
 
-fun MenuBuilder.legacyChorusFruitPopped(
+fun BaseMenuBuilder.legacyChorusFruitPopped(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_CHORUS_FRUIT_POPPED, slots.toList(), block)
 
-fun MenuBuilder.legacyBeetroot(
+fun BaseMenuBuilder.legacyBeetroot(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BEETROOT, slots.toList(), block)
 
-fun MenuBuilder.legacyBeetrootSeeds(
+fun BaseMenuBuilder.legacyBeetrootSeeds(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BEETROOT_SEEDS, slots.toList(), block)
 
-fun MenuBuilder.legacyBeetrootSoup(
+fun BaseMenuBuilder.legacyBeetrootSoup(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BEETROOT_SOUP, slots.toList(), block)
 
-fun MenuBuilder.legacyDragonsBreath(
+fun BaseMenuBuilder.legacyDragonsBreath(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_DRAGONS_BREATH, slots.toList(), block)
 
-fun MenuBuilder.legacySplashPotion(
+fun BaseMenuBuilder.legacySplashPotion(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SPLASH_POTION, slots.toList(), block)
 
-fun MenuBuilder.legacySpectralArrow(
+fun BaseMenuBuilder.legacySpectralArrow(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SPECTRAL_ARROW, slots.toList(), block)
 
-fun MenuBuilder.legacyTippedArrow(
+fun BaseMenuBuilder.legacyTippedArrow(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_TIPPED_ARROW, slots.toList(), block)
 
-fun MenuBuilder.legacyLingeringPotion(
+fun BaseMenuBuilder.legacyLingeringPotion(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_LINGERING_POTION, slots.toList(), block)
 
-fun MenuBuilder.legacyShield(
+fun BaseMenuBuilder.legacyShield(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SHIELD, slots.toList(), block)
 
-fun MenuBuilder.legacyElytra(
+fun BaseMenuBuilder.legacyElytra(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_ELYTRA, slots.toList(), block)
 
-fun MenuBuilder.legacyBoatSpruce(
+fun BaseMenuBuilder.legacyBoatSpruce(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BOAT_SPRUCE, slots.toList(), block)
 
-fun MenuBuilder.legacyBoatBirch(
+fun BaseMenuBuilder.legacyBoatBirch(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BOAT_BIRCH, slots.toList(), block)
 
-fun MenuBuilder.legacyBoatJungle(
+fun BaseMenuBuilder.legacyBoatJungle(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BOAT_JUNGLE, slots.toList(), block)
 
-fun MenuBuilder.legacyBoatAcacia(
+fun BaseMenuBuilder.legacyBoatAcacia(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BOAT_ACACIA, slots.toList(), block)
 
-fun MenuBuilder.legacyBoatDarkOak(
+fun BaseMenuBuilder.legacyBoatDarkOak(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_BOAT_DARK_OAK, slots.toList(), block)
 
-fun MenuBuilder.legacyTotem(
+fun BaseMenuBuilder.legacyTotem(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_TOTEM, slots.toList(), block)
 
-fun MenuBuilder.legacyShulkerShell(
+fun BaseMenuBuilder.legacyShulkerShell(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_SHULKER_SHELL, slots.toList(), block)
 
-fun MenuBuilder.legacyIronNugget(
+fun BaseMenuBuilder.legacyIronNugget(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_IRON_NUGGET, slots.toList(), block)
 
-fun MenuBuilder.legacyKnowledgeBook(
+fun BaseMenuBuilder.legacyKnowledgeBook(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_KNOWLEDGE_BOOK, slots.toList(), block)
 
-fun MenuBuilder.legacyGoldRecord(
+fun BaseMenuBuilder.legacyGoldRecord(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GOLD_RECORD, slots.toList(), block)
 
-fun MenuBuilder.legacyGreenRecord(
+fun BaseMenuBuilder.legacyGreenRecord(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_GREEN_RECORD, slots.toList(), block)
 
-fun MenuBuilder.legacyRecord3(
+fun BaseMenuBuilder.legacyRecord3(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RECORD_3, slots.toList(), block)
 
-fun MenuBuilder.legacyRecord4(
+fun BaseMenuBuilder.legacyRecord4(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RECORD_4, slots.toList(), block)
 
-fun MenuBuilder.legacyRecord5(
+fun BaseMenuBuilder.legacyRecord5(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RECORD_5, slots.toList(), block)
 
-fun MenuBuilder.legacyRecord6(
+fun BaseMenuBuilder.legacyRecord6(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RECORD_6, slots.toList(), block)
 
-fun MenuBuilder.legacyRecord7(
+fun BaseMenuBuilder.legacyRecord7(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RECORD_7, slots.toList(), block)
 
-fun MenuBuilder.legacyRecord8(
+fun BaseMenuBuilder.legacyRecord8(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RECORD_8, slots.toList(), block)
 
-fun MenuBuilder.legacyRecord9(
+fun BaseMenuBuilder.legacyRecord9(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RECORD_9, slots.toList(), block)
 
-fun MenuBuilder.legacyRecord10(
+fun BaseMenuBuilder.legacyRecord10(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RECORD_10, slots.toList(), block)
 
-fun MenuBuilder.legacyRecord11(
+fun BaseMenuBuilder.legacyRecord11(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RECORD_11, slots.toList(), block)
 
-fun MenuBuilder.legacyRecord12(
+fun BaseMenuBuilder.legacyRecord12(
     vararg slots: Int,
     block: Item.() -> Unit = {}
 ) = item(Material.LEGACY_RECORD_12, slots.toList(), block)

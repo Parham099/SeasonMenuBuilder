@@ -1,5 +1,6 @@
-package ir.parham099.seasonMenuBuilder.menus
+package ir.parham099.seasonMenuBuilder.event
 
+import ir.parham099.seasonMenuBuilder.runtime.MenuManager
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.event.inventory.InventoryClickEvent

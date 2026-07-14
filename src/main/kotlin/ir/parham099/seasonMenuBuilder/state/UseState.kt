@@ -1,10 +1,11 @@
-package ir.parham099.seasonMenuBuilder.menus.operators
+package ir.parham099.seasonMenuBuilder.state
 
-import ir.parham099.seasonMenuBuilder.menus.MenuBuilder
+import ir.parham099.seasonMenuBuilder.builder.DynamicMenuBuilder
+import ir.parham099.seasonMenuBuilder.builder.StaticMenuBuilder
 import kotlin.reflect.KProperty
 
 class UseState<T>(
-    private val menu: MenuBuilder,
+    private val menu: DynamicMenuBuilder,
     val initial: T
 ) {
     operator fun getValue(thisRef: Any?, property: KProperty<*>): T {
@@ -24,6 +25,6 @@ class UseState<T>(
     }
 }
 
-fun <T> useState(menu: MenuBuilder, initial: T): UseState<T> {
+fun <T> useState(menu: DynamicMenuBuilder, initial: T): UseState<T> {
     return UseState(menu, initial)
 }

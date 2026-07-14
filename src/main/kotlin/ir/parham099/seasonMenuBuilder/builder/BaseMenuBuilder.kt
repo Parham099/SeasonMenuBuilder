@@ -1,13 +1,14 @@
-package ir.parham099.seasonMenuBuilder.menus
+package ir.parham099.seasonMenuBuilder.builder
 
-import ir.parham099.seasonMenuBuilder.MenuDsl
-import ir.parham099.seasonMenuBuilder.menus.MenuManager.openGui
-import ir.parham099.seasonMenuBuilder.menus.operators.UseState
-import ir.parham099.seasonMenuBuilder.models.Item
+import ir.parham099.seasonMenuBuilder.dsl.MenuDsl
+import ir.parham099.seasonMenuBuilder.item.MenuItem
+import ir.parham099.seasonMenuBuilder.menus.MenuType
+import ir.parham099.seasonMenuBuilder.runtime.MenuManager.openGui
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.minimessage.MiniMessage
 import org.bukkit.Bukkit
 import org.bukkit.Material
+import org.bukkit.entity.HumanEntity
 import org.bukkit.event.inventory.InventoryClickEvent
 import org.bukkit.event.inventory.InventoryCloseEvent
 import org.bukkit.event.inventory.InventoryOpenEvent
@@ -15,48 +16,35 @@ import org.bukkit.inventory.Inventory
 import java.util.UUID
 
 @MenuDsl
-data class MenuBuilder(
+abstract class BaseMenuBuilder(
     val title: Component = MiniMessage.miniMessage().deserialize(""),
     val size: Int = 27,
     val menuType: MenuType = MenuType.STATIC,
     var player: UUID? = null,
-    val states: HashMap<String, Any?> = hashMapOf(),
-    var block: MenuBuilder.() -> Unit = {},
+    var block: BaseMenuBuilder.() -> Unit = {},
 ) {
     var inventory: Inventory? = null
-        private set
-    val items = hashMapOf<Int, Item?>()
+        protected set
+    val items = hashMapOf<Int, MenuItem?>()
 
     init {
         block(this)
         fixItemsMap()
-        if (menuType == MenuType.STATIC) {
-            inventory = buildInventory()
-        }
     }
+
+    abstract fun copy(): BaseMenuBuilder
+    abstract fun open()
 
     fun item(
         material: Material,
         slots: List<Int>,
-        block: Item.() -> Unit = {}
+        block: MenuItem.() -> Unit = {}
     ) {
         for (slot in slots) {
-            val item = Item(slot = slot, material = material, menu = this).apply(block)
-            items[slot] = item
-            inventory?.setItem(slot, item.itemStack)
+            val menuItem = MenuItem(slot = slot, material = material, menu = this).apply(block)
+            items[slot] = menuItem
+            inventory?.setItem(slot, menuItem.itemStack)
         }
-    }
-
-    // just for dynamic menu
-    fun refresh() {
-        val uuid = player ?: return
-        val human = Bukkit.getPlayer(uuid) ?: return
-        human.openGui(this)
-    }
-
-    fun build(): Inventory {
-        inventory = buildInventory()
-        return inventory!!
     }
 
     // events
@@ -103,13 +91,13 @@ data class MenuBuilder(
         handleShiftClick = handler
     }
 
-    private fun fixItemsMap() {
+    protected fun fixItemsMap() {
         for (i in 0 until size) {
             items.putIfAbsent(i, null)
         }
     }
 
-    private fun buildInventory(): Inventory {
+    protected fun buildInventory(): Inventory {
         val inventory = Bukkit.createInventory(null, size, title)
         for (slot in 0 until size) {
             val item = items[slot] ?: continue
