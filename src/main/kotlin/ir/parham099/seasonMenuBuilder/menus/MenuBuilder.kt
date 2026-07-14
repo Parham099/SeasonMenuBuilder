@@ -2,6 +2,7 @@ package ir.parham099.seasonMenuBuilder.menus
 
 import ir.parham099.seasonMenuBuilder.MenuDsl
 import ir.parham099.seasonMenuBuilder.menus.MenuManager.openGui
+import ir.parham099.seasonMenuBuilder.menus.operators.UseState
 import ir.parham099.seasonMenuBuilder.models.Item
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.minimessage.MiniMessage
@@ -19,6 +20,7 @@ data class MenuBuilder(
     val size: Int = 27,
     val menuType: MenuType = MenuType.STATIC,
     var player: UUID? = null,
+    val states: HashMap<String, Any?> = hashMapOf(),
     var block: MenuBuilder.() -> Unit = {},
 ) {
     var inventory: Inventory? = null

@@ -5,15 +5,21 @@ import kotlin.reflect.KProperty
 
 class UseState<T>(
     private val menu: MenuBuilder,
-    initial: T
+    val initial: T
 ) {
-    private var state = initial
+    operator fun getValue(thisRef: Any?, property: KProperty<*>): T {
+        val name = property.name
+        if (!menu.states.containsKey(name)) {
+            menu.states[name] = initial
+        }
 
-    operator fun getValue(thisRef: Any?, property: KProperty<*>): T = state
+        return menu.states[name] as T
+    }
 
     operator fun setValue(thisRef: Any?, property: KProperty<*>, value: T) {
-        if (state == value) return   // اگر تغییری نکرده refresh نکن
-        state = value
+        val name = property.name
+        if (menu.states[name] == value) return   // اگر تغییری نکرده refresh نکن
+        menu.states[name] = value
         menu.refresh()
     }
 }

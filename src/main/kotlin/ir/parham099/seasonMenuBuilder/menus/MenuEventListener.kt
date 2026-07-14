@@ -16,6 +16,7 @@ class MenuEventListener : Listener {
 
         val slot = event.slot
         if (!menu.items.containsKey(slot)) return
+        if (menu.items[slot] != event.currentItem) return
 
         val item = menu.items[slot]
         if (event.isRightClick) {
