@@ -4,8 +4,8 @@ import ir.parham099.seasonMenuBuilder.menus.MenuBuilder
 import kotlin.reflect.KProperty
 
 class UseState<T>(
-    initial: T,
-    private val menu: MenuBuilder
+    private val menu: MenuBuilder,
+    initial: T
 ) {
     private var state = initial
 
@@ -19,5 +19,5 @@ class UseState<T>(
 }
 
 fun <T> useState(menu: MenuBuilder, initial: T): UseState<T> {
-    return UseState(initial, menu)
+    return UseState(menu, initial)
 }

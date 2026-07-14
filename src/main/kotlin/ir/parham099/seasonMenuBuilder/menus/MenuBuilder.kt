@@ -62,43 +62,43 @@ data class MenuBuilder(
     var handleClose: (InventoryCloseEvent) -> Unit = {}
         private set
 
-    fun onClose(block: (InventoryCloseEvent) -> Unit) {
-        handleClose = block
+    fun onClose(handler: (InventoryCloseEvent) -> Unit) {
+        handleClose = handler
     }
 
     var handleOpen: (InventoryOpenEvent) -> Unit = {}
         private set
 
-    fun onOpen(block: (InventoryOpenEvent) -> Unit) {
-        handleOpen = block
+    fun onOpen(handler: (InventoryOpenEvent) -> Unit) {
+        handleOpen = handler
     }
 
     var handleClick: (InventoryClickEvent) -> Unit = {}
         private set
 
-    fun onClick(block: (InventoryClickEvent) -> Unit) {
-        handleClick = block
+    fun onClick(handler: (InventoryClickEvent) -> Unit) {
+        handleClick = handler
     }
 
     var handleRightClick: (InventoryClickEvent) -> Unit = {}
         private set
 
-    fun onRightClick(block: (InventoryClickEvent) -> Unit) {
-        handleRightClick = block
+    fun onRightClick(handler: (InventoryClickEvent) -> Unit) {
+        handleRightClick = handler
     }
 
     var handleLeftClick: (InventoryClickEvent) -> Unit = {}
         private set
 
-    fun onLeftClick(block: (InventoryClickEvent) -> Unit) {
-        handleLeftClick = block
+    fun onLeftClick(handler: (InventoryClickEvent) -> Unit) {
+        handleLeftClick = handler
     }
 
     var handleShiftClick: (InventoryClickEvent) -> Unit = {}
         private set
 
-    fun onShiftClick(block: (InventoryClickEvent) -> Unit) {
-        handleShiftClick = block
+    fun onShiftClick(handler: (InventoryClickEvent) -> Unit) {
+        handleShiftClick = handler
     }
 
     private fun fixItemsMap() {
