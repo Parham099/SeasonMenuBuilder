@@ -16,23 +16,22 @@ class MenuEventListener : Listener {
         val menu = MenuManager.openedMenuPayers[uuid] ?: return
 
         val slot = event.slot
-        if (!menu.items.containsKey(slot)) return
-        if (menu.items[slot] != event.currentItem) return
+        val item = menu.items[slot] ?: return
+        if (item.itemStack != event.currentItem) return
 
-        val item = menu.items[slot]
         if (event.isRightClick) {
             menu.handleRightClick(event)
-            item?.handleRightClick(event)
+            item.handleRightClick(event)
         } else if (event.isLeftClick) {
             menu.handleLeftClick(event)
-            item?.handleLeftClick(event)
+            item.handleLeftClick(event)
         } else if (event.isShiftClick) {
             menu.handleShiftClick(event)
-            item?.handleShiftClick(event)
+            item.handleShiftClick(event)
         }
 
         menu.handleClick(event)
-        item?.handleClick(event)
+        item.handleClick(event)
     }
 
     @EventHandler

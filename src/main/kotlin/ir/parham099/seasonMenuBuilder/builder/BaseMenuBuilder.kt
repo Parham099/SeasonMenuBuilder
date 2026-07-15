@@ -3,12 +3,10 @@ package ir.parham099.seasonMenuBuilder.builder
 import ir.parham099.seasonMenuBuilder.dsl.MenuDsl
 import ir.parham099.seasonMenuBuilder.item.MenuItem
 import ir.parham099.seasonMenuBuilder.menus.MenuType
-import ir.parham099.seasonMenuBuilder.runtime.MenuManager.openGui
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.minimessage.MiniMessage
 import org.bukkit.Bukkit
 import org.bukkit.Material
-import org.bukkit.entity.HumanEntity
 import org.bukkit.event.inventory.InventoryClickEvent
 import org.bukkit.event.inventory.InventoryCloseEvent
 import org.bukkit.event.inventory.InventoryOpenEvent
@@ -21,16 +19,10 @@ abstract class BaseMenuBuilder(
     val size: Int = 27,
     val menuType: MenuType = MenuType.STATIC,
     var player: UUID? = null,
-    var block: BaseMenuBuilder.() -> Unit = {},
 ) {
     var inventory: Inventory? = null
         protected set
     val items = hashMapOf<Int, MenuItem?>()
-
-    init {
-        block(this)
-        fixItemsMap()
-    }
 
     abstract fun copy(): BaseMenuBuilder
     abstract fun open()

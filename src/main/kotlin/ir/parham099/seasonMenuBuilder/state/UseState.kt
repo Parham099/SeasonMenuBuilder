@@ -1,7 +1,6 @@
 package ir.parham099.seasonMenuBuilder.state
 
 import ir.parham099.seasonMenuBuilder.builder.DynamicMenuBuilder
-import ir.parham099.seasonMenuBuilder.builder.StaticMenuBuilder
 import kotlin.reflect.KProperty
 
 class UseState<T>(
@@ -23,8 +22,4 @@ class UseState<T>(
         menu.states[name] = value
         menu.refresh()
     }
-}
-
-fun <T> useState(menu: DynamicMenuBuilder, initial: T): UseState<T> {
-    return UseState(menu, initial)
 }

@@ -24,7 +24,7 @@ fun main() {
                 """
 fun BaseMenuBuilder.$name(
     vararg slots: Int,
-    block: Item.() -> Unit = {}
+    block: MenuItem.() -> Unit = {}
 ) = item(Material.${material.name}, slots.toList(), block)
             """.trimIndent()
             )
