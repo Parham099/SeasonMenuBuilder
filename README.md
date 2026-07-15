@@ -1,42 +1,131 @@
-# SeasonMenuBuilder Wiki
+# Installation
 
-Welcome to the official documentation for **SeasonMenuBuilder**.
-
-SeasonMenuBuilder is a Kotlin DSL library for creating Minecraft GUI menus on Paper servers. It focuses on simplicity, readability, and flexibility while keeping the API clean.
+SeasonMenuBuilder supports **Paper** servers and is designed primarily for **Kotlin** projects.
 
 ---
 
-# Features
+# Requirements
 
-- Kotlin DSL
-- Clean and readable syntax
-- Static menus
-- Dynamic menus
-- Adventure Component support
-- MiniMessage support
-- Multiple click events
-- Per-item event handlers
-- Menu-wide event handlers
-- Custom item IDs
-- Multiple slot support
-- Paper API compatible
+| Requirement | Version |
+|-------------|----------|
+| Java | 21+ |
+| Kotlin | 2.4+ |
+| Paper | 1.21.6 or lower |
 
 ---
 
-# Basic Example
+**Replace `Tag` with version tagname in github**
+
+# Maven
+
+```xml
+<repositories>
+	<repository>
+		<id>jitpack.io</id>
+		<url>https://jitpack.io</url>
+	</repository>
+</repositories>
+
+<dependencies>
+
+    <dependency>
+	    <groupId>com.github.Parham099</groupId>
+	    <artifactId>SeasonMenuBuilder</artifactId>
+	    <version>Tag</version>
+    </dependency>
+
+</dependencies>
+```
+
+---
+
+# Gradle (Kotlin DSL)
 
 ```kotlin
-val menu = staticMenu("Example Menu", 27) {
+dependencyResolutionManagement {
+	repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+	repositories {
+		mavenCentral()
+		maven { url = uri("https://jitpack.io") }
+	}
+}
 
-    stone(13) {
-        displayName = mm("<green>Hello!")
+dependencies {
+	implementation("com.github.Parham099:SeasonMenuBuilder:Tag")
+}
+```
 
-        onClick {
-            it.whoClicked.sendMessage(
-                mm("<yellow>You clicked the stone!")
-            )
-        }
-    }
+---
+
+# Gradle (Groovy)
+
+```groovy
+dependencyResolutionManagement {
+	repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+	repositories {
+		mavenCentral()
+		maven { url 'https://jitpack.io' }
+	}
+}
+
+dependencies {
+	implementation 'com.github.Parham099:SeasonMenuBuilder:Tag'
+}
+```
+
+---
+
+# Shadow Plugin
+
+If your plugin is written in Kotlin, it is recommended to **shade** SeasonMenuBuilder into your plugin.
+
+Gradle example:
+
+```kotlin
+dependencies {
+	implementation("com.github.Parham099:SeasonMenuBuilder:Tag")
+}
+
+```
+
+---
+
+# Installation in plugin
+
+```kotlin
+// Use this in you plugin to use Gui this is very important!!!
+SeasonMenuBuilder(instance as JavaPlugin)
+```
+
+If register in onEnable method use this
+
+```kotlin
+// Use this in you plugin to use Gui this is very important!!!
+SeasonMenuBuilder(this)
+```
+
+---
+
+# Kotlin DSL
+
+SeasonMenuBuilder is built around a Kotlin DSL.
+
+A simple menu looks like this:
+
+```kotlin
+val menu = staticMenu("Example", 27) {
+
+}
+```
+
+Menus, items and events are configured inside the DSL block.
+
+---
+
+# Your First Menu
+
+```kotlin
+val menu = staticMenu("Hello", 27) {
 
 }
 ```
@@ -47,14 +136,34 @@ Open it:
 player.openGui(menu)
 ```
 
+That's all you need to display your first GUI.
+
 ---
 
-# Menu Sizes
+# Adventure Components
 
-You can create a menu with any valid inventory size.
+SeasonMenuBuilder uses Adventure Components instead of legacy color codes.
+
+Example:
 
 ```kotlin
-staticMenu("Example", 27) {
+displayName = Component.text("Hello")
+```
+
+MiniMessage is also supported:
+
+```kotlin
+displayName = mm("<green>Hello World!")
+```
+
+---
+
+# Inventory Sizes
+
+You can create inventories using the generic builder:
+
+```kotlin
+staticMenu("Menu", 9) {
 
 }
 ```
@@ -63,162 +172,52 @@ staticMenu("Example", 27) {
 
 # Menu Types
 
-SeasonMenuBuilder supports two menu types.
+Every menu can be either **Dynamic** or **Static**.
 
-## Dynamic
-
-A new Bukkit inventory is created every time the menu is opened.
-
-Recommended when:
-
-- Reactive menus
-- Contents change frequently
-- Player-specific data
-- Database values
-- Economy values
-- Live statistics
+Dynamic:
 
 ```kotlin
 dynamicMenu(
-    title = "Dynamic",
-    size = 27,
-) {
-
-}
-```
-
----
-
-## Static
-
-The inventory is created only once and reused.
-
-Recommended when:
-
-- Decoration menus
-- Static shops
-- Help menus
-- Information menus
-
-```kotlin
-staticMenu(
-    title = "Static",
+    title = "Example",
     size = 27
 ) {
 
 }
 ```
 
----
-
-# Creating Items
-
-Every menu consists of items.
-
-Example:
+Static:
 
 ```kotlin
-staticMenu("Example", 27) {
+staticMenu(
+    title = "Example",
+    size = 27
+) {
 
-    stone(13)
 }
 ```
 
-See the **Items** page for all available item properties.
+Read more in the **Menu-Types** page.
 
 ---
 
-# Events
+# Project Structure
 
-Both menus and items support event handlers.
+A recommended project structure:
 
-Menu:
-
-```kotlin
-onOpen {
-
-}
-
-onClose {
-
-}
-
-onClick {
-
-}
-
-onLeftClick {
-
-}
-
-onRightClick {
-
-}
-
-onShiftClick {
-
-}
+```
+plugin
+│
+├── commands
+├── listeners
+├── menus
+│   ├── MainMenu.kt
+│   ├── ShopMenu.kt
+│   ├── SettingsMenu.kt
+│   └── AdminMenu.kt
+│
+└── Plugin.kt
 ```
 
-Item:
-
-```kotlin
-stone(10) {
-
-    onClick {
-
-    }
-
-    onLeftClick {
-
-    }
-
-    onRightClick {
-
-    }
-
-    onShiftClick {
-
-    }
-
-}
-```
-
-Detailed explanations are available in:
-
-- Item-Events
-- Menu-Events
+Keeping every menu in its own file makes projects much easier to maintain.
 
 ---
-
-# Opening a Menu
-
-Simply call:
-
-```kotlin
-player.openGui(menu)
-```
-
-The library automatically manages the opened menu for each player.
-
----
-
-# Adventure Support
-
-SeasonMenuBuilder uses Adventure Components.
-
-Example:
-
-```kotlin
-displayName = Component.text("Hello")
-```
-
-or with MiniMessage:
-
-```kotlin
-displayName = mm("<gradient:red:gold>Hello</gradient>")
-```
-
----
-
-Full Wiki: https://github.com/Parham099/SeasonMenuBuilder/wiki
