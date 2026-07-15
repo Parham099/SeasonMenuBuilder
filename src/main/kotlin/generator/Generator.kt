@@ -5,16 +5,16 @@ import java.io.File
 
 fun main() {
     val file = File(
-        "src/main/kotlin/ir/parham099/seasonMenuBuilder/models/Materials.kt"
+        "src/main/kotlin/ir/parham099/seasonMenuBuilder/dsl/MaterialDsl.kt"
     )
     file.parentFile.mkdirs()
 
     file.writeText(buildString {
-        appendLine("package ir.parham099.seasonMenuBuilder.models")
+        appendLine("package ir.parham099.seasonMenuBuilder.dsl")
         appendLine()
         appendLine("import org.bukkit.Material")
-        appendLine("import ir.parham099.seasonMenuBuilder.menus.MenuBuilder")
-        appendLine("import ir.parham099.seasonMenuBuilder.models.Item")
+        appendLine("import ir.parham099.seasonMenuBuilder.builder.BaseMenuBuilder")
+        appendLine("import ir.parham099.seasonMenuBuilder.item.MenuItem")
         appendLine()
 
         Material.entries.forEach { material ->
@@ -22,9 +22,9 @@ fun main() {
 
             appendLine(
                 """
-fun MenuBuilder.$name(
+fun BaseMenuBuilder.$name(
     vararg slots: Int,
-    block: Item.() -> Unit = {}
+    block: MenuItem.() -> Unit = {}
 ) = item(Material.${material.name}, slots.toList(), block)
             """.trimIndent()
             )
