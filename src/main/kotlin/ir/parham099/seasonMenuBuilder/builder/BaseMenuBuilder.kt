@@ -15,8 +15,8 @@ import java.util.UUID
 
 @MenuDsl
 abstract class BaseMenuBuilder(
-    val title: Component = MiniMessage.miniMessage().deserialize(""),
-    val size: Int = 27,
+    var title: Component = MiniMessage.miniMessage().deserialize(""),
+    var size: Int = 27,
     val menuType: MenuType = MenuType.STATIC,
     var player: UUID? = null,
 ) {
