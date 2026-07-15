@@ -6,7 +6,7 @@
 
     <groupId>ir.parham099</groupId>
     <artifactId>SeasonMenuBuilder</artifactId>
-    <version>0.0.1-BetaTest</version>
+    <version>0.0.2-Beta</version>
     <packaging>jar</packaging>
 
     <name>SeasonMenuBuilder-Paper</name>
