@@ -29,6 +29,9 @@ class DynamicMenuBuilder(
     }
 
     fun refresh() {
+        items.clear()
+        block(this)
+        fixItemsMap()
         val uuid = player ?: return
         val human = Bukkit.getPlayer(uuid) ?: return
         human.openGui(this)
