@@ -6,20 +6,6 @@ SeasonMenuBuilder is a Kotlin DSL library for creating Minecraft GUI menus on Pa
 
 ---
 
-# Contents
-
-- [Installation](Installation)
-- [Creating Your First Menu](Creating-Your-First-Menu)
-- [Items](Items)
-- [Item Events](Item-Events)
-- [Menu Events](Menu-Events)
-- [Menu Types](Menu-Types)
-- [Advanced](Advanced)
-- [Examples](Examples)
-- [FAQ](FAQ)
-
----
-
 # Features
 
 - Kotlin DSL
@@ -40,7 +26,7 @@ SeasonMenuBuilder is a Kotlin DSL library for creating Minecraft GUI menus on Pa
 # Basic Example
 
 ```kotlin
-val menu = menu("Example Menu", 27) {
+val menu = staticMenu("Example Menu", 27) {
 
     stone(13) {
         displayName = mm("<green>Hello!")
@@ -68,35 +54,7 @@ player.openGui(menu)
 You can create a menu with any valid inventory size.
 
 ```kotlin
-menu("Example", 27) {
-
-}
-```
-
-or use the predefined builders.
-
-```kotlin
-menu9("Menu") {
-
-}
-
-menu18("Menu") {
-
-}
-
-menu27("Menu") {
-
-}
-
-menu36("Menu") {
-
-}
-
-menu45("Menu") {
-
-}
-
-menu54("Menu") {
+staticMenu("Example", 27) {
 
 }
 ```
@@ -113,6 +71,7 @@ A new Bukkit inventory is created every time the menu is opened.
 
 Recommended when:
 
+- Reactive menus
 - Contents change frequently
 - Player-specific data
 - Database values
@@ -120,10 +79,9 @@ Recommended when:
 - Live statistics
 
 ```kotlin
-menu(
+dynamicMenu(
     title = "Dynamic",
     size = 27,
-    menuType = MenuType.DYNAMIC
 ) {
 
 }
@@ -143,10 +101,9 @@ Recommended when:
 - Information menus
 
 ```kotlin
-menu(
+staticMenu(
     title = "Static",
-    size = 27,
-    menuType = MenuType.STATIC
+    size = 27
 ) {
 
 }
@@ -161,15 +118,9 @@ Every menu consists of items.
 Example:
 
 ```kotlin
-menu("Example", 27) {
+staticMenu("Example", 27) {
 
-    item(
-        material = Material.STONE,
-        slots = listOf(13)
-    ) {
-
-    }
-
+    stone(13)
 }
 ```
 
