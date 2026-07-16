@@ -13,6 +13,7 @@ class StaticMenuBuilder(
     size: Int = 27,
     player: UUID? = null,
     var block: StaticMenuBuilder.() -> Unit = {},
+    initialize: Boolean = true
 ) : BaseMenuBuilder(
     title = title,
     size = size,
@@ -20,8 +21,10 @@ class StaticMenuBuilder(
     player = player,
 ) {
     init {
-        block(this)
-        inventory = buildInventory()
+        if (initialize) {
+            block(this)
+            inventory = buildInventory()
+        }
     }
 
     override fun copy(): BaseMenuBuilder {
@@ -29,7 +32,8 @@ class StaticMenuBuilder(
             title = title,
             size = size,
             player = player,
-            block = block
+            block = block,
+            initialize = false
         )
     }
 
