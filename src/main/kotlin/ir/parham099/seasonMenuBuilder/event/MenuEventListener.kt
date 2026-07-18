@@ -51,5 +51,6 @@ class MenuEventListener : Listener {
 
         menu.handleClose(event)
         MenuManager.openedMenuPayers.remove(uuid)
+        MenuManager.openedPaginated.remove(uuid)
     }
 }

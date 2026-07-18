@@ -16,11 +16,14 @@ fun PaginatedMenuBuilder.dynamicPage(
     title: Component = Component.text(size),
     block: DynamicMenuBuilder.() -> Unit = {}
 ): DynamicMenuBuilder {
-    return dynamicMenu(
+    val menu = dynamicMenu(
         size = size,
         title = title,
         block = block
     )
+
+    this.createPage(menu)
+    return menu
 }
 
 fun PaginatedMenuBuilder.staticPage(
@@ -28,9 +31,12 @@ fun PaginatedMenuBuilder.staticPage(
     title: Component = Component.text(size),
     block: StaticMenuBuilder.() -> Unit = {}
 ): StaticMenuBuilder {
-    return staticMenu(
+    val menu = staticMenu(
         size = size,
         title = title,
         block = block
     )
+
+    this.createPage(menu)
+    return menu
 }

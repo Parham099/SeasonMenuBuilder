@@ -5,6 +5,7 @@ import ir.parham099.seasonMenuBuilder.menus.MenuType
 import net.kyori.adventure.text.Component
 import net.kyori.adventure.text.minimessage.MiniMessage
 import org.bukkit.Bukkit
+import org.bukkit.inventory.Inventory
 import java.util.UUID
 
 @MenuDsl
@@ -18,11 +19,14 @@ class StaticMenuBuilder(
     title = title,
     size = size,
     menuType = MenuType.STATIC,
-    player = player,
+    player = player
 ) {
+    override var inventory: Inventory? = null
+
     init {
         if (initialize) {
             block(this)
+            fixItemsMap()
             inventory = buildInventory()
         }
     }
@@ -32,9 +36,20 @@ class StaticMenuBuilder(
             title = title,
             size = size,
             player = player,
-            block = block,
             initialize = false
-        )
+        ).apply {
+            for (entry in this@StaticMenuBuilder.items) {
+                items[entry.key] = entry.value
+            }
+            inventory = this@StaticMenuBuilder.inventory
+            // copy from events
+            handleClick = this@StaticMenuBuilder.handleClick
+            handleLeftClick = this@StaticMenuBuilder.handleLeftClick
+            handleRightClick = this@StaticMenuBuilder.handleRightClick
+            handleShiftClick = this@StaticMenuBuilder.handleShiftClick
+            handleOpen = this@StaticMenuBuilder.handleOpen
+            handleClose = this@StaticMenuBuilder.handleClose
+        }
     }
 
     override fun open() {

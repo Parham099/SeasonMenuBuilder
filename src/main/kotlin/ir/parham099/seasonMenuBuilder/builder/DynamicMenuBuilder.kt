@@ -23,6 +23,9 @@ class DynamicMenuBuilder(
     menuType = MenuType.DYNAMIC,
     player = player,
 ) {
+    override val inventory: Inventory
+        get() = buildInventory()
+
     init {
         block(this)
         fixItemsMap()
@@ -35,11 +38,6 @@ class DynamicMenuBuilder(
         val uuid = player ?: return
         val human = Bukkit.getPlayer(uuid) ?: return
         human.openGui(this)
-    }
-
-    fun build(): Inventory {
-        inventory = buildInventory()
-        return inventory!!
     }
 
     fun <T> useState(initial: T): UseState<T> {
@@ -58,6 +56,6 @@ class DynamicMenuBuilder(
 
     override fun open() {
         val uuid = player ?: return
-        Bukkit.getPlayer(uuid)?.openInventory(build())
+        Bukkit.getPlayer(uuid)?.openInventory(inventory)
     }
 }

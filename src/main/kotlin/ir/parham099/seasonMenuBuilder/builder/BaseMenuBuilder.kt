@@ -20,8 +20,8 @@ abstract class BaseMenuBuilder(
     val menuType: MenuType = MenuType.STATIC,
     var player: UUID? = null,
 ) {
-    var inventory: Inventory? = null
-        protected set
+    abstract val inventory: Inventory?
+
     val items = hashMapOf<Int, MenuItem?>()
 
     abstract fun copy(): BaseMenuBuilder
@@ -42,42 +42,42 @@ abstract class BaseMenuBuilder(
     // events
 
     var handleClose: (InventoryCloseEvent) -> Unit = {}
-        private set
+        protected set
 
     fun onClose(handler: (InventoryCloseEvent) -> Unit) {
         handleClose = handler
     }
 
     var handleOpen: (InventoryOpenEvent) -> Unit = {}
-        private set
+        protected set
 
     fun onOpen(handler: (InventoryOpenEvent) -> Unit) {
         handleOpen = handler
     }
 
     var handleClick: (InventoryClickEvent) -> Unit = {}
-        private set
+        protected set
 
     fun onClick(handler: (InventoryClickEvent) -> Unit) {
         handleClick = handler
     }
 
     var handleRightClick: (InventoryClickEvent) -> Unit = {}
-        private set
+        protected set
 
     fun onRightClick(handler: (InventoryClickEvent) -> Unit) {
         handleRightClick = handler
     }
 
     var handleLeftClick: (InventoryClickEvent) -> Unit = {}
-        private set
+        protected set
 
     fun onLeftClick(handler: (InventoryClickEvent) -> Unit) {
         handleLeftClick = handler
     }
 
     var handleShiftClick: (InventoryClickEvent) -> Unit = {}
-        private set
+        protected set
 
     fun onShiftClick(handler: (InventoryClickEvent) -> Unit) {
         handleShiftClick = handler

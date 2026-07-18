@@ -1,13 +1,15 @@
 package ir.parham099.seasonMenuBuilder.builder.template.paginated
 
 import ir.parham099.seasonMenuBuilder.builder.BaseMenuBuilder
+import ir.parham099.seasonMenuBuilder.runtime.MenuManager
 import ir.parham099.seasonMenuBuilder.runtime.MenuManager.openGui
+import ir.parham099.seasonMenuBuilder.runtime.MenuManager.openedPaginated
 import org.bukkit.Bukkit
+import org.bukkit.entity.HumanEntity
 import java.util.UUID
+import kotlin.collections.set
 
 data class PaginatedMenuBuilder(
-    var player: UUID? = null,
-    var nowPage: Int = 0,
     private val pages: MutableList<BaseMenuBuilder> = mutableListOf<BaseMenuBuilder>(),
     var block: PaginatedMenuBuilder.() -> Unit
 ) {
@@ -23,55 +25,50 @@ data class PaginatedMenuBuilder(
         block(this)
     }
 
-    fun next() {
-        val uuid = player ?: return
-        val nextPageIndex = nowPage + 1
-        if (pages.size < nextPageIndex) {
-            Bukkit.getPlayer(uuid)?.openGui(
-                pages[nextPageIndex]
-            )
-        }
+    fun open(player: HumanEntity) {
+        openPageByIndex(player, 0)
     }
 
-    fun previous() {
-        val uuid = player ?: return
-        val nextPageIndex = nowPage - 1
-        if (nextPageIndex >= 0) {
-            Bukkit.getPlayer(uuid)?.openGui(
-                pages[nextPageIndex]
-            )
-        }
+    fun next(player: HumanEntity) {
+        val nowPage = MenuManager.openedPaginated[player.uniqueId]?.apply {
+            nowPage++
+        }?.nowPage ?: return
+        openPageByIndex(player, nowPage)
     }
 
-    fun openPageByIndex(index: Int) {
-        val uuid = player ?: return
+    fun previous(player: HumanEntity) {
+        val nowPage = MenuManager.openedPaginated[player.uniqueId]?.apply {
+            nowPage--
+        }?.nowPage ?: return
+        openPageByIndex(player, nowPage)
+    }
+
+    fun openPageByIndex(player: HumanEntity, index: Int) {
         if (pages.size > index) {
-            Bukkit.getPlayer(uuid)?.openGui(
-                pages[index]
+            val nowPage = MenuManager.openedPaginated[player.uniqueId]?.apply {
+                nowPage = index
+            }?.nowPage ?: return
+            player.openGui(
+                pages[nowPage]
+            )
+            openedPaginated[player.uniqueId] = PaginatedData(
+                nowPage = nowPage,
+                paginatedMenuBuilder = this
             )
         }
     }
 
-    fun openPage(page: Int) {
-        val uuid = player ?: return
-        if (pages.size >= page) {
-            Bukkit.getPlayer(uuid)?.openGui(
-                pages[page - 1]
-            )
-        }
+    fun hasNextPage(player: HumanEntity): Boolean {
+        val nextPageIndex = MenuManager.openedPaginated[player.uniqueId]?.nowPage?.plus(1) ?: return false
+        return pages.size - 1 > nextPageIndex
     }
 
-    fun hasNextPage(): Boolean {
-        val nextPageIndex = nowPage + 1
-        return pages.size < nextPageIndex
-    }
-
-    fun hasPreviousPage(): Boolean {
-        val nextPageIndex = nowPage - 1
+    fun hasPreviousPage(player: HumanEntity): Boolean {
+        val nextPageIndex = MenuManager.openedPaginated[player.uniqueId]?.nowPage?.minus(1) ?: return false
         return nextPageIndex >= 0
     }
 
-    private fun createPage(menu: BaseMenuBuilder) {
+    fun createPage(menu: BaseMenuBuilder) {
         pages.add(menu)
     }
 
