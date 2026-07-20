@@ -31,6 +31,10 @@ class DynamicMenuBuilder(
         fixItemsMap()
     }
 
+    fun append(new: DynamicMenuBuilder.() -> Unit) {
+        new(this)
+    }
+
     fun refresh() {
         items.clear()
         block(this)
