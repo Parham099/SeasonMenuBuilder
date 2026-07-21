@@ -54,7 +54,6 @@ class MenuEventListener : Listener {
         if (!MenuManager.onUpdatePlayers.contains(uuid)) {
             MenuManager.openedPaginated.remove(uuid)
         } else {
-            println(1)
             MenuManager.onUpdatePlayers.remove(uuid)
         }
     }
