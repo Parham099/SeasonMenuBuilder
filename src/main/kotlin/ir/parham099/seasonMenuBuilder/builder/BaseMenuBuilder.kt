@@ -40,7 +40,6 @@ abstract class BaseMenuBuilder(
     }
 
     // events
-
     var handleClose: (InventoryCloseEvent) -> Unit = {}
         protected set
 

@@ -27,6 +27,8 @@ class DynamicMenuBuilder(
     override val inventory: Inventory
         get() = buildInventory()
 
+    private var hasRefreshRequest = false
+
     init {
         block(this)
         fixItemsMap()
@@ -34,6 +36,16 @@ class DynamicMenuBuilder(
 
     fun append(new: DynamicMenuBuilder.() -> Unit) {
         new(this)
+    }
+
+    fun refreshRequest() {
+        hasRefreshRequest = true
+    }
+
+    fun doRefreshRequest() {
+        if (!hasRefreshRequest) return
+        hasRefreshRequest = false
+        refresh()
     }
 
     fun refresh() {

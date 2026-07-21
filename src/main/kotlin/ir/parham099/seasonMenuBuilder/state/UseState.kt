@@ -20,6 +20,6 @@ class UseState<T>(
         val name = property.name
         if (menu.states[name] == value) return   // اگر تغییری نکرده refresh نکن
         menu.states[name] = value
-        menu.refresh()
+        menu.refreshRequest()
     }
 }

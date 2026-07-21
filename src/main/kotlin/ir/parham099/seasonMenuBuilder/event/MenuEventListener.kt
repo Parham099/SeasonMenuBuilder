@@ -1,5 +1,6 @@
 package ir.parham099.seasonMenuBuilder.event
 
+import ir.parham099.seasonMenuBuilder.builder.DynamicMenuBuilder
 import ir.parham099.seasonMenuBuilder.runtime.MenuManager
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
@@ -19,19 +20,22 @@ class MenuEventListener : Listener {
         val item = menu.items[slot] ?: return
         if (item.itemStack != event.currentItem) return
 
-        if (event.isRightClick) {
-            menu.handleRightClick(event)
-            item.handleRightClick(event)
-        } else if (event.isLeftClick) {
-            menu.handleLeftClick(event)
-            item.handleLeftClick(event)
-        } else if (event.isShiftClick) {
-            menu.handleShiftClick(event)
-            item.handleShiftClick(event)
-        }
+        try {
+            if (event.isRightClick) {
+                menu.handleRightClick(event)
+                item.handleRightClick(event)
+            } else if (event.isLeftClick) {
+                menu.handleLeftClick(event)
+                item.handleLeftClick(event)
+            } else if (event.isShiftClick) {
+                menu.handleShiftClick(event)
+                item.handleShiftClick(event)
+            }
 
-        menu.handleClick(event)
-        item.handleClick(event)
+            menu.handleClick(event)
+            item.handleClick(event)
+        } catch (_: Exception) {}
+        (menu as? DynamicMenuBuilder)?.doRefreshRequest()
     }
 
     @EventHandler
@@ -40,7 +44,10 @@ class MenuEventListener : Listener {
         val uuid = player.uniqueId
         val menu = MenuManager.openedMenuPayers[uuid] ?: return
 
-        menu.handleOpen(event)
+        try {
+            menu.handleOpen(event)
+        } catch (_: Exception) {}
+        (menu as? DynamicMenuBuilder)?.doRefreshRequest()
     }
 
     @EventHandler
@@ -49,7 +56,11 @@ class MenuEventListener : Listener {
         val uuid = player.uniqueId
         val menu = MenuManager.openedMenuPayers[uuid] ?: return
 
-        menu.handleClose(event)
+        try {
+            menu.handleClose(event)
+        } catch (_: Exception) {}
+        (menu as? DynamicMenuBuilder)?.doRefreshRequest()
+
         MenuManager.openedMenuPayers.remove(uuid)
         if (!MenuManager.onUpdatePlayers.contains(uuid)) {
             MenuManager.openedPaginated.remove(uuid)
