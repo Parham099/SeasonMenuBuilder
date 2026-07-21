@@ -2,6 +2,7 @@ package ir.parham099.seasonMenuBuilder.builder.template.paginated
 
 import ir.parham099.seasonMenuBuilder.builder.BaseMenuBuilder
 import ir.parham099.seasonMenuBuilder.runtime.MenuManager
+import ir.parham099.seasonMenuBuilder.runtime.MenuManager.onUpdatePlayers
 import ir.parham099.seasonMenuBuilder.runtime.MenuManager.openGui
 import ir.parham099.seasonMenuBuilder.runtime.MenuManager.openedPaginated
 import org.bukkit.Bukkit
@@ -45,16 +46,17 @@ data class PaginatedMenuBuilder(
 
     fun openPageByIndex(player: HumanEntity, index: Int) {
         if (pages.size > index) {
-            val nowPage = MenuManager.openedPaginated[player.uniqueId]?.apply {
+            val nowPage = openedPaginated[player.uniqueId]?.apply {
                 nowPage = index
             }?.nowPage ?: return
+
+            // This add player to on update process list
+            onUpdatePlayers.add(player.uniqueId)
+            // open menu
             player.openGui(
                 pages[nowPage]
             )
-            openedPaginated[player.uniqueId] = PaginatedData(
-                nowPage = nowPage,
-                paginatedMenuBuilder = this
-            )
+            openedPaginated[player.uniqueId]?.nowPage = nowPage
         }
     }
 

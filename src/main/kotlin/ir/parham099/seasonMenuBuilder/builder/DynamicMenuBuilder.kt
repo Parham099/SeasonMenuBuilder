@@ -2,6 +2,7 @@ package ir.parham099.seasonMenuBuilder.builder
 
 import ir.parham099.seasonMenuBuilder.dsl.MenuDsl
 import ir.parham099.seasonMenuBuilder.menus.MenuType
+import ir.parham099.seasonMenuBuilder.runtime.MenuManager
 import ir.parham099.seasonMenuBuilder.runtime.MenuManager.openGui
 import ir.parham099.seasonMenuBuilder.state.UseState
 import net.kyori.adventure.text.Component
@@ -41,6 +42,8 @@ class DynamicMenuBuilder(
         fixItemsMap()
         val uuid = player ?: return
         val human = Bukkit.getPlayer(uuid) ?: return
+        // add to onUpdate processor to dont remove from map
+        MenuManager.onUpdatePlayers.add(uuid)
         human.openGui(this)
     }
 
@@ -53,7 +56,7 @@ class DynamicMenuBuilder(
             title = title,
             size = size,
             player = player,
-            states = states,
+            states = HashMap(states),
             block = block
         )
     }

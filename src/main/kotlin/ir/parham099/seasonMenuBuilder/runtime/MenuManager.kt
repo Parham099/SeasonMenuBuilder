@@ -9,8 +9,14 @@ import org.bukkit.entity.HumanEntity
 import java.util.UUID
 
 object MenuManager {
+    // save opened players
     val openedMenuPayers = hashMapOf<UUID, BaseMenuBuilder>()
+
+    // save opened paginated gui
     val openedPaginated = hashMapOf<UUID, PaginatedData>()
+
+    // add: 0.0.8-Beta to know close type is update or really close! for better performance.
+    val onUpdatePlayers = hashSetOf<UUID>()
 
     fun HumanEntity.openGui(baseMenuBuilder: BaseMenuBuilder) {
         try {
@@ -22,6 +28,7 @@ object MenuManager {
             // open inventory
             menu.open()
         } catch (exc: Exception) {
+            if (onUpdatePlayers.contains(this.uniqueId)) onUpdatePlayers.remove(this.uniqueId)
             this.closeInventory()
             if (openedMenuPayers.contains(this.uniqueId)) openedMenuPayers.remove(this.uniqueId)
             exc.printStackTrace()
@@ -38,6 +45,7 @@ object MenuManager {
             // open inventory
             menu.open(this)
         } catch (exc: Exception) {
+            if (onUpdatePlayers.contains(this.uniqueId)) onUpdatePlayers.remove(this.uniqueId)
             this.closeInventory()
             if (openedPaginated.contains(this.uniqueId)) openedPaginated.remove(this.uniqueId)
             exc.printStackTrace()
